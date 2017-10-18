@@ -7,6 +7,8 @@
   font-family: 'Droid Serif', serif;
 }
 
+button:focus {outline:0;}
+
 /* !Nav! */ 
 
 nav {
@@ -58,3 +60,20 @@ nav ul li:first-child {
 nav ul li a:hover {
   background-color: #B20D0C;
 }
+
+/* Projects */
+
+.projectSelectImage{
+	width: 100px; 
+	height: 100px; 
+	padding: 0; 
+	margin: 0; 
+}
+.projectSelectButton{
+	background: white; 
+	width: 100px; 
+	height: 100px; 
+	padding: 0; 
+	margin-left: 30px; 
+	border: none; 
+	}
