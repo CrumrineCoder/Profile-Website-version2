@@ -53,6 +53,7 @@ nav ul li:first-child {
   margin-right: auto;
 }
 
+/* Right links */ 
 
 nav ul li a:hover {
   background-color: #B20D0C;
