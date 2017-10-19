@@ -61,8 +61,56 @@ nav ul li a:hover {
   background-color: #B20D0C;
 }
 
-/* Projects */
+/* !Projects! */
 
+#projectPic{
+	float: left; 
+	margin-left: 20px; 
+	width: 700px;  
+}
+#projectPic img{
+	max-width: 700px; 
+	height: 450px; 
+}
+
+
+#projectFrontEnd li, #projectBackEnd li{
+	border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 3px 5px 3px 5px;
+    margin: 0px 3px 4px 3px ;
+}
+
+#projectFrontEnd li{
+	border: 1px solid #E34C26; 
+}
+
+#projectBackEnd li{
+	border: 1px solid #9400D3; 
+}
+
+#projectProductPaper{
+	margin-top: 30px; 
+}
+
+#links{
+	display: inline;
+	color: red; 
+}
+#links li{
+	color: red; 
+}
+li {
+  list-style-type : '';
+}
+
+/* Project Buttons */
+
+#projectSelectBoxes{
+	clear: both; 
+}
 .projectSelectImage{
 	width: 100px; 
 	height: 100px; 
@@ -76,4 +124,4 @@ nav ul li a:hover {
 	padding: 0; 
 	margin-left: 30px; 
 	border: none; 
-	}
+}
