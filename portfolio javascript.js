@@ -1,9 +1,9 @@
 var projects = [ 
 {
-	logo: "https://images.findagrave.com/photos/2015/20/481_1421880348.jpg", 
-	picture: "https://images-na.ssl-images-amazon.com/images/M/MV5BNTYzMjc2Mjg4MF5BMl5BanBnXkFtZTcwODc1OTQwNw@@._V1_UX214_CR0,0,214,317_AL_.jpg", 
+	logo: "https://www.dropbox.com/s/ilzr341uddw8d85/votingAppLogo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/ma91oyg2p5zu1t8/votingApp3.png?raw=1", 
 	title: "Polling Website", 
-	shortDesc: "A fullstack website for creating and answering polls.", 
+	shortDesc: "This is my first attempt at a fullstack website. The website lets users create a poll with several options, view polls with optional search functionality, and of course vote on polls. If the user is logged in during poll creation, the user can link the poll to the user's account. The user can edit or delete the poll at any time afterwards.", 
 	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport"],
     frontend: [ "HTML", "CSS", "Responsive"], 	
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-voting-app'> here </a>", 

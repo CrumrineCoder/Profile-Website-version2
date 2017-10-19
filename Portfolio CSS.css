@@ -63,27 +63,22 @@ nav ul li a:hover {
 
 #projectPic {
     float: left;
-    margin-left: 20px;
-    width: 49%;
-	
-	//height: 500px; 
+    margin: 0px 10px 0px 10px;
+    width: 600px;
+	height: 500px; 
+	position: relative; 
 }
 
 #projectPic img{
 	width: 100%; 
-}
-/*
-#projectPic img {
-   object-fit: contain;
-  max-width:230px;
-  max-height:150px;
-  width: auto;
-  height: auto;
-}
-*/
-#right{
-
-	background: red; 
+	display:block;
+    margin:auto;
+	  position: absolute;
+	   top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	max-height: 500px; 
 }
 
 #projectFrontEnd li,
@@ -105,7 +100,6 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 #projectLinks {
-    display: inline-block;
     text-align: center;
     padding-left: 0px;
 }
@@ -137,15 +131,15 @@ nav ul li a:hover {
     clear: both;
 }
 .projectSelectImage {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     padding: 0;
     margin: 0;
 }
 .projectSelectButton {
     background: white;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     padding: 0;
     margin-left: 30px;
     border: none;
