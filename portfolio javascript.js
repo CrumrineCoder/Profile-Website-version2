@@ -42,7 +42,7 @@ window.onload=function(){
 		
 			projectLinks.innerHTML = ""; 
 		
-		projectPic.innerHTML = "<img src = '" + projects[projectID].picture + "' ></img> ";
+		projectPic.innerHTML = "<img src = '" + projects[projectID].picture + "'></img> ";
 		
 		projectTitle.innerHTML = "<h1> " + projects[projectID].title + "</h1>"; 
 		
@@ -62,7 +62,7 @@ window.onload=function(){
 		
 		projectProductPaper.innerHTML = projects[projectID].productPaper; 
 		
-		projectLinks.innerHTML += "<li> <a href='" + projects[projectID].codeLink + "' ><i class='fa fa-code' >  See Code</i></a> </li>";
+		projectLinks.innerHTML += "<li> <a href='" + projects[projectID].codeLink + "' ><i class='fa fa-code' rgb=(0,0,0) >  See Code</i></a> </li>";
 		projectLinks.innerHTML += "<li> <a href='" +projects[projectID].websiteLink + "' > <i class='fa fa-external-link' > Visit Website</i> </a> </li>";
 		
 	

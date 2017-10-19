@@ -1,127 +1,152 @@
-/* Entire Document */ 
+/* Entire Document */
 
- body {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-family: 'Droid Serif', serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Droid Serif', serif;
 }
-
-button:focus {outline:0;}
-
-/* !Nav! */ 
+button:focus {
+    outline: 0;
+}
+/* !Nav! */
 
 nav {
-  background-color: #3B3738;
-  margin: 0;
-  overflow: hidden;
-  color: white; 
-  border-bottom-color: yellow; 
-   border-bottom-style: solid;
+    background-color: #3B3738;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    border-bottom-color: yellow;
+    border-bottom-style: solid;
 }
-
 /* Leftside of Nav */
 
-#nic{
-	font-size: 22px; 
-	font-weight: bold; 
+#nic {
+    font-size: 22px;
+    font-weight: bold;
 }
-#nicJob{
-	font-style: italic; 
-	margin-top: -15px; 
+#nicJob {
+    font-style: italic;
+    margin-top: -15px;
 }
-#nameNavContainer{
-	padding-left: 15px; 
+#nameNavContainer {
+    padding-left: 15px;
 }
-/* Nav Positioning */ 
+/* Nav Positioning */
+
 nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 nav ul li {
-  display: inline-block;
-  list-style-type: none;
+    display: inline-block;
+    list-style-type: none;
 }
 nav ul li a {
-  color: white;
-  background-color: #521A19;
-  display: block;
-  line-height: 3em;
-  padding: 1em 3em;
-  text-decoration: none;
+    color: white;
+    background-color: #521A19;
+    display: block;
+    line-height: 3em;
+    padding: 1em 3em;
+    text-decoration: none;
 }
 nav ul li:first-child {
-  margin-right: auto;
+    margin-right: auto;
 }
-
-/* Right links */ 
+/* Right links */
 
 nav ul li a:hover {
-  background-color: #B20D0C;
+    background-color: #B20D0C;
 }
-
 /* !Projects! */
 
-#projectPic{
-	float: left; 
-	margin-left: 20px; 
-	width: 700px;  
+#projectPic {
+    float: left;
+    margin-left: 20px;
+    width: 49%;
+	
+	//height: 500px; 
 }
+
 #projectPic img{
-	max-width: 700px; 
-	height: 450px; 
+	width: 100%; 
+}
+/*
+#projectPic img {
+   object-fit: contain;
+  max-width:230px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+}
+*/
+#right{
+
+	background: red; 
 }
 
-
-#projectFrontEnd li, #projectBackEnd li{
-	border-radius: 5px;
+#projectFrontEnd li,
+#projectBackEnd li {
+    border-radius: 5px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     padding: 3px 5px 3px 5px;
-    margin: 0px 3px 4px 3px ;
+    margin: 0px 3px 4px 3px;
+}
+#projectFrontEnd li {
+    border: 1px solid #E39C8A;
+}
+#projectBackEnd li {
+    border: 1px solid #C198D3;
+}
+#projectProductPaper {
+    margin-top: 30px;
+}
+#projectLinks {
+    display: inline-block;
+    text-align: center;
+    padding-left: 0px;
+}
+#projectLinks li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px 10px 0px 0px;
+    font-size: 17px;
+    border: 2px solid #8C96ED;
+    padding: 3px 5px 3px 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.fa {
+    color: black;
+	-webkit-transition: color .5s;
+    -moz-transition:    color .5s;
+    -ms-transition:     color .5s;
+    -o-transition:      color .5s;
+    transition:         color .5s;
 }
 
-#projectFrontEnd li{
-	border: 1px solid #E34C26; 
+.fa:hover{
+	color: #5D6BD4; 
 }
-
-#projectBackEnd li{
-	border: 1px solid #9400D3; 
-}
-
-#projectProductPaper{
-	margin-top: 30px; 
-}
-
-#links{
-	display: inline;
-	color: red; 
-}
-#links li{
-	color: red; 
-}
-li {
-  list-style-type : '';
-}
-
 /* Project Buttons */
 
-#projectSelectBoxes{
-	clear: both; 
+#projectSelectBoxes {
+    clear: both;
 }
-.projectSelectImage{
-	width: 100px; 
-	height: 100px; 
-	padding: 0; 
-	margin: 0; 
+.projectSelectImage {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
 }
-.projectSelectButton{
-	background: white; 
-	width: 100px; 
-	height: 100px; 
-	padding: 0; 
-	margin-left: 30px; 
-	border: none; 
+.projectSelectButton {
+    background: white;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin-left: 30px;
+    border: none;
 }
