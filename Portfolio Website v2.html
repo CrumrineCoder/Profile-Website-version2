@@ -52,26 +52,48 @@
 	  </div> 
    </div>
    <div id="projectSelectBoxes"> </div>
-   <p>Stay a while and listen!</p>
-   <p> crumrinecoding@gmail.com </p>
-   <form id="contactContainer">
+   <div id="contactInfo">
+   <i class="fa fa-envelope-o fa-2x"> </i>
+	<p>Stay a while and listen!</p>	
+	<p><a href="http://www.google.com/recaptcha/mailhide/d?k=01ght4MFCiQ05S163X7JgTjQ==&amp;c=aoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01ght4MFCiQ05S163X7JgTjQ\x3d\x3d\x26c\x3daoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">c...</a>@gmail.com </p>
+   </div>
+ <!--  <form id="contactContainer">
       <div id="nameAndAddress"> 
-         <label for="name"> Name </label> 
-         <input id="name" >
-         <label for="address"> Address </label> 
-         <input id="address" >
+		<div id="nameContainer">
+			<label for="name"> Name </label> 
+			<input id="name" >
+		 </div>
+		 <div id="addressContainer">
+			<label for="address"> Address </label> 
+			<input id="address" >
+		 </div>
       </div>
       <label for="Message"> Message </label> 
       <input id="Message" />
       <button id="sendMessage"> Send Message </button> 
-   </form>
+   </form> -->
    
+   <form action="submit.php" method="post">
+
+    <p>Your name: <input type="text" name="name" /></p>
+
+    <p>Your email: <input type="text" name="email" /></p>
+
+    <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
+
+    <p><textarea name="message"></textarea></p>
+
+    <p><input type="submit" value="Send" /></p>
+
+</form>
+
    <ul> Logo Credits 
 	<li>Resume logo by Nicholas Menghini from Noun Project </li>
     <li>Poll Website logo by Misha from Noun Project </li>
+	<li> Weather App logo by Shastry from Noun Project </li> 
    </ul>
    <script type="text/javascript" src=" C:\Users\NicLaptop\Desktop\Web Development\v2 Portfolio Website\Profile-Website-version2\portfolio javascript.js"> </script>
-   
+ 
    
     <script> 
    </script>

@@ -11,12 +11,12 @@ var projects = [
 	websiteLink: "https://joinordie.glitch.me/"
 }, 
 {
-	logo: "https://i.pinimg.com/736x/43/35/5e/43355e3d0aff6512fab8a5e549158440--pathfinder-rpg-dark-souls-d-d.jpg", 
-	picture: "https://i.pinimg.com/736x/2d/bd/d7/2dbdd70a5f5419ad2f7b2d5ca9a510e7--tabletop-rpg-pathfinder-rpg.jpg", 
+	logo: "https://www.dropbox.com/s/ukbsb6po0hhh09i/weatherApp%20logo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/g47zdpfvkld5hhz/weatherApp.png?raw=1", 
 	title: "Weather App", 
-	shortDesc: "A front end app for getting the weather.", 
+	shortDesc: "This is a web app that uses the Geolocation API to find the user's location and then tells the user of the weather with the Forecast.io API.", 
 	backend: ["Javascript", "Geolocation", "Forecast.io", "jQuery"], 
-	frontend: ["HTML", "CSS", "Fonts", "Responsive"], 
+	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
 	codeLink: "https://codepen.io/CrumrineCoder/pen/jAKOWY", 
 	websiteLink: "https://codepen.io/CrumrineCoder/full/jAKOWY/"

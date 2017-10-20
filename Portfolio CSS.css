@@ -113,7 +113,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
-.fa {
+.fa,.fa-external-link {
     color: black;
 	-webkit-transition: color .5s;
     -moz-transition:    color .5s;
@@ -122,7 +122,7 @@ nav ul li a:hover {
     transition:         color .5s;
 }
 
-.fa:hover{
+.fa-code:hover, .fa-external-link:hover{
 	color: #5D6BD4; 
 }
 /* Project Buttons */
@@ -144,3 +144,23 @@ nav ul li a:hover {
     margin-left: 30px;
     border: none;
 }
+
+/* !!CONTACT!! */
+
+#contactInfo{
+	text-align: center; 
+}
+
+#nameContainer{
+	float: left; 
+}
+
+#addressContainer{
+	float: right; 
+}
+
+#Message{
+	clear: both; 
+}
+
+.antispam { display:none;}
