@@ -5,3 +5,5 @@ To Do: Make logos and get pictures for the websites. Voting App needs to have it
 Transitions?
 
 Perhaps make the website images slightly blurred? 
+
+Make a proper form for the email. 

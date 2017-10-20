@@ -1,0 +1,23 @@
+{
+  "name": "profile-website-version2",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "portfolio javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrumrineCoder/Profile-Website-version2.git"
+  },
+  "author": "Nic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrumrineCoder/Profile-Website-version2/issues"
+  },
+  "homepage": "https://github.com/CrumrineCoder/Profile-Website-version2#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  }
+}
