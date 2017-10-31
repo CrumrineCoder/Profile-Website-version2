@@ -18,6 +18,10 @@ nav {
     color: white;
     border-bottom-color: yellow;
     border-bottom-style: solid;
+	position: fixed; 
+	width: 100%; 
+	top: 0; 
+	 z-index: 99;
 }
 /* Leftside of Nav */
 
@@ -60,6 +64,10 @@ nav ul li a:hover {
     background-color: #B20D0C;
 }
 /* !Projects! */
+
+#projectInfoContainer{
+	padding-top: 80px; 
+}
 
 #projectPic {
     float: left;

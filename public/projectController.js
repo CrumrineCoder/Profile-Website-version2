@@ -18,10 +18,44 @@ var projects = [
 	backend: ["Javascript", "Geolocation", "Forecast.io", "jQuery"], 
 	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/jAKOWY", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/jAKOWY/"
+	codeLink: "https://codepen.io/CrumrineCoder/pen/WZWKLg", 
+	websiteLink: "https://codepen.io/CrumrineCoder/full/WZWKLg/"
+}, 
+{
+	logo: "https://www.dropbox.com/s/larkckwosuw81tw/pomodoroAppLogo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/g47zdpfvkld5hhz/weatherApp.png?raw=1", 
+	title: "Pomodoro Clock", 
+	shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jquery progress to display to the user the progress of the current Pomodoro the user is on.", 
+	backend: ["Javascript", "jQuery"], 
+	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>", 
+	codeLink: "https://codepen.io/CrumrineCoder/pen/ooNqaM", 
+	websiteLink: "https://codepen.io/CrumrineCoder/full/ooNqaM/"
 }
-
+, 
+{
+	logo: "https://www.dropbox.com/s/jhsgasksxrhlc3h/wikipediaViewerLogo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/b7q5dujvpnek2s4/wikipediaViewer.png?raw=1", 
+	title: "Wikipedia Viewer", 
+	shortDesc: "This is a web app that uses the Wikipedia API to allow search functionality or searching a random page.", 
+	backend: ["Javascript", "jQuery", "Wikipedia API"], 
+	frontend: ["HTML", "CSS",  "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>", 
+	codeLink: "https://codepen.io/CrumrineCoder/pen/xPbVzw", 
+	websiteLink: "https://codepen.io/CrumrineCoder/full/xPbVzw"
+}
+, 
+{
+	logo: "https://www.dropbox.com/s/o4otu48qrkji2ao/calculatorAppLogo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/b7q5dujvpnek2s4/wikipediaViewer.png?raw=1", 
+	title: "Calculator", 
+	shortDesc: "This is a web app that resembles a basic calculator.", 
+	backend: ["Javascript"], 
+	frontend: ["HTML", "CSS", "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
+	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
+	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
+}
 
 ]
 
@@ -80,4 +114,5 @@ window.onload=function(){
 		buttons.append(btn);   
 	}
 	// Select one at random for the onload
+	changeProject(0); 
 }
