@@ -68,7 +68,7 @@ nav ul li a:hover {
 /* !Projects! */
 
 #projectInfoContainer{
-	padding-top: 80px; 
+	padding-top: 100px; 
 }
 
 #projectPic {
@@ -84,10 +84,10 @@ nav ul li a:hover {
 	display:block;
     margin:auto;
 	  position: absolute;
-	   top: 0;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+
 	max-height: 500px; 
 }
 
