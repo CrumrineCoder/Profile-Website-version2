@@ -154,6 +154,8 @@ nav ul li a:hover {
     background: white;
 	max-width: 150px; 
 	max-height: 150px; 
+	min-width: 100px; 
+	min-height: 100px; 
     width: 18%;
     padding: 0;
     margin-left: 30px;
@@ -197,3 +199,32 @@ nav ul li a:hover {
 	display: none; 
 }
 
+@media screen and (max-width: 1000px) {
+	nav ul{
+	display: block; 
+	text-align: center; 
+}
+nav ul li {
+height: 50px; 
+width: 24%; 	
+text-align: center; 
+}
+nav ul li:first-child {
+    width: 100%; 
+	text-align: center; 
+	display: block; 
+}
+nav ul li a {
+	display: block; 
+	font-size: 8px; 
+}
+.projectSelectButton{
+	width: 30%; 
+}
+}
+
+@media screen and (max-width: 400px) {
+	#projectPic img{
+		display: none; 
+	}
+}
