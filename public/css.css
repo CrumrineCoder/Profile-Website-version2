@@ -221,6 +221,16 @@ nav ul li a {
 .projectSelectButton{
 	width: 30%; 
 }
+#splash button{
+	height: 250px; 
+	width: 100%; 
+}
+#splash{
+	width: 100%; 
+}
+#splash button img{
+	width: 150px;
+}
 }
 
 @media screen and (max-width: 400px) {
