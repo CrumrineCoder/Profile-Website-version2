@@ -68,7 +68,7 @@ var projectProductPaper = document.getElementById("projectProductPaper");
 var projectLinks = document.getElementById("projectLinks"); 
 
 var buttons = document.getElementById("projectSelectBoxes"); 
-window.onload=function(){
+
 	function changeProject(projectID){
 		projectBackEnd.innerHTML  = ""; 
 		
@@ -99,20 +99,27 @@ window.onload=function(){
 		projectLinks.innerHTML += "<li> <a href='" + projects[projectID].codeLink + "' ><i class='fa fa-code' rgb=(0,0,0) >  See Code</i></a> </li>";
 		projectLinks.innerHTML += "<li> <a href='" +projects[projectID].websiteLink + "' > <i class='fa fa-external-link' > Visit Website</i> </a> </li>";
 		
+		
+	}
 	
-	}
-	for(var i=0; i<projects.length; i++){
-		var btn = document.createElement("BUTTON");
-		btn.type = "image"; 
-		btn.innerHTML = '<img src="' + projects[i].logo + '" class="projectSelectImage" />'
-		btn.className = "projectSelectButton"; 
-		btn.onclick = function(id){ 
-			return function(){
-				changeProject(id);  
-			}; 
-		}(i);
-		buttons.append(btn);   
-	}
 	// Select one at random for the onload
-	changeProject(0); 
+	//changeProject(0); 
+
+
+function change(x){
+	document.getElementById("index").style.display = "block"; 
+	document.getElementById("splash").style.display = "none"; 
+	changeProject(x); 
+	for(var i=0; i<projects.length; i++){
+			var btn = document.createElement("BUTTON");
+			btn.type = "image"; 
+			btn.innerHTML = '<img src="' + projects[i].logo + '" class="projectSelectImage" />'
+			btn.className = "projectSelectButton"; 
+			btn.onclick = function(id){ 
+				return function(){
+					changeProject(id);  
+				}; 
+			}(i);
+			buttons.append(btn);   
+		}
 }
