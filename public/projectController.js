@@ -56,7 +56,30 @@ var projects = [
 	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
 	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
 }
-
+, 
+{
+	logo: "https://www.dropbox.com/s/o4otu48qrkji2ao/calculatorAppLogo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/zbcigzoxcxg7bgu/calculatorApp.png?raw=1", 
+	title: "Calculator", 
+	shortDesc: "This is a web app that resembles a basic calculator. I am still develop this app and ironing out bugs that I find.", 
+	backend: ["Javascript"], 
+	frontend: ["HTML", "CSS", "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
+	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
+	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
+}
+, 
+{
+	logo: "https://www.dropbox.com/s/o4otu48qrkji2ao/calculatorAppLogo.png?raw=1", 
+	picture: "https://www.dropbox.com/s/zbcigzoxcxg7bgu/calculatorApp.png?raw=1", 
+	title: "Calculator", 
+	shortDesc: "This is a web app that resembles a basic calculator. I am still develop this app and ironing out bugs that I find.", 
+	backend: ["Javascript"], 
+	frontend: ["HTML", "CSS", "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
+	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
+	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
+}
 ]
 
 var projectPic = document.getElementById("projectPic"); 
@@ -111,6 +134,9 @@ function change(x){
 	document.getElementById("splash").style.display = "none"; 
 	changeProject(x); 
 	for(var i=0; i<projects.length; i++){
+		   if(i % 7 == 0){
+			   buttons.append(document.createElement("br"));
+		   }
 			var btn = document.createElement("BUTTON");
 			btn.type = "image"; 
 			btn.innerHTML = '<img src="' + projects[i].logo + '" class="projectSelectImage" />'

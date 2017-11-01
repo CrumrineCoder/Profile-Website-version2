@@ -67,18 +67,9 @@ nav ul li a:hover {
 }
 /* !Projects! */
 
-#projects{
-	background: red; 
-	padding: 20px; 
-   overflow: hidden;
-   display: inline; 
-
-}
 #projectInfoContainer{
-	float: left; 
 	margin-left: 10px; 
-	margin-top: 100px; 
-	width: 80%; 
+	width: 100%; 
 }
 
 #projectPic {
@@ -144,24 +135,14 @@ nav ul li a:hover {
 
 #projectSelectBoxes {
 	margin-top: 100px; 
-    width: 180px;
-    float: right;
-	margin-right: 10px;
+	width: 100%; 
 }
 .projectSelectImage {
-    width: 150px;
-    height: 150px;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
-.projectSelectButton {
-    background: white;
-    width: 150px;
-    height: 150px;
-    padding: 0;
-    margin-left: 30px;
-    border: none;
-}
+
 
 /* !!CONTACT!! */
 
@@ -169,7 +150,15 @@ nav ul li a:hover {
 	text-align: center; 
 	clear: both; 
 }
-
+.projectSelectButton {
+    background: white;
+	max-width: 150px; 
+	max-height: 150px; 
+    width: 18%;
+    padding: 0;
+    margin-left: 30px;
+    border: none;
+}
 #nameContainer{
 	float: left; 
 }
@@ -208,8 +197,3 @@ nav ul li a:hover {
 	display: none; 
 }
 
-@media screen and (max-width: 1000px) {
-	#projectPic {
-		float: none; 
-	}
-}
