@@ -75,7 +75,7 @@ nav ul li a:hover {
     float: left;
     margin: 0px 10px 0px 10px;
     width: 600px;
-	height: 500px; 
+	height: 450px; 
 	position: relative; 
 }
 
@@ -175,6 +175,9 @@ nav ul li a:hover {
 
 .antispam { display:none;}
 
+#credit{
+	font-size: 10px; 
+}
 /* Splash page */
 #splash button{
 	width: 19.5%; 
@@ -194,4 +197,10 @@ nav ul li a:hover {
 }
 #index{
 	display: none; 
+}
+
+@media screen and (max-width: 1000px) {
+	#projectPic {
+		float: none; 
+	}
 }
