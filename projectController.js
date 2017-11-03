@@ -1,7 +1,7 @@
 var projects = [ 
 {
-	logo: "https://www.dropbox.com/s/ilzr341uddw8d85/votingAppLogo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/ma91oyg2p5zu1t8/votingApp3.png?raw=1", 
+	logo: " Images/votingAppLogo.png ", 
+	picture: " Images/votingApp3.png ", 
 	title: "Polling Website", 
 	shortDesc: "This is my first attempt at a fullstack website. The website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.", 
 	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport"],
@@ -11,8 +11,8 @@ var projects = [
 	websiteLink: "https://joinordie.glitch.me/"
 }, 
 {
-	logo: "https://www.dropbox.com/s/ukbsb6po0hhh09i/weatherApp%20logo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/g47zdpfvkld5hhz/weatherApp.png?raw=1", 
+	logo: " Images/weatherApp%20logo.png ", 
+	picture: " Images/weatherApp.png ", 
 	title: "Weather App", 
 	shortDesc: "This is a web app that uses the Geolocation API to find the user's location and then tells the user of the weather with the Forecast.io API.", 
 	backend: ["Javascript", "Geolocation", "Forecast.io", "jQuery"], 
@@ -22,8 +22,8 @@ var projects = [
 	websiteLink: "https://codepen.io/CrumrineCoder/full/WZWKLg/"
 }, 
 {
-	logo: "https://www.dropbox.com/s/larkckwosuw81tw/pomodoroAppLogo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/zkhaoemdjx2eatb/pomodoroApp.png?raw=1", 
+	logo: " Images/pomodoroAppLogo.png", 
+	picture: " Images/pomodoroApp.png ", 
 	title: "Pomodoro Clock", 
 	shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on.", 
 	backend: ["Javascript", "jQuery"], 
@@ -34,8 +34,8 @@ var projects = [
 }
 , 
 {
-	logo: "https://www.dropbox.com/s/jhsgasksxrhlc3h/wikipediaViewerLogo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/b7q5dujvpnek2s4/wikipediaViewer.png?raw=1", 
+	logo: " Images/wikipediaViewerLogo.png ", 
+	picture: " Images/wikipediaViewer.png ", 
 	title: "Wikipedia Viewer", 
 	shortDesc: "This is a web app that uses the Wikipedia API to allow search functionality for Wikipedia or for searching random pages.", 
 	backend: ["Javascript", "jQuery", "Wikipedia API"], 
@@ -46,8 +46,8 @@ var projects = [
 }
 , 
 {
-	logo: "https://www.dropbox.com/s/o4otu48qrkji2ao/calculatorAppLogo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/zbcigzoxcxg7bgu/calculatorApp.png?raw=1", 
+	logo: " Images/calculatorAppLogo.png ", 
+	picture: " Images/calculatorApp.png ", 
 	title: "Calculator", 
 	shortDesc: "This is a web app that resembles a basic calculator. I am still develop this app and ironing out bugs that I find.", 
 	backend: ["Javascript"], 
@@ -58,8 +58,8 @@ var projects = [
 }
 , 
 {
-	logo: "https://www.dropbox.com/s/o4otu48qrkji2ao/calculatorAppLogo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/zbcigzoxcxg7bgu/calculatorApp.png?raw=1", 
+	logo: " Images/calculatorAppLogo.png ", 
+	picture: " Images/calculatorApp.png ", 
 	title: "Calculator", 
 	shortDesc: "This is a web app that resembles a basic calculator. I am still develop this app and ironing out bugs that I find.", 
 	backend: ["Javascript"], 
@@ -70,8 +70,8 @@ var projects = [
 }
 , 
 {
-	logo: "https://www.dropbox.com/s/o4otu48qrkji2ao/calculatorAppLogo.png?raw=1", 
-	picture: "https://www.dropbox.com/s/zbcigzoxcxg7bgu/calculatorApp.png?raw=1", 
+	logo: " Images/calculatorAppLogo.png ", 
+	picture: " Images/calculatorApp.png ",  
 	title: "Calculator", 
 	shortDesc: "This is a web app that resembles a basic calculator. I am still develop this app and ironing out bugs that I find.", 
 	backend: ["Javascript"], 
