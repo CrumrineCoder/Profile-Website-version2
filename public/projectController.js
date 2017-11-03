@@ -119,8 +119,8 @@ var buttons = document.getElementById("projectSelectBoxes");
 		
 		projectProductPaper.innerHTML = projects[projectID].productPaper; 
 		
-		projectLinks.innerHTML += "<li> <a href='" + projects[projectID].codeLink + "' ><i class='fa fa-code' rgb=(0,0,0) >  See Code</i></a> </li>";
-		projectLinks.innerHTML += "<li> <a href='" +projects[projectID].websiteLink + "' > <i class='fa fa-external-link' > Visit Website</i> </a> </li>";
+		projectLinks.innerHTML += "<li> <a href='" + projects[projectID].codeLink + "' target='_blank'><i class='fa fa-code' rgb=(0,0,0) >  See Code</i></a> </li>";
+		projectLinks.innerHTML += "<li> <a href='" +projects[projectID].websiteLink + "' target='_blank'> <i class='fa fa-external-link' > Visit Website</i> </a> </li>";
 		
 		
 	}
