@@ -29,8 +29,8 @@ var projects = [
 	backend: ["Javascript", "jQuery"], 
 	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/ooNqaM", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/ooNqaM/"
+	codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2", 
+	websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/"
 }
 , 
 {
@@ -41,8 +41,8 @@ var projects = [
 	backend: ["Javascript", "jQuery", "Wikipedia API"], 
 	frontend: ["HTML", "CSS",  "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/xPbVzw", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/xPbVzw"
+	codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2", 
+	websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/"
 }
 , 
 {
@@ -53,8 +53,8 @@ var projects = [
 	backend: ["Javascript"], 
 	frontend: ["HTML", "CSS", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
+	codeLink: "https://github.com/CrumrineCoder/Calculator", 
+	websiteLink: " https://crumrinecoder.github.io/Calculator/"
 }
 , 
 {
@@ -65,8 +65,8 @@ var projects = [
 	backend: ["Javascript"], 
 	frontend: ["HTML", "CSS", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
+	codeLink: "https://github.com/CrumrineCoder/Calculator", 
+	websiteLink:  "https://crumrinecoder.github.io/Calculator/"
 }
 , 
 {
@@ -77,8 +77,8 @@ var projects = [
 	backend: ["Javascript"], 
 	frontend: ["HTML", "CSS", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/OOVrBP", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/OOVrBP"
+	codeLink: "https://github.com/CrumrineCoder/Calculator", 
+	websiteLink: " https://crumrinecoder.github.io/Calculator/"
 }
 ]
 
