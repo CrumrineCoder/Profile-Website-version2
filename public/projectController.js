@@ -94,7 +94,6 @@ var buttons = document.getElementById("projectSelectBoxes");
 
 	function changeProject(projectID){
 		if(selectedProject != null){
-			console.log(true); 
 			document.getElementById(selectedProject).style.opacity = "1";
 			document.getElementById(selectedProject).disabled = false;
 		} 
@@ -106,6 +105,7 @@ var buttons = document.getElementById("projectSelectBoxes");
 		
 			projectLinks.innerHTML = ""; 
 		
+	//	document.getElementById("projectInfoContainer").style.background = "url(" + projects[projectID].picture + ")"; 
 		projectPic.innerHTML = "<img src = '" + projects[projectID].picture + "'></img> ";
 		
 		projectTitle.innerHTML = "<h1> " + projects[projectID].title + "</h1>"; 
