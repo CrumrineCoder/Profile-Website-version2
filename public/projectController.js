@@ -89,10 +89,17 @@ var projectBackEnd = document.getElementById("projectBackEnd");
 var projectFrontEnd = document.getElementById("projectFrontEnd"); 
 var projectProductPaper = document.getElementById("projectProductPaper"); 
 var projectLinks = document.getElementById("projectLinks"); 
-
+var selectedProject; 
 var buttons = document.getElementById("projectSelectBoxes"); 
 
 	function changeProject(projectID){
+		if(selectedProject != null){
+			console.log(true); 
+			document.getElementById(selectedProject).style.opacity = "1";
+			document.getElementById(selectedProject).disabled = false;
+		} 
+		document.getElementById(projectID).style.opacity = ".3"
+		document.getElementById(projectID).disabled = true;
 		projectBackEnd.innerHTML  = ""; 
 		
 		projectFrontEnd.innerHTML = ""; 
@@ -122,7 +129,7 @@ var buttons = document.getElementById("projectSelectBoxes");
 		projectLinks.innerHTML += "<li> <a href='" + projects[projectID].codeLink + "' target='_blank'><i class='fa fa-code' rgb=(0,0,0) >  See Code</i></a> </li>";
 		projectLinks.innerHTML += "<li> <a href='" +projects[projectID].websiteLink + "' target='_blank'> <i class='fa fa-external-link' > Visit Website</i> </a> </li>";
 		
-		
+			selectedProject = projectID; 
 	}
 	
 	// Select one at random for the onload
@@ -132,7 +139,8 @@ var buttons = document.getElementById("projectSelectBoxes");
 function change(x){
 	document.getElementById("index").style.display = "block"; 
 	document.getElementById("splash").style.display = "none"; 
-	changeProject(x); 
+	
+	
 	for(var i=0; i<projects.length; i++){
 		   if(i % 7 == 0){
 			   buttons.append(document.createElement("br"));
@@ -141,6 +149,7 @@ function change(x){
 			btn.type = "image"; 
 			btn.innerHTML = '<img src="' + projects[i].logo + '" class="projectSelectImage" />'
 			btn.className = "projectSelectButton"; 
+			btn.id = i; 
 			btn.onclick = function(id){ 
 				return function(){
 					changeProject(id);  
@@ -148,4 +157,6 @@ function change(x){
 			}(i);
 			buttons.append(btn);   
 		}
+		changeProject(x); 
+
 }
