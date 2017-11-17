@@ -18,8 +18,8 @@ var projects = [
 	backend: ["Javascript", "Geolocation", "Forecast.io", "jQuery"], 
 	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
-	codeLink: "https://codepen.io/CrumrineCoder/pen/WZWKLg", 
-	websiteLink: "https://codepen.io/CrumrineCoder/full/WZWKLg/"
+	codeLink: "https://github.com/CrumrineCoder/Weather-App", 
+	websiteLink: "https://crumrinecoder.github.io/Weather-App/"
 }, 
 {
 	logo: " Images/pomodoroAppLogo.png", 
@@ -79,6 +79,18 @@ var projects = [
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Calculator", 
 	websiteLink: " https://crumrinecoder.github.io/Calculator/"
+}
+, 
+{
+	logo: " Images/tabletopAppLogo.png ", 
+	picture: " Images/calculatorApp.png ",  
+	title: "Tabletop Coordination", 
+	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in the user's area and RSVP if they are logged in.", 
+	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport", "Angular"], 
+	frontend: ["HTML", "CSS", "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>", 
+	codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp", 
+	websiteLink: "https://tabletop.glitch.me/"
 }
 ]
 
