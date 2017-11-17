@@ -83,7 +83,7 @@ var projects = [
 , 
 {
 	logo: " Images/tabletopAppLogo.png ", 
-	picture: " Images/calculatorApp.png ",  
+	picture: " Images/tabletopApp.png ",  
 	title: "Tabletop Coordination", 
 	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in the user's area and RSVP if they are logged in.", 
 	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport", "Angular"], 
