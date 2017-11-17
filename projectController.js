@@ -85,7 +85,7 @@ var projects = [
 	logo: " Images/tabletopAppLogo.png ", 
 	picture: " Images/tabletopApp.png ",  
 	title: "Tabletop Coordination", 
-	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in the user's area and RSVP if they are logged in.", 
+	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP.", 
 	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport", "Angular"], 
 	frontend: ["HTML", "CSS", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>", 
