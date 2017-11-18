@@ -9,6 +9,16 @@ var projects = [
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-voting-app'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/VotingApp", 
 	websiteLink: "https://joinordie.glitch.me/"
+}, {
+	logo: " Images/tabletopAppLogo.png ", 
+	picture: " Images/tabletopApp.png ",  
+	title: "Tabletop Coordination", 
+	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP. ", 
+	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport", "Angular"], 
+	frontend: ["HTML", "CSS", "Responsive"], 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>. I changed it from finding bars to finding Tabletop shops.", 
+	codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp", 
+	websiteLink: "https://tabletop.glitch.me/"
 }, 
 {
 	logo: " Images/weatherApp%20logo.png ", 
@@ -55,42 +65,6 @@ var projects = [
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Calculator", 
 	websiteLink: " https://crumrinecoder.github.io/Calculator/"
-}
-, 
-{
-	logo: " Images/calculatorAppLogo.png ", 
-	picture: " Images/calculatorApp.png ", 
-	title: "Calculator", 
-	shortDesc: "This is a web app that resembles a basic calculator. I am still developing this app and ironing out bugs that I find.", 
-	backend: ["Javascript"], 
-	frontend: ["HTML", "CSS", "Responsive"], 
-	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
-	codeLink: "https://github.com/CrumrineCoder/Calculator", 
-	websiteLink:  "https://crumrinecoder.github.io/Calculator/"
-}
-, 
-{
-	logo: " Images/calculatorAppLogo.png ", 
-	picture: " Images/calculatorApp.png ",  
-	title: "Calculator", 
-	shortDesc: "This is a web app that resembles a basic calculator. I am still developing this app and ironing out bugs that I find.", 
-	backend: ["Javascript"], 
-	frontend: ["HTML", "CSS", "Responsive"], 
-	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
-	codeLink: "https://github.com/CrumrineCoder/Calculator", 
-	websiteLink: " https://crumrinecoder.github.io/Calculator/"
-}
-, 
-{
-	logo: " Images/tabletopAppLogo.png ", 
-	picture: " Images/tabletopApp.png ",  
-	title: "Tabletop Coordination", 
-	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP.", 
-	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport", "Angular"], 
-	frontend: ["HTML", "CSS", "Responsive"], 
-	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>", 
-	codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp", 
-	websiteLink: "https://tabletop.glitch.me/"
 }
 ]
 
