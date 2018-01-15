@@ -1,12 +1,11 @@
 var projects = [ 
-, 
 {
 	logo: " Images/npcLookUpLogo.png ", 
 	picture: " Images/npcLookUp.png ", 
 	title: "NPC Lookup", 
 	shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.", 
-	backend: ["Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular"], 
-	frontend: ["HTML", "CSS", "Responsive"], 
+	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular", 
+	frontend: "HTML, CSS, Responsive", 
 	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live.", 
 	codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP", 
 	websiteLink: "https://npclookup.glitch.me/"
@@ -16,8 +15,8 @@ var projects = [
 	picture: " Images/votingApp3.png ", 
 	title: "Polling Website", 
 	shortDesc: "This is my first attempt at a fullstack website. The website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.", 
-	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport"],
-    frontend: [ "HTML", "CSS", "Responsive"], 	
+	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport", 
+    frontend:  "HTML, CSS, Responsive", 	
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-voting-app'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/VotingApp", 
 	websiteLink: "https://joinordie.glitch.me/"
@@ -26,8 +25,8 @@ var projects = [
 	picture: " Images/tabletopApp.png ",  
 	title: "Tabletop Coordination", 
 	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP. ", 
-	backend: ["Javascript", "Node.js", "Glitch", "MongoDB", "Express", "Mongoose", "Passport", "Angular"], 
-	frontend: ["HTML", "CSS", "Responsive"], 
+	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular", 
+	frontend:  "HTML, CSS, Responsive", 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>. I changed it from finding bars to finding Tabletop shops.", 
 	codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp", 
 	websiteLink: "https://tabletop.glitch.me/"
@@ -37,8 +36,8 @@ var projects = [
 	picture: " Images/weatherApp.png ", 
 	title: "Weather App", 
 	shortDesc: "This is a web app that uses the Geolocation API to find the user's location and then tells the user of the weather with the Forecast.io API.", 
-	backend: ["Javascript", "Geolocation", "Forecast.io", "jQuery"], 
-	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
+	backend: "Javascript, Geolocation, Forecast.io, jQuery", 
+	frontend:  "HTML, CSS, Font Awesome, Responsive", 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Weather-App", 
 	websiteLink: "https://crumrinecoder.github.io/Weather-App/"
@@ -48,8 +47,8 @@ var projects = [
 	picture: " Images/pomodoroApp.png ", 
 	title: "Pomodoro Clock", 
 	shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on.", 
-	backend: ["Javascript", "jQuery"], 
-	frontend: ["HTML", "CSS", "Font Awesome", "Responsive"], 
+	backend: "Javascript, jQuery", 
+	frontend:  "HTML, CSS, Font Awesome, Responsive", 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2", 
 	websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/"
@@ -60,8 +59,8 @@ var projects = [
 	picture: " Images/wikipediaViewer.png ", 
 	title: "Wikipedia Viewer", 
 	shortDesc: "This is a web app that uses the Wikipedia API to allow search functionality for Wikipedia or for searching random pages.", 
-	backend: ["Javascript", "jQuery", "Wikipedia API"], 
-	frontend: ["HTML", "CSS",  "Responsive"], 
+	backend: "Javascript, jQuery, Wikipedia API", 
+	frontend:  "HTML, CSS, Responsive", 
 	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2", 
 	websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/"
@@ -72,8 +71,8 @@ var projects = [
 	picture: " Images/calculatorApp.png ", 
 	title: "Calculator", 
 	shortDesc: "This is a web app that resembles a basic calculator.", 
-	backend: ["Javascript"], 
-	frontend: ["HTML", "CSS", "Responsive"], 
+	backend: "Javascript", 
+	frontend:  "HTML, CSS, Responsive", 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Calculator", 
 	websiteLink: " https://crumrinecoder.github.io/Calculator/"
@@ -112,15 +111,15 @@ var buttons = document.getElementById("projectSelectBoxes");
 		projectShortDescription.innerHTML = "<p> " + projects[projectID].shortDesc + "</p>";  
 		
 		projectFrontEnd.innerHTML += "<ul>";
-		for(var i=0; i<projects[projectID].frontend.length; i++){
-			projectFrontEnd.innerHTML += "<li class='frontend' >" + projects[projectID].frontend[i] + "</li>"; 
-		}
+		
+			projectFrontEnd.innerHTML += "<li class='frontend' >" + projects[projectID].frontend + "</li>"; 
+		
 		projectFrontEnd.innerHTML += "</ul>";
 		
 		projectBackEnd.innerHTML += "<ul>";
-		for(var i=0; i<projects[projectID].backend.length; i++){
-			projectBackEnd.innerHTML += "<li class='backend' >" + projects[projectID].backend[i] + "</li>"; 
-		}
+		
+			projectBackEnd.innerHTML += "<li class='backend' >" + projects[projectID].backend + "</li>"; 
+		
 		projectBackEnd.innerHTML += "</ul>";
 		
 		projectProductPaper.innerHTML = projects[projectID].productPaper; 
@@ -133,8 +132,6 @@ var buttons = document.getElementById("projectSelectBoxes");
 	
 	// Select one at random for the onload
 	//changeProject(0); 
-
-
 function change(x){
 	document.getElementById("index").style.display = "block"; 
 	document.getElementById("splash").style.display = "none"; 
