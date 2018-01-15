@@ -1,4 +1,16 @@
 var projects = [ 
+, 
+{
+	logo: " Images/npcLookUpLogo.png ", 
+	picture: " Images/npcLookUp.png ", 
+	title: "NPC Lookup", 
+	shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.", 
+	backend: ["Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular"], 
+	frontend: ["HTML", "CSS", "Responsive"], 
+	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live.", 
+	codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP", 
+	websiteLink: "https://npclookup.glitch.me/"
+}
 {
 	logo: " Images/votingAppLogo.png ", 
 	picture: " Images/votingApp3.png ", 
@@ -59,13 +71,14 @@ var projects = [
 	logo: " Images/calculatorAppLogo.png ", 
 	picture: " Images/calculatorApp.png ", 
 	title: "Calculator", 
-	shortDesc: "This is a web app that resembles a basic calculator. I am still developing this app and ironing out bugs that I find.", 
+	shortDesc: "This is a web app that resembles a basic calculator.", 
 	backend: ["Javascript"], 
 	frontend: ["HTML", "CSS", "Responsive"], 
 	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
 	codeLink: "https://github.com/CrumrineCoder/Calculator", 
 	websiteLink: " https://crumrinecoder.github.io/Calculator/"
 }
+
 ]
 
 var projectPic = document.getElementById("projectPic"); 
