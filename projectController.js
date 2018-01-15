@@ -10,7 +10,7 @@ var projects = [
 	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live.", 
 	codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP", 
 	websiteLink: "https://npclookup.glitch.me/"
-}
+},
 {
 	logo: " Images/votingAppLogo.png ", 
 	picture: " Images/votingApp3.png ", 
