@@ -77,6 +77,18 @@ var projects = [
 	codeLink: "https://github.com/CrumrineCoder/Calculator", 
 	websiteLink: " https://crumrinecoder.github.io/Calculator/"
 }
+, 
+{
+	logo: " Images/connectFourAppLogo.png ", 
+	picture: " Images/connectFourApp.png ", 
+	title: "Connect Four", 
+	shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.", 
+	backend: "Javascript", 
+	frontend:  "HTML, CSS, Responsive", 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game'> here </a>. I've built aboutt three Tic-Tac-Toe games in my time so I got bored and made a Connect Four instead of the suggested Tic Tac Toe game.", 
+	codeLink: "https://github.com/CrumrineCoder/Connect-Four", 
+	websiteLink: " https://crumrinecoder.github.io/Connect-Four/"
+}
 
 ]
 
