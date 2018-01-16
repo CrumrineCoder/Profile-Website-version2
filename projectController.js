@@ -150,9 +150,6 @@ function change(x){
 	
 	
 	for(var i=0; i<projects.length; i++){
-		   if(i % 7 == 0){
-			   buttons.append(document.createElement("br"));
-		   }
 			var btn = document.createElement("BUTTON");
 			btn.type = "image"; 
 			btn.innerHTML = '<img src="' + projects[i].logo + '" class="projectSelectImage" />'

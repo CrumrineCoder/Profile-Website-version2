@@ -235,6 +235,9 @@ nav ul li a {
 #splash button img{
 	width: 150px;
 }
+#projectSelectBoxes {
+	margin-top: 140px; 
+}
 }
 
 @media screen and (max-width: 400px) {
