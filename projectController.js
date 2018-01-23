@@ -32,6 +32,17 @@ var projects = [
 	websiteLink: "https://tabletop.glitch.me/"
 }, 
 {
+	logo: " Images/twitchViewerlogo.png ", 
+	picture: " Images/twitchViewer.png ", 
+	title: "Twitch Viewer", 
+	shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.", 
+	backend: "Javascript, jQuery, Angular, Twitch.tv API", 
+	frontend:  "HTML, CSS, Font Awesome, Responsive", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
+	codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone", 
+	websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/"
+},
+{
 	logo: " Images/weatherApp%20logo.png ", 
 	picture: " Images/weatherApp.png ", 
 	title: "Weather App", 
