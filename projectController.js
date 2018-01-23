@@ -38,7 +38,7 @@ var projects = [
 	shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.", 
 	backend: "Javascript, jQuery, Angular, Twitch.tv API", 
 	frontend:  "HTML, CSS, Font Awesome, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>. I revisited this project and am incredibly proud how much I've grown since I made this. I struggled with teaching myself about Angular filters and factories with this one, but otherwise the website was easy to make. I took a lot of inspiration from other projects on the r/freeCodeCamp subreddit during the revision process.", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>. I revisited this project and am incredibly proud how much I've grown since I made this. I decided to display the data with Angular this time and this was the first time I've used a one page design with Angular, which meant I had to be sending data back and forth. This was the main struggle with this project but the rest which would've taken me weeks to do now took me only two days.", 
 	codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone", 
 	websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/"
 },
