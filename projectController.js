@@ -6,7 +6,7 @@ var projects = [
 	shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.", 
 	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular", 
 	frontend: "HTML, CSS, Responsive", 
-	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live.", 
+	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live. I refined the skills I learned making the Voting website by routing the individual pages better, incorporating Angular to display the data, experimenting with a comment section, and other minor fixes.", 
 	codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP", 
 	websiteLink: "https://npclookup.glitch.me/"
 },
@@ -17,7 +17,7 @@ var projects = [
 	shortDesc: "This is my first attempt at a fullstack website. The website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.", 
 	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport", 
     frontend:  "HTML, CSS, Responsive", 	
-	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-voting-app'> here </a>", 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-voting-app'> here </a>. This is my first fullstack website and I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to build this. Once I find the time, I'll improve on this with the skills I learned making the NPC website.", 
 	codeLink: "https://github.com/CrumrineCoder/VotingApp", 
 	websiteLink: "https://joinordie.glitch.me/"
 }, {
@@ -27,7 +27,7 @@ var projects = [
 	shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP. ", 
 	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular, Yelp API", 
 	frontend:  "HTML, CSS, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>. I changed it from finding bars to finding Tabletop shops.", 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app'> here </a>. I changed it from finding bars to finding Tabletop shops. I had to teach myself Angular for this project and learned how to incorporate an API with a database.", 
 	codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp", 
 	websiteLink: "https://tabletop.glitch.me/"
 }, 
@@ -38,7 +38,7 @@ var projects = [
 	shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.", 
 	backend: "Javascript, jQuery, Angular, Twitch.tv API", 
 	frontend:  "HTML, CSS, Font Awesome, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>. I revisited this project and am incredibly proud how much I've grown since I made this. I struggled with teaching myself about Angular filters and factories with this one, but otherwise the website was easy to make. I took a lot of inspiration from other projects on the r/freeCodeCamp subreddit during the revision process.", 
 	codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone", 
 	websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/"
 },
@@ -49,7 +49,7 @@ var projects = [
 	shortDesc: "This is a web app that uses the Geolocation API to find the user's location and then tells the user of the weather with the Forecast.io API.", 
 	backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,", 
 	frontend:  "HTML, CSS, Font Awesome, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/show-the-local-weather'> here </a>. This was the first project I was really proud to make. The revision process actually didn't change that much other than making the search bar work, improving the time zone marker, and cleaning up the backend functions and the page layout.", 
 	codeLink: "https://github.com/CrumrineCoder/Weather-App", 
 	websiteLink: "https://crumrinecoder.github.io/Weather-App/"
 }, 
@@ -60,7 +60,7 @@ var projects = [
 	shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on.", 
 	backend: "Javascript, jQuery", 
 	frontend:  "HTML, CSS, Font Awesome, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>. I learned about intervals for this one and about minimalistic design: initially I had a large amount of buttons, but I was able to streamline them into a UI design I like.", 
 	codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2", 
 	websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/"
 }
@@ -72,7 +72,7 @@ var projects = [
 	shortDesc: "This is a web app that uses the Wikipedia API to allow search functionality for Wikipedia or for searching random pages.", 
 	backend: "Javascript, jQuery, Wikipedia API", 
 	frontend:  "HTML, CSS, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>. I like the colors I picked out for this design as well as its layout. The Wikipedia API doesn't give that much information so once I teach myself React I'm going to redo this project to get proper data in a layout similar to the revised Twtich.tv viewer.", 
 	codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2", 
 	websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/"
 }
@@ -84,7 +84,7 @@ var projects = [
 	shortDesc: "This is a web app that resembles a basic calculator.", 
 	backend: "Javascript", 
 	frontend:  "HTML, CSS, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>", 
+	productPaper: "This was built as part of FreeCodeCamp's backend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-javascript-calculator'> here </a>. This one was pure javascript and algorithm scripting.", 
 	codeLink: "https://github.com/CrumrineCoder/Calculator", 
 	websiteLink: " https://crumrinecoder.github.io/Calculator/"
 }
