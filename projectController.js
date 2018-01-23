@@ -32,7 +32,7 @@ var projects = [
 	websiteLink: "https://tabletop.glitch.me/"
 }, 
 {
-	logo: " Images/twitchViewerlogo.png ", 
+	logo: " Images/twitchViewerLogo.png ", 
 	picture: " Images/twitchViewer.png ", 
 	title: "Twitch Viewer", 
 	shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.", 
