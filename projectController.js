@@ -6,7 +6,7 @@ var projects = [
 	shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.", 
 	backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular", 
 	frontend: "HTML, CSS, Responsive", 
-	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live. I refined the skills I learned making the Voting website by routing the individual pages better, incorporating Angular to display the data, experimenting with a comment section, and other minor fixes.", 
+	productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live. I refined the skills I learned making the Voting website by routing the individual pages better, incorporating Angular to display the data, experimenting with a comment section, and other minor fixes. Once I find the time the comment sction will allow for replying, editing and deleting one's comment, and allowing a user to change their password.", 
 	codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP", 
 	websiteLink: "https://npclookup.glitch.me/"
 },
@@ -60,7 +60,7 @@ var projects = [
 	shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on.", 
 	backend: "Javascript, jQuery", 
 	frontend:  "HTML, CSS, Font Awesome, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>. I learned about intervals for this one and about minimalistic design: initially I had a large amount of buttons, but I was able to streamline them into a UI design I like.", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-pomodoro-clock'> here </a>. I learned about intervals for this one and about minimalistic design: initially I had a large amount of buttons, but I was able to streamline them into a UI design I like. I want to learn about sessions and be able to store a user's preferences.", 
 	codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2", 
 	websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/"
 }
@@ -72,7 +72,7 @@ var projects = [
 	shortDesc: "This is a web app that uses the Wikipedia API to allow search functionality for Wikipedia or for searching random pages.", 
 	backend: "Javascript, jQuery, Wikipedia API", 
 	frontend:  "HTML, CSS, Responsive", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>. I like the colors I picked out for this design as well as its layout. The Wikipedia API doesn't give that much information so once I teach myself React I'm going to redo this project to get proper data in a layout similar to the revised Twtich.tv viewer.", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer'> here </a>. I like the colors I picked out for this design as well as its layout. The Wikipedia API doesn't give that much information so once I teach myself React I'm going to redo this project to get proper data in a layout similar to the revised Twtich.tv viewer. I'd like to do this same website but for the TvTropes website instead of Wikipedia, but their API doesn't work.", 
 	codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2", 
 	websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/"
 }
@@ -96,7 +96,7 @@ var projects = [
 	shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.", 
 	backend: "Javascript", 
 	frontend:  "HTML, CSS", 
-	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game'> here </a>. I've built about three Tic-Tac-Toe games in my time so I got bored and made a Connect Four instead of the suggested Tic Tac Toe game.", 
+	productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum, the assignment can be found <a href='https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game'> here </a>. I've built about three Tic-Tac-Toe games in my time so I got bored and made a Connect Four instead of the suggested Tic Tac Toe game. I'd like to build a full TI-84 except for the graphing part.", 
 	codeLink: "https://github.com/CrumrineCoder/Connect-Four", 
 	websiteLink: " https://crumrinecoder.github.io/Connect-Four/"
 }
