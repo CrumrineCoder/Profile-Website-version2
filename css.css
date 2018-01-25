@@ -4,15 +4,15 @@
 }
  body {
      margin: 0;
-     height: 100%;
      padding: 0;
-     font-size: 15px;
+     font-size: 14px;
      font-family: 'Droid Serif', serif;
      z-index: 0;
 }
  button:focus {
      outline: 0;
 }
+
 /* !Nav! */
  nav {
      background-color: #3B3738;
@@ -66,75 +66,6 @@
 
 
 
-/* !Projects! */
- #projects{
-	margin: 0 auto; 
-	width: 95%;
- }
- 
- #projects ul{
-	 padding: 0px; 
- }
- 
-#projectBackEnd, #projectFrontEnd{
-	width: 95%;
-}
- #projectFrontEnd li, #projectBackEnd li {
-     border-radius: 5px;
-     display: inline-block;
-     text-transform: uppercase;
-     letter-spacing: 0.2em;
-     padding: 3px 5px 3px 5px;
-     margin: 0px 3px 4px 3px;
-}
- #projectFrontEnd li {
-     border: 1px solid #E39C8A;
-}
- #projectBackEnd li {
-     border: 1px solid #C198D3;
- }
- 
- #projectLinks {
-     text-align: center;
-     padding-left: 0px;
-}
- #projectLinks li {
-     display: inline-block;
-     list-style-type: none;
-     margin: 5px 10px 0px 0px;
-     font-size: 17px;
-     border: 2px solid #8C96ED;
-     padding: 3px 5px 3px 5px;
-     text-transform: uppercase;
-     letter-spacing: 0.2em;
-}
- .fa-code,.fa-external-link, .fa-free-code-camp {
-     color: black;
-     -webkit-transition: color .5s;
-     -moz-transition: color .5s;
-     -ms-transition: color .5s;
-     -o-transition: color .5s;
-     transition: color .5s;
-}
- .fa-code:hover, .fa-external-link:hover, .fa-free-code-camp:hover{
-     color: #5D6BD4;
-}
-
- #projectPic {
-     margin: 0px 10px 0px 10px;
-     position: relative;
-}
- #projectPic img{
-     display:block;
-     margin:auto;
-     top: 0;
-     left: 0;
-     right: 0;
-     max-width: 100%;
-     z-index:-1;
-}
-
-
 /* Project Buttons */
  #projectSelectBoxes {
      width: 95%;
@@ -156,10 +87,87 @@
      max-height: 150px;
      min-width: 100px;
      min-height: 100px;
-     width: 18%;
      padding: 0;
      border: none;
 }
+
+
+
+/* !Projects! */
+ #projects{
+	margin: 0 auto; 
+	width: 95%;
+ }
+#projectInfoText{
+   position: absolute;  
+   width: 93.5%;
+   color: white; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+   z-index:99999;
+   top: 170px; 
+}
+ #projects ul{
+	 padding: 0px; 
+ }
+ 
+#projectBackEnd, #projectFrontEnd{
+	width: 95%;
+}
+ #projectFrontEnd li, #projectBackEnd li {
+     border-radius: 5px;
+     display: inline-block;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
+     padding: 3px 5px 3px 5px;
+     margin: 0px 3px 4px 3px;
+}
+ #projectFrontEnd li {
+     border: 1px solid #E39C8A;
+	 background: #E39C8A
+}
+ #projectBackEnd li {
+     border: 1px solid #C198D3;
+	 background: #C198D3;
+ }
+ 
+ #projectLinks {
+     text-align: center;
+     padding-left: 0px;
+}
+ #projectLinks li {
+     display: inline-block;
+     list-style-type: none;
+     margin: 5px 10px 0px 0px;
+     font-size: 17px;
+     border: 2px solid #8C96ED;
+     padding: 3px 5px 3px 5px;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
+	 background: white; 
+}
+ .fa-code,.fa-external-link, .fa-free-code-camp {
+     color: black;
+     -webkit-transition: color .5s;
+     -moz-transition: color .5s;
+     -ms-transition: color .5s;
+     -o-transition: color .5s;
+     transition: color .5s;
+}
+ .fa-code:hover, .fa-external-link:hover, .fa-free-code-camp:hover{
+     color: #5D6BD4;
+}
+
+ #projectPicture {
+     position: relative;
+	 opacity: 0.6;
+	 width: 100%;
+    height: auto;
+}
+
+
 /* !!CONTACT!! */
  #contactInfo{
      text-align: center;
@@ -201,6 +209,19 @@
      display: none;
 }
  @media screen and (max-width: 1000px) {
+	 /* SPLASH PAGE */
+	#splash button{
+         height: 250px;
+         width: 100%;
+    }
+     #splash{
+         width: 100%;
+    }
+     #splash button img{
+         width: 150px;
+    }
+	 
+	 /* NAV */
      nav ul{
          display: block;
          text-align: center;
@@ -218,34 +239,43 @@
          display: block;
          font-size: 8px;
     }
-     .projectSelectButton{
-         width: 30%;
-    }
-     #splash button{
-         height: 250px;
-         width: 100%;
-    }
-     #splash{
-         width: 100%;
-    }
-     #splash button img{
-         width: 150px;
-    }
-     #projectInfoContainer{
-         margin-top: 150px;
-    }
+	
+	/* Projects */
+	 #projectLinks li {
+		font-size: 12px; 
+	 }
+	  #projectFrontEnd li, #projectBackEnd li {
+		font-size: 12px; 
+	  }
+	h1 {
+	  margin: .37em 0px; 
+	  font-size: 1.4em;
+	}
+	
  }
-     @media screen and (max-width: 400px) {
-         #projectPic img{
-             display: none;
-        }
-		 nav ul li img{
-			height: 25px; 
-			width: 25px; 
-		 }
-		  nav ul li a{
-			padding: 0px; 
-			padding-top: 4px; 
-		 }
+  @media screen and (max-width: 900px) {
+	#projectLinks li {
+		padding: 1px; 
+	 }
+	  #projectFrontEnd li, #projectBackEnd li {
+		padding: 1px;  
+	  }
+  }
+ @media screen and (max-width: 700px) {
+	#projectInfoText{
+	   position: relative;  
+	   top: 0px; 
+	}
+	#projectPicture{
+        display: none;
     }
+	nav ul li img{
+		height: 25px; 
+		width: 25px; 
+	}
+	nav ul li a{
+		padding: 0px; 
+		padding-top: 4px; 
+	}
+ }
     

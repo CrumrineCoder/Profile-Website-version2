@@ -29,24 +29,6 @@
    
 	<!-- Project Section -->
 	<div id="projects">
-		<h1> {{projectInfo.title}} </h1>
-		<ul>
-			<div id="projectFrontEnd">
-				<li class="frontend"> {{projectInfo.frontTechnologies}} </li>
-			</div>
-			<div id="projectBackEnd">
-				<li class="backend"> {{projectInfo.backTechnologies}} </li>
-			</div>
-		</ul>
-		<p> {{projectInfo.projectDescription}} </p>
-		<p> {{projectInfo.productPaper}} </p>
-		<ul id="projectLinks">
-		  <li><a href="{{projectInfo.codeLink}}" target="_blank"><i class="fa fa-code" rgb="(0,0,0)"> See Code </i></a></li>
-		  <li><a href="{{projectInfo.websiteLink}}" target="_blank"> <i class="fa fa-external-link"> Visit Website </i> </a></li>
-		  <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li>
-		</ul>
-		<img src="{{projectInfo.picture}}"> </img>
-		
 		<!-- Select a project section -->
 		<div id="projectSelectBoxes">
 			<span ng-repeat="project in buttons">
@@ -55,6 +37,28 @@
 				</button>
 			</span>
 		</div>
+		<img id="projectPicture" src="{{projectInfo.picture}}">
+		<div id="projectInfoText">
+			<h1> {{projectInfo.title}} </h1>
+			<ul>
+				<div id="projectFrontEnd">
+					<li class="frontend"> {{projectInfo.frontTechnologies}} </li>
+				</div>
+				<div id="projectBackEnd">
+					<li class="backend"> {{projectInfo.backTechnologies}} </li>
+				</div>
+			</ul>
+			<p> {{projectInfo.projectDescription}} </p>
+			<p> {{projectInfo.productPaper}} </p>
+			<ul id="projectLinks">
+			  <li><a href="{{projectInfo.codeLink}}" target="_blank"><i class="fa fa-code" rgb="(0,0,0)"> See Code </i></a></li>
+			  <li><a href="{{projectInfo.websiteLink}}" target="_blank"> <i class="fa fa-external-link"> Visit Website </i> </a></li>
+			  <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li>
+			</ul>
+		</div>
+		 </img>
+		
+		
 	</div>
 	<!-- Contact Section -->
     <div id="contactInfo"> <i class="fa fa-envelope-o fa-2x"> </i>
