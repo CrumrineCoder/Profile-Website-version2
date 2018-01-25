@@ -28,7 +28,7 @@
 }
 /* Leftside of Nav */
  #nic {
-     font-size: 22px;
+     font-size: 16px;
      font-weight: bold;
 }
  #nicJob {
@@ -53,7 +53,7 @@
      background-color: #521A19;
      display: block;
      line-height: 3em;
-     padding: 1em 3em;
+     padding: 5px 20px; 
      text-decoration: none;
 }
  nav ul li:first-child {
@@ -65,28 +65,13 @@
 }
 
 
-
-
 /* !Projects! */
  #projects{
 	margin: 0 auto; 
 	width: 95%;
 	position: relative; 
  }
- /*
-#projectInfoText{
-   width: 80%;
-   color: white; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); 
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
-   z-index:99999;
-   position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+
 #projectInfoText{
   position: absolute;
   bottom: 0px;
@@ -95,6 +80,7 @@
    background: rgb(0, 0, 0); 
    background: rgba(0, 0, 0, 0.7);
    padding: 10px;
+   width: 98.5%;
 }
 #projects #projectPicture{
 	
