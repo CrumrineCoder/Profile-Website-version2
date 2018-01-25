@@ -66,32 +66,6 @@
 
 
 
-/* Project Buttons */
- #projectSelectBoxes {
-     width: 95%;
-     overflow-x:scroll;
-     white-space: nowrap;
-     margin: 0 auto; 
-}
- .projectSelectImage {
-     width: 100%;
-     padding: 0;
-     margin: 0;
-}
- button{
-     cursor: pointer;
-}
- .projectSelectButton {
-     background: white;
-     max-width: 150px;
-     max-height: 150px;
-     min-width: 100px;
-     min-height: 100px;
-     padding: 0;
-     border: none;
-}
-
-
 
 /* !Projects! */
  #projects{
@@ -107,7 +81,7 @@
    padding: 10px; 
    z-index:99999;
    position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -168,6 +142,34 @@
 	 width: 100%;
     height: auto;
 }
+
+
+/* Project Buttons */
+ #projectSelectBoxes {
+     width: 95%;
+     overflow-x:scroll;
+     white-space: nowrap;
+     margin: 0 auto; 
+}
+ .projectSelectImage {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+}
+ button{
+     cursor: pointer;
+}
+ .projectSelectButton {
+     background: white;
+     max-width: 150px;
+     max-height: 150px;
+     min-width: 100px;
+     min-height: 100px;
+     padding: 0;
+     border: none;
+}
+
+
 
 
 /* !!CONTACT!! */
@@ -258,18 +260,24 @@
 	}
 	
  }
-  @media screen and (max-width: 900px) {
-	#projectLinks li {
-		padding: 1px; 
+ @media screen and (max-width: 850px) {
+	.projectSelectButton {
+     max-width: 100px;
+     max-height: 100px;
+     min-width: 50px;
+     min-height: 50px;
+	}
+	 #projectLinks li {
+		width: 90%; 
+		height: 20px; 
 	 }
-	  #projectFrontEnd li, #projectBackEnd li {
-		padding: 1px;  
-	  }
-  }
- @media screen and (max-width: 700px) {
+
 	#projectInfoText{
 	   position: relative;  
 	   top: 0px; 
+	   width: 90%; 
+	   left: 0px; 
+	   transform: none; 
 	}
 	#projectPicture{
         display: none;
