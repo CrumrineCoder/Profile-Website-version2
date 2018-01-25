@@ -1,253 +1,246 @@
 /* Entire Document */
- html, body {height: 100%;}
-
-body {
-    margin: 0;
-	height: 100%;
-    padding: 0;
-    font-size: 15px;
-    font-family: 'Droid Serif', serif;
-	z-index: 0; 
+ html, body {
+    height: 100%;
 }
-button:focus {
-    outline: 0;
+ body {
+     margin: 0;
+     height: 100%;
+     padding: 0;
+     font-size: 15px;
+     font-family: 'Droid Serif', serif;
+     z-index: 0;
 }
-
-
+ button:focus {
+     outline: 0;
+}
 /* !Nav! */
-
-nav {
-    background-color: #3B3738;
-    margin: 0;
-    overflow: hidden;
-    color: white;
-    border-bottom-color: yellow;
-    border-bottom-style: solid;
-	position: fixed; 
-	width: 100%; 
-	top: 0; 
-	 z-index: 99;
+ nav {
+     background-color: #3B3738;
+     margin: 0;
+     overflow: hidden;
+     color: white;
+     border-bottom-color: yellow;
+     border-bottom-style: solid;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 99;
 }
 /* Leftside of Nav */
-
-#nic {
-    font-size: 22px;
-    font-weight: bold;
+ #nic {
+     font-size: 22px;
+     font-weight: bold;
 }
-#nicJob {
-    font-style: italic;
-    margin-top: -15px;
+ #nicJob {
+     font-style: italic;
+     margin-top: -15px;
 }
-#nameNavContainer {
-    padding-left: 15px;
+ #nameNavContainer {
+     padding-left: 15px;
 }
 /* Nav Positioning */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+ nav ul {
+     margin: 0;
+     padding: 0;
+     display: flex;
 }
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
+ nav ul li {
+     display: inline-block;
+     list-style-type: none;
 }
-nav ul li a {
-    color: white;
-    background-color: #521A19;
-    display: block;
-    line-height: 3em;
-    padding: 1em 3em;
-    text-decoration: none;
+ nav ul li a {
+     color: white;
+     background-color: #521A19;
+     display: block;
+     line-height: 3em;
+     padding: 1em 3em;
+     text-decoration: none;
 }
-nav ul li:first-child {
-    margin-right: auto;
+ nav ul li:first-child {
+     margin-right: auto;
 }
 /* Right links */
-
-nav ul li a:hover {
-    background-color: #B20D0C;
+ nav ul li a:hover {
+     background-color: #B20D0C;
 }
 /* !Projects! */
-
-#projectInfoContainer{
-	margin-left: 10px; 
-	width: 100%; 
-	margin-top: 100px; 
+ #projects{
+	padding-right: 10px;
+ }
+ #projectInfoContainer{
+     margin-left: 10px;
+     width: 100%;
+     margin-top: 100px;
 }
-
-#projectPic {
-    margin: 0px 10px 0px 10px;
-	position: relative; 
-
+ #projectPic {
+     margin: 0px 10px 0px 10px;
+     position: relative;
 }
-
-#projectPic img{
-	display:block;
-    margin:auto;
-    top: 0;
-    left: 0;
-    right: 0;
-	max-width: 80%; 
-	z-index:-1;
+ #projectPic img{
+     display:block;
+     margin:auto;
+     top: 0;
+     left: 0;
+     right: 0;
+     max-width: 80%;
+     z-index:-1;
 }
-
-#projectFrontEnd li,
-#projectBackEnd li {
-    border-radius: 5px;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    padding: 3px 5px 3px 5px;
-    margin: 0px 3px 4px 3px;
+#projectBackEnd, #projectFrontEnd{
+	width: 90%;
 }
-#projectFrontEnd li {
-    border: 1px solid #E39C8A;
+ #projectFrontEnd li, #projectBackEnd li {
+     border-radius: 5px;
+     display: inline-block;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
+     padding: 3px 5px 3px 5px;
+     margin: 0px 3px 4px 3px;
 }
-#projectBackEnd li {
-    border: 1px solid #C198D3;
+ #projectFrontEnd li {
+     border: 1px solid #E39C8A;
 }
-#projectProductPaper {
-    margin-top: 30px;
+ #projectBackEnd li {
+     border: 1px solid #C198D3;
 }
-#projectLinks {
-    text-align: center;
-    padding-left: 0px;
+ #projectProductPaper {
+     margin-top: 30px;
 }
-#projectLinks li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 5px 10px 0px 0px;
-    font-size: 17px;
-    border: 2px solid #8C96ED;
-    padding: 3px 5px 3px 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+ #projectLinks {
+     text-align: center;
+     padding-left: 0px;
 }
-.fa,.fa-external-link {
-    color: black;
-	-webkit-transition: color .5s;
-    -moz-transition:    color .5s;
-    -ms-transition:     color .5s;
-    -o-transition:      color .5s;
-    transition:         color .5s;
+ #projectLinks li {
+     display: inline-block;
+     list-style-type: none;
+     margin: 5px 10px 0px 0px;
+     font-size: 17px;
+     border: 2px solid #8C96ED;
+     padding: 3px 5px 3px 5px;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
 }
-
-.fa-code:hover, .fa-external-link:hover{
-	color: #5D6BD4; 
+ .fa,.fa-external-link {
+     color: black;
+     -webkit-transition: color .5s;
+     -moz-transition: color .5s;
+     -ms-transition: color .5s;
+     -o-transition: color .5s;
+     transition: color .5s;
+}
+ .fa-code:hover, .fa-external-link:hover{
+     color: #5D6BD4;
 }
 /* Project Buttons */
-
-#projectSelectBoxes {
-	width: 100%; 
-	overflow-x:scroll;     
-    white-space: nowrap;
-	margin-top: 30px; 
+ #projectSelectBoxes {
+     width: 100%;
+     overflow-x:scroll;
+     white-space: nowrap;
+     margin-top: 30px;
 }
-.projectSelectImage {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+ .projectSelectImage {
+     width: 100%;
+     padding: 0;
+     margin: 0;
 }
-button{
-	cursor: pointer;
+ button{
+     cursor: pointer;
 }
-
-.projectSelectButton {
-    background: white;
-	max-width: 150px; 
-	max-height: 150px; 
-	min-width: 100px; 
-	min-height: 100px; 
-    width: 18%;
-    padding: 0;
-    border: none;
+ .projectSelectButton {
+     background: white;
+     max-width: 150px;
+     max-height: 150px;
+     min-width: 100px;
+     min-height: 100px;
+     width: 18%;
+     padding: 0;
+     border: none;
 }
-
-
 /* !!CONTACT!! */
-
-#contactInfo{
-	text-align: center; 
-	clear: both; 
+ #contactInfo{
+     text-align: center;
+     clear: both;
 }
-#nameContainer{
-	float: left; 
+ #nameContainer{
+     float: left;
 }
-
-#addressContainer{
-	float: right; 
+ #addressContainer{
+     float: right;
 }
-
-#Message{
-	clear: both; 
+ #Message{
+     clear: both;
 }
-
-.antispam { display:none;}
-
-#credit{
-	font-size: 10px; 
+ .antispam {
+     display:none;
+}
+ #credit{
+     font-size: 10px;
 }
 /* Splash page */
-#splash button{
-	width: 19.5%; 
-	height: 100%; 
-	margin: 0px; 
-	border: none; 
+ #splash button{
+     width: 19.5%;
+     height: 100%;
+     margin: 0px;
+     border: none;
 }
-#splash button img{
-	width: 100%;
+ #splash button img{
+     width: 100%;
 }
-#splash{
-	text-align: center; 
-	margin: 0; 
-	padding: 0; 
-	width: 100%;
-	height: 100%; 	
+ #splash{
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
 }
-#index{
-	display: none; 
+ #index{
+     display: none;
 }
-
-@media screen and (max-width: 1000px) {
-	nav ul{
-	display: block; 
-	text-align: center; 
-}
-nav ul li {
-height: 50px; 
-width: 24%; 	
-text-align: center; 
-}
-nav ul li:first-child {
-    width: 100%; 
-	text-align: center; 
-	display: block; 
-}
-nav ul li a {
-	display: block; 
-	font-size: 8px; 
-}
-.projectSelectButton{
-	width: 30%; 
-}
-#splash button{
-	height: 250px; 
-	width: 100%; 
-}
-#splash{
-	width: 100%; 
-}
-#splash button img{
-	width: 150px;
-}
-#projectInfoContainer{
-
-	margin-top: 150px; 
-}
-
-@media screen and (max-width: 400px) {
-	#projectPic img{
-		display: none; 
-	}
-}
+ @media screen and (max-width: 1000px) {
+     nav ul{
+         display: block;
+         text-align: center;
+    }
+     nav ul li {
+         width: 24%;
+         text-align: center;
+    }
+     nav ul li:first-child {
+         width: 100%;
+         text-align: center;
+         display: block;
+    }
+     nav ul li a {
+         display: block;
+         font-size: 8px;
+    }
+     .projectSelectButton{
+         width: 30%;
+    }
+     #splash button{
+         height: 250px;
+         width: 100%;
+    }
+     #splash{
+         width: 100%;
+    }
+     #splash button img{
+         width: 150px;
+    }
+     #projectInfoContainer{
+         margin-top: 150px;
+    }
+ }
+     @media screen and (max-width: 400px) {
+         #projectPic img{
+             display: none;
+        }
+		 nav ul li img{
+			height: 25px; 
+			width: 25px; 
+		 }
+		  nav ul li a{
+			padding: 0px; 
+			padding-top: 4px; 
+		 }
+    }
+    
