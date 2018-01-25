@@ -63,44 +63,21 @@
  nav ul li a:hover {
      background-color: #B20D0C;
 }
+
+
+
 /* !Projects! */
  #projects{
-	padding-right: 10px;
+	margin: 0 auto; 
+	width: 95%;
  }
- #projectInfoContainer{
-     margin-left: 10px;
-     width: 100%;
-     margin-top: 100px;
-	 position: relative;
-    text-align: center;
-    color: white;
-	background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    );
-}
-.projectInfoText{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- #projectPic {
-     margin: 0px 10px 0px 10px;
-     position: relative;
-}
- #projectPic img{
-     display:block;
-     margin:auto;
-     top: 0;
-     left: 0;
-     right: 0;
-     max-width: 80%;
-     z-index:-1;
-}
+ 
+ #projects ul{
+	 padding: 0px; 
+ }
+ 
 #projectBackEnd, #projectFrontEnd{
-	width: 90%;
+	width: 95%;
 }
  #projectFrontEnd li, #projectBackEnd li {
      border-radius: 5px;
@@ -115,10 +92,8 @@
 }
  #projectBackEnd li {
      border: 1px solid #C198D3;
-}
- #projectProductPaper {
-     margin-top: 30px;
-}
+ }
+ 
  #projectLinks {
      text-align: center;
      padding-left: 0px;
@@ -133,7 +108,7 @@
      text-transform: uppercase;
      letter-spacing: 0.2em;
 }
- .fa,.fa-external-link {
+ .fa-code,.fa-external-link, .fa-free-code-camp {
      color: black;
      -webkit-transition: color .5s;
      -moz-transition: color .5s;
@@ -141,15 +116,31 @@
      -o-transition: color .5s;
      transition: color .5s;
 }
- .fa-code:hover, .fa-external-link:hover{
+ .fa-code:hover, .fa-external-link:hover, .fa-free-code-camp:hover{
      color: #5D6BD4;
 }
+
+ #projectPic {
+     margin: 0px 10px 0px 10px;
+     position: relative;
+}
+ #projectPic img{
+     display:block;
+     margin:auto;
+     top: 0;
+     left: 0;
+     right: 0;
+     max-width: 100%;
+     z-index:-1;
+}
+
+
 /* Project Buttons */
  #projectSelectBoxes {
-     width: 100%;
+     width: 95%;
      overflow-x:scroll;
      white-space: nowrap;
-     margin-top: 30px;
+     margin: 0 auto; 
 }
  .projectSelectImage {
      width: 100%;

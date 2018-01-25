@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
 
 <body ng-app="portfolio" ng-controller="portfolioControllers">
+	<!-- Initial/Splash page -->
   <div id="splash">
     <button ng-click="change(0)" style="background: #FF7B00"> 
 			<img src="Images/npcLookUpLogo.png"></img>
@@ -26,35 +27,43 @@
   </div>
   <div id="index">
    
-
-    <h1> {{projectInfo.title}} </h1>
-    <ul>
-		<div id="projectFrontEnd">
-			<li class="frontend"> {{projectInfo.frontTechnologies}} </li>
+	<!-- Project Section -->
+	<div id="projects">
+		<h1> {{projectInfo.title}} </h1>
+		<ul>
+			<div id="projectFrontEnd">
+				<li class="frontend"> {{projectInfo.frontTechnologies}} </li>
+			</div>
+			<div id="projectBackEnd">
+				<li class="backend"> {{projectInfo.backTechnologies}} </li>
+			</div>
+		</ul>
+		<p> {{projectInfo.projectDescription}} </p>
+		<p> {{projectInfo.productPaper}} </p>
+		<ul id="projectLinks">
+		  <li><a href="{{projectInfo.codeLink}}" target="_blank"><i class="fa fa-code" rgb="(0,0,0)"> See Code </i></a></li>
+		  <li><a href="{{projectInfo.websiteLink}}" target="_blank"> <i class="fa fa-external-link"> Visit Website </i> </a></li>
+		  <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li>
+		</ul>
+		<img src="{{projectInfo.picture}}"> </img>
+		
+		<!-- Select a project section -->
+		<div id="projectSelectBoxes">
+			<span ng-repeat="project in buttons">
+				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
+					<img src={{project.logo}} class="projectSelectImage">
+				</button>
+			</span>
 		</div>
-		<div id="projectBackEnd">
-			<li class="backend"> {{projectInfo.backTechnologies}} </li>
-		</div>
-    </ul>
-    <p> {{projectInfo.projectDescription}} </p>
-    <p> {{projectInfo.productPaper}} </p>
-    <ul id="projectLinks">
-      <li><a href="{{projectInfo.codeLink}}" target="_blank"><i class="fa fa-code" rgb="(0,0,0)"> See Code</i></a></li>
-      <li><a href="{{projectInfo.websiteLink}}" target="_blank"> <i class="fa fa-external-link"> Visit Website</i> </a></li>
-    </ul>
-    <img src="{{projectInfo.picture}}"> </img>
-    <div id="projectSelectBoxes">
-		<span ng-repeat="project in buttons">
-			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
-				<img src={{project.logo}} class="projectSelectImage">
-			</button>
-		</span>
 	</div>
+	<!-- Contact Section -->
     <div id="contactInfo"> <i class="fa fa-envelope-o fa-2x"> </i>
       <p>Come say hi! These projects are constantly in development and I'd appreciate any feedback.</p>
       <p><a href="http://www.google.com/recaptcha/mailhide/d?k=01ght4MFCiQ05S163X7JgTjQ==&amp;c=aoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01ght4MFCiQ05S163X7JgTjQ\x3d\x3d\x26c\x3daoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
           title="Reveal this e-mail address">c...</a>@gmail.com </p>
     </div>
+	
+	<!-- Credits for logos -->
     <ul id="credit"> Logo Credits
       <li>Resume logo by Nicholas Menghini of the Noun Project </li>
       <li>Poll Website logo by Misha of the Noun Project </li>
