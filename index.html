@@ -1,87 +1,68 @@
 <!DOCTYPE html>
+
 <head>
-   <title>Nicolas Crumrine</title>
+  <title>Nicolas Crumrine</title>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="css.css" />
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-<div id="splash">
-	<button onclick="change(0)" style="background: #FF7B00"> <img src="Images/npcLookUpLogo.png"></img></button> 
-	<button onclick="change(1)" style="background: #A61C88"> <img src="Images/votingAppLogo.png"></img></button> 
-	<button onclick="change(2)" style="background: #6100FF"> <img src="Images/tabletopAppLogo.png"></img></button> 	
-	<button onclick="change(3)" style="background: #6441A4"> <img src="Images/twitchViewerLogo.png"></img></button> 
-	<button onclick="change(4)" style="background: #4BC42D"> <img src="Images/weatherApp%20logo.png"></img></button> 
-</div>
+  <link rel="stylesheet" type="text/css" href="css.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
 
-<div id="index">
-   <nav>
-      <ul>
-         <li id="nameNavContainer"> <p id="nic" > Nicolas Crumrine </p>
-			<p id="nicJob" > Web Developer based in NYC </p> 
-         </li>
+<body ng-app="portfolio" ng-controller="portfolioControllers">
+  <div id="splash">
+    <button ng-click="change(0)" style="background: #FF7B00"> 
+			<img src="Images/npcLookUpLogo.png"></img>
+		</button>
+    <button ng-click="change(1)" style="background: #A61C88"> 
+			<img src="Images/votingAppLogo.png"></img>
+		</button>
+    <button ng-click="change(2)" style="background: #6100FF"> 
+			<img src="Images/tabletopAppLogo.png"></img>
+		</button>
+    <button ng-click="change(3)" style="background: #6441A4"> 
+			<img src="Images/twitchViewerLogo.png"></img>
+		</button>
+    <button ng-click="change(4)" style="background: #4BC42D"> 
+			<img src="Images/weatherApp%20logo.png"></img>
+		</button>
+  </div>
+  <div id="index">
+   
+
+    <h1> Title </h1>
+    <ul>
+      <li> Frontend </li>
+      <li> Backend </li>
+    </ul>
+    <p> Description of Website </p>
+    <p> Product Paper </p>
+    <ul>
+      <li> See Code </li>
+      <li> Visit Website </li>
+    </ul>
+    <img> Image </img>
+    <div>
+      Project Select
+    </div>
+	<span ng-repeat="project in buttons">
+		<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
+			<img src={{project.logo}} class="projectSelectImage">
+		</button>
+	</span>
 	
-         <li>
-			<a href="https://github.com/CrumrineCoder" id="github" >
-				<img src="Images/githubWhite.png" width="42" height="42" border="0" color="white" >
-			</a>
-         </li>
-         <li>
-			<a href="https://codepen.io/collection/DxOEJM/#0">
-				<img src="Images/codepenWhite.png" width="42" height="42" border="0">
-			</a>
-         </li>
-         <li>
-			<a href="https://www.linkedin.com/in/nicolas-crumrine-50899b120/">
-				<img src="Images/linkedinWhite.png" width="42" height="42" border="0">
-            </a>
-         </li>
-         <li> 
-            <a href="download link"> 
-				<img src="Images/resume.png" width="42" height="42" border="0">
-            </a>
-         </li>
-      </ul>
-   </nav>
-   <div id="projects">
- 
-	   <div id="projectInfoContainer">
-	   
-			<div id="projectPic"> </div>
-			<div class="projectInfoText">
-				<div id="projectTitle"> </div>
-				  
-				  <div id="tools&skills">
-					  <div id="projectFrontEnd"> </div>
-					  <div id="projectBackEnd"> </div>
-				  </div>
-				  
-				  <div id="projectDescription"></div>
-				  <div id="projectProductPaper"></div>
-				  <ul id="projectLinks">
-				  </ul>
-			</div>
-		  
-			
-		 
-	   </div>
-	    <div id="projectSelectBoxes"> </div>
-   </div>
-   <div id="contactInfo">
-   <i class="fa fa-envelope-o fa-2x"> </i>
-	<p>Come say Hi!</p>	
-	<p><a href="http://www.google.com/recaptcha/mailhide/d?k=01ght4MFCiQ05S163X7JgTjQ==&amp;c=aoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01ght4MFCiQ05S163X7JgTjQ\x3d\x3d\x26c\x3daoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">c...</a>@gmail.com </p>
-   </div>
-
-   <ul id = "credit"> Logo Credits 
-	<li>Resume logo by Nicholas Menghini of the Noun Project </li>
-    <li>Poll Website logo by Misha of the Noun Project </li>
-	<li> Weather App logo by Shastry of the Noun Project </li> 
-	<li> Clock logo by mikicon of the Noun Project </li> 
-	<li> Calculator logo by Thengakola of the Noun Project </li> 
-	<li> Tabletop logo by Andrew Doane of the Noun Project </li>
-	<li> Simon Says logo adapted from Creaticca Creative Agency of the Noun Project </li>
-   </ul>
-</div>   
-  <script type="text/javascript" src="projectController.js"> </script>
+    <div id="contactInfo"> <i class="fa fa-envelope-o fa-2x"> </i>
+      <p>Come say hi! These projects are constantly in development and I'd appreciate any feedback.</p>
+      <p><a href="http://www.google.com/recaptcha/mailhide/d?k=01ght4MFCiQ05S163X7JgTjQ==&amp;c=aoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01ght4MFCiQ05S163X7JgTjQ\x3d\x3d\x26c\x3daoPleq7inL7lHu6-9yfVzIwsgLWVKmilYlU7XLMsnxo\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;"
+          title="Reveal this e-mail address">c...</a>@gmail.com </p>
+    </div>
+    <ul id="credit"> Logo Credits
+      <li>Resume logo by Nicholas Menghini of the Noun Project </li>
+      <li>Poll Website logo by Misha of the Noun Project </li>
+      <li> Weather App logo by Shastry of the Noun Project </li>
+      <li> Clock logo by mikicon of the Noun Project </li>
+      <li> Calculator logo by Thengakola of the Noun Project </li>
+      <li> Tabletop logo by Andrew Doane of the Noun Project </li>
+      <li> Simon Says logo adapted from Creaticca Creative Agency of the Noun Project </li>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
+  <script type="text/javascript" src="projectController.js">
+  </script>
 </body>
