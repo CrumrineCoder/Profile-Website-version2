@@ -70,6 +70,7 @@
 	margin: 0 auto; 
 	width: 95%;
 	position: relative; 
+	margin-top: 100px; 
  }
 
 #projectInfoText{
@@ -81,9 +82,6 @@
    background: rgba(0, 0, 0, 0.7);
    padding: 10px;
    width: 98.5%;
-}
-#projects #projectPicture{
-	
 }
 
  #projects ul{
@@ -226,24 +224,7 @@
          width: 150px;
     }
 	 
-	 /* NAV */
-     nav ul{
-         display: block;
-         text-align: center;
-    }
-     nav ul li {
-         width: 24%;
-         text-align: center;
-    }
-     nav ul li:first-child {
-         width: 100%;
-         text-align: center;
-         display: block;
-    }
-     nav ul li a {
-         display: block;
-         font-size: 8px;
-    }
+	 
 	
 	/* Projects */
 	#projectLinks{
@@ -262,6 +243,24 @@
 	
  }
  @media screen and (max-width: 800px) {
+	 /* NAV */
+     nav ul{
+         display: block;
+         text-align: center;
+    }
+     nav ul li {
+         width: 24%;
+         text-align: center;
+    }
+     nav ul li:first-child {
+         width: 100%;
+         text-align: center;
+         display: block;
+    }
+     nav ul li a {
+         display: block;
+         font-size: 8px;
+    }
 	.projectSelectButton {
      max-width: 100px;
      max-height: 100px;
