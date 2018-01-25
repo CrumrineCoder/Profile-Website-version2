@@ -99,15 +99,17 @@
 	width: 95%;
  }
 #projectInfoText{
-   position: absolute;  
-   width: 93.5%;
+   width: 80%;
    color: white; 
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
    z-index:99999;
-   top: 170px; 
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
  #projects ul{
 	 padding: 0px; 
@@ -241,6 +243,9 @@
     }
 	
 	/* Projects */
+	#projectLinks{
+		margin: 0px; 
+	}
 	 #projectLinks li {
 		font-size: 12px; 
 	 }

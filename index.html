@@ -30,14 +30,8 @@
 	<!-- Project Section -->
 	<div id="projects">
 		<!-- Select a project section -->
-		<div id="projectSelectBoxes">
-			<span ng-repeat="project in buttons">
-				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
-					<img src={{project.logo}} class="projectSelectImage">
-				</button>
-			</span>
-		</div>
-		<img id="projectPicture" src="{{projectInfo.picture}}">
+		
+		<img id="projectPicture" src="{{projectInfo.picture}}" />
 		<div id="projectInfoText">
 			<h1> {{projectInfo.title}} </h1>
 			<ul>
@@ -56,7 +50,15 @@
 			  <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li>
 			</ul>
 		</div>
-		 </img>
+		
+		 
+		 <div id="projectSelectBoxes">
+			<span ng-repeat="project in buttons">
+				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
+					<img src={{project.logo}} class="projectSelectImage">
+				</button>
+			</span>
+		</div>
 		
 		
 	</div>
