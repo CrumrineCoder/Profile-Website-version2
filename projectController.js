@@ -12,7 +12,7 @@ app.controller('portfolioControllers', function($scope) {
         websiteLink: "https://npclookup.glitch.me/"
     }, {
         logo: " Images/votingAppLogo.png ",
-        picture: " Images/votingApp3.png ",
+        picture: " Images/votingApp.png ",
         title: "Polling Website",
         shortDesc: "This is my first attempt at a fullstack website. The website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.",
         backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport",
