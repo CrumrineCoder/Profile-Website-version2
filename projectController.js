@@ -106,12 +106,10 @@ app.controller('portfolioControllers', function($scope) {
 	};
 
 	$scope.changeProject = function(projectID){
-		console.log(projectID);
 		if ($scope.selectedProject != null) {
 			document.getElementById($scope.selectedProject).style.opacity = "1";
 			document.getElementById($scope.selectedProject).disabled = false;
 		}
-		 console.log($scope.buttons);
 		 document.getElementById(projectID).style.opacity = ".3"
 		 document.getElementById(projectID).disabled = true;
 		 
@@ -126,7 +124,6 @@ app.controller('portfolioControllers', function($scope) {
 		$scope.projectInfo.codeLink = $scope.projects[projectID].codeLink;
 		$scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
 		
-		console.log(document.getElementById(projectID));
 		$scope.selectedProject = projectID;
 	}
 	$scope.buttons = [];
