@@ -26,7 +26,7 @@
 		</button>
   </div>
   <div id="index">
-   
+  
 	<!-- Project Section -->
 	<div id="projects">
 		<!-- Select a project section -->
@@ -50,18 +50,15 @@
 			  <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li>
 			</ul>
 		</div>
-		
-		 
-		 <div id="projectSelectBoxes">
+
+	</div>
+	<div id="projectSelectBoxes">
 			<span ng-repeat="project in buttons">
 				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
 					<img src={{project.logo}} class="projectSelectImage">
 				</button>
 			</span>
 		</div>
-		
-		
-	</div>
 	<!-- Contact Section -->
     <div id="contactInfo"> <i class="fa fa-envelope-o fa-2x"> </i>
       <p>Come say hi! These projects are constantly in development and I'd appreciate any feedback.</p>
