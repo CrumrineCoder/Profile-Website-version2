@@ -8,7 +8,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.",
         backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live. I refined the skills I learned making the Voting website by routing the individual pages better, incorporating Angular to display the data, experimenting with a comment section, and other minor fixes. Once I find the time the comment sction will allow for replying, editing and deleting one's comment, and allowing a user to change their password.",
+        productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live. I refined the skills I learned making the Voting website by routing the individual pages better, incorporating Angular to display the data, experimenting with a comment section. Next steps are replying to comments, deleting and editing comments, and changing passwords.",
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
         websiteLink: "https://npclookup.glitch.me/"
     }, {
