@@ -2,6 +2,7 @@ var app = angular.module('portfolio', []);
 app.controller('portfolioControllers', function($scope) {
     $scope.projects = [{
         logo: " Images/npcLookUpLogo.png ",
+		color: "#FF7B00",
         picture: " Images/npcLookUp.png ",
         title: "NPC Lookup",
         shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.",
@@ -12,6 +13,7 @@ app.controller('portfolioControllers', function($scope) {
         websiteLink: "https://npclookup.glitch.me/"
     }, {
         logo: " Images/votingAppLogo.png ",
+		color: "#A61C88",
         picture: " Images/votingApp.png ",
         title: "Polling Website",
         shortDesc: "This is my first attempt at a fullstack website. The website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.",
@@ -23,6 +25,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
     }, {
         logo: " Images/tabletopAppLogo.png ",
+		color: "#6100FF",
         picture: " Images/tabletopApp.png ",
         title: "Tabletop Coordination",
         shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP. ",
@@ -34,6 +37,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
     }, {
         logo: " Images/twitchViewerLogo.png ",
+		color: "#6441A4",
         picture: " Images/twitchViewer.png ",
         title: "Twitch Viewer",
         shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.",
@@ -45,6 +49,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
     }, {
         logo: " Images/weatherApp%20logo.png ",
+		color: "#4BC42D",
         picture: " Images/weatherApp.png ",
         title: "Weather App",
         shortDesc: "This is a web app that uses the Geolocation API to find the user's location and then tells the user of the weather with the Forecast.io API.",
@@ -56,6 +61,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
     }, {
         logo: " Images/pomodoroAppLogo.png",
+		color: "#E5000F",
         picture: " Images/pomodoroApp.png ",
         title: "Pomodoro Clock",
         shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on.",
@@ -67,6 +73,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
     }, {
         logo: " Images/wikipediaViewerLogo.png ",
+		color: "#00AEFF",
         picture: " Images/wikipediaViewer.png ",
         title: "Wikipedia Viewer",
         shortDesc: "This is a web app that uses the Wikipedia API to allow search functionality for Wikipedia or for searching random pages.",
@@ -78,6 +85,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
     }, {
         logo: " Images/calculatorAppLogo.png ",
+		color: "#CCBE00",
         picture: " Images/calculatorApp.png ",
         title: "Calculator",
         shortDesc: "This is a web app that resembles a basic calculator.",
@@ -89,6 +97,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
     }, {
         logo: " Images/connectFourAppLogo.png ",
+		color: "#FFDC46",
         picture: " Images/connectFourApp.png ",
         title: "Connect Four",
         shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.",
@@ -100,6 +109,7 @@ app.controller('portfolioControllers', function($scope) {
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
     }, {
         logo: " Images/simonSaysLogo.png ",
+		color: "#2D2D2D",
         picture: " Images/simonSays.png ",
         title: "Simon Says",
         shortDesc: "This is a web app that uses Javascript to play Simon Says. jQuery is used to change  classes but other than that it is not used. ",
@@ -139,7 +149,7 @@ app.controller('portfolioControllers', function($scope) {
 	}
 	$scope.buttons = [];
 	for (var i = 0; i < $scope.projects.length; i++) {
-			$scope.buttons.push({logo: $scope.projects[i].logo, id: i});
+			$scope.buttons.push({logo: $scope.projects[i].logo, id: i, color: $scope.projects[i].color});
 		}
 	$scope.change = function(x){
 		document.getElementById("index").style.display = "block";

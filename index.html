@@ -76,8 +76,8 @@
 	</div>
 	<div id="projectSelectBoxes">
 			<span ng-repeat="project in buttons">
-				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)">
-					<img src={{project.logo}} class="projectSelectImage">
+				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)" ng-style="{'background-color': project.color}">
+					<img src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 				</button>
 			</span>
 		</div>
