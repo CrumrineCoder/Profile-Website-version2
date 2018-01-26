@@ -142,7 +142,6 @@ app.controller('portfolioControllers', function($scope) {
 			$scope.buttons.push({logo: $scope.projects[i].logo, id: i});
 		}
 	$scope.change = function(x){
-		console.log(x);
 		document.getElementById("index").style.display = "block";
 		document.getElementById("splash").style.display = "none";
 		document.getElementById("nav").style.position = "fixed";
