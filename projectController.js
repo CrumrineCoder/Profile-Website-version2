@@ -59,7 +59,19 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
-    }, {
+    },{
+        logo: " Images/quotesAppLogo.png ",
+		color: "#35301C",
+        picture: " Images/quotesApp.png ",
+        title: "Quotes App",
+        shortDesc: "This is a website that uses Angular to display quotes from various sources.",
+        backend: "Javascript, jQuery, Angular",
+        frontend: "HTML, CSS, Font Awesome, Responsive",
+        productPaper: "This was built as part of FreeCodeCamp's frontend cirriculum. I displayed the data with Angular during the revision and experimented with using different sources for quotes and allowing users to pick those sources. I also experimented with changing color schemes depending on which sources were picked, but that didn't work when I decided users could have more than one source for quotes.",
+        codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
+        websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
+		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
+    },{
         logo: " Images/pomodoroAppLogo.png",
 		color: "#E5000F",
         picture: " Images/pomodoroApp.png ",

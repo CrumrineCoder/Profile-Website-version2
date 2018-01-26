@@ -254,6 +254,9 @@
  }
  @media screen and (max-width: 820px) {
 	 /* NAV */
+	 nav{
+		 height: 100px; 
+	 }
      nav ul{
          display: block;
          text-align: center;
@@ -278,7 +281,7 @@
      min-height: 50px;
 	}
 	#projectTitle{
-		padding: 0px; 
+		padding-top: 40px; 
 	}
 	 #projectLinks li {
 		width: 90%; 
