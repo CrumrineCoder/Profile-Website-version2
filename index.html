@@ -7,26 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
 
 <body ng-app="portfolio" ng-controller="portfolioControllers">
-	<!-- Initial/Splash page -->
-  <div id="splash">
-    <button ng-click="change(0)" style="background: #FF7B00"> 
-			<img src="Images/npcLookUpLogo.png"></img>
-		</button>
-    <button ng-click="change(1)" style="background: #A61C88"> 
-			<img src="Images/votingAppLogo.png"></img>
-		</button>
-    <button ng-click="change(2)" style="background: #6100FF"> 
-			<img src="Images/tabletopAppLogo.png"></img>
-		</button>
-    <button ng-click="change(3)" style="background: #6441A4"> 
-			<img src="Images/twitchViewerLogo.png"></img>
-		</button>
-    <button ng-click="change(4)" style="background: #4BC42D"> 
-			<img src="Images/weatherApp%20logo.png"></img>
-		</button>
-  </div>
-  <div id="index">
-    <nav>
+ <nav id="nav">
       <ul>
         <li id="nameNavContainer">
           <p id="nic"> Nicolas Crumrine </p>
@@ -46,6 +27,28 @@
 				</a> </li>
       </ul>
     </nav>
+	<!-- Initial/Splash page -->
+  <div id="splash">
+	<h1> Pick a Project </h1>
+    <button ng-click="change(0)" style="background: #FF7B00"> 
+			<img src="Images/npcLookUpLogo.png"></img>
+		</button>
+    <button ng-click="change(1)" style="background: #A61C88"> 
+			<img src="Images/votingAppLogo.png"></img>
+		</button>
+    <button ng-click="change(2)" style="background: #6100FF"> 
+			<img src="Images/tabletopAppLogo.png"></img>
+		</button>
+    <button ng-click="change(3)" style="background: #6441A4"> 
+			<img src="Images/twitchViewerLogo.png"></img>
+		</button>
+    <button ng-click="change(4)" style="background: #4BC42D"> 
+			<img src="Images/weatherApp%20logo.png"></img>
+		</button>
+		
+  </div>
+  <div id="index">
+   
 	<!-- Project Section -->
 	<div id="projects">
 		<!-- Select a project section -->
