@@ -166,13 +166,18 @@
      list-style-type: none;
      margin: 5px 10px 0px 0px;
      font-size: 17px;
-     border: 2px solid #8C96ED;
-     padding: 3px 5px 3px 5px;
+     border: 2px solid #2D304C;
      text-transform: uppercase;
      letter-spacing: 0.2em;
 	 background: white; 
+	 -webkit-transition:  .5s;
+     -moz-transition:  .5s;
+     -ms-transition:  .5s;
+     -o-transition:  .5s;
+     transition:  .5s;
 }
  .fa-code,.fa-external-link, .fa-free-code-camp {
+	 padding: 3px 5px 3px 5px;
      color: black;
      -webkit-transition: color .5s;
      -moz-transition: color .5s;
@@ -180,8 +185,11 @@
      -o-transition: color .5s;
      transition: color .5s;
 }
+ #projectLinks li:hover {
+	 background: #2D304C;
+ }
  .fa-code:hover, .fa-external-link:hover, .fa-free-code-camp:hover{
-     color: #5D6BD4;
+	color: white; 
 }
 
  #projectPicture {
