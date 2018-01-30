@@ -1,3 +1,11 @@
+function on() {
+    document.getElementById("aboutMeOverlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("aboutMeOverlay").style.display = "none";
+}
+
 var app = angular.module('portfolio', []);
 app.controller('portfolioControllers', function($scope) {
     $scope.projects = [{

@@ -11,22 +11,25 @@
       <ul>
         <li id="nameNavContainer">
           <p id="nic"> Nicolas Crumrine </p>
-          <p id="nicJob"> Web Developer based in NYC </p>
+          <p id="nicJob"> Web Developer based in NYC     <button id="aboutMeButton" onclick="on()">   Read More</button></p> 
         </li>
-        <li> <a href="https://github.com/CrumrineCoder" id="github">
+        <li> <a href="https://github.com/CrumrineCoder" id="github" title="Github: revised projects">
 					<img src="Images/githubWhite.png" width="42" height="42" border="0" color="white" >
 				</a> </li>
-        <li> <a href="https://codepen.io/collection/DxOEJM/#0">
-					<img src="Images/codepenWhite.png" width="42" height="42" border="0">
-				</a> </li>
-        <li> <a href="https://www.linkedin.com/in/nicolas-crumrine-50899b120/">
+		<li> <a href="https://www.linkedin.com/in/nicolas-crumrine-50899b120/" title="LinkedIn">
 					<img src="Images/linkedinWhite.png" width="42" height="42" border="0">
 				</a> </li>
-        <li> <a href="download link"> 
-					<img src="Images/resume.png" width="42" height="42" border="0">
-				</a> </li>
+        <li> <a href="https://codepen.io/collection/DxOEJM/#0" title="Codepen: old projects">
+					<img src="Images/codepenWhite.png" width="42" height="42" border="0">
+				</a> </li>       
       </ul>
     </nav>
+	<div id="aboutMeOverlay" onclick="off()">
+		<div id="aboutMeText">Hi, I'm Nicolas Crumrine. I made this website and the websites featured on it. 
+		
+		
+		I work with HTML, CSS, Javascript, Angular, Express.JS and Node.JS and am failing forward through FreeCodeCamp's curriculum. Web Development is a beautiful tool for making the world a better  place. I like to read history, sci-fi, and Terry Prachett, draw knights in shining armor, hum along to space filk and rock operas, or play D&D with my friends when I'm not building websites. I hope I can help.</div>
+	</div>
 	<!-- Initial/Splash page -->
   <div id="splash">
 	<h1> Pick a Project </h1>
@@ -48,6 +51,7 @@
 		
   </div>
   <div id="index">
+	
    test
 	<!-- Project Section -->
 	<div id="projects">
