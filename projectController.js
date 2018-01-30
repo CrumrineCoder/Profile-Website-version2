@@ -174,7 +174,7 @@ app.controller('portfolioControllers', function($scope) {
 	$scope.change = function(x){
 		document.getElementById("index").style.display = "block";
 		document.getElementById("splash").style.display = "none";
-		document.getElementById("nav").style.position = "fixed";
+	//	document.getElementById("nav").style.position = "fixed";
 		$scope.changeProject(x);
 	}
 });
