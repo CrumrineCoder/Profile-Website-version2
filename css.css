@@ -53,9 +53,10 @@
      color: white;
      background-color: #521A19;
      display: block;
-     line-height: 3em;
+    height: 100%;
      padding: 5px 20px; 
      text-decoration: none;
+	padding-top: 12px;
 }
  nav ul li:first-child {
      margin-right: auto;
@@ -69,7 +70,7 @@
 
 /* About me Section */
 #aboutMeButton{
-	 color: white; 
+	 color: #CDCCFF; 
      cursor:pointer;
 	 background:none!important;
      border:none; 
@@ -202,7 +203,7 @@
 
 /* Project Buttons */
  #projectSelectBoxes {
-     width: 95%;
+     width: 100%;
      overflow-x:scroll;
      white-space: nowrap;
      margin: 0 auto; 
@@ -278,6 +279,7 @@
          width: 100%;
     }
      #splash{
+		margin-top: 70px;
          width: 100%;
     }
      #splash button img{
@@ -312,6 +314,9 @@
 	 #aboutMeText{
 		font-size: 16px;
 	}
+	 #splash{
+		margin-top: 100px;
+	 }
 	 /* NAV */
 	 nav{
 		 height: 100px; 
