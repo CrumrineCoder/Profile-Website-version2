@@ -13,10 +13,10 @@ app.controller('portfolioControllers', function($scope) {
 		color: "#FF7B00",
         picture: " Images/npcLookUp.png ",
         title: "NPC Lookup",
-        shortDesc: "This is a full stack website that lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit NPCs they've made and they only need to fill out the name. Users can also search for NPCs.",
+        shortDesc: "This fullstack website lets users create Non Playable Characters (NPCs) and add them to the database. Other users can view them and comment on them. Users can edit and delete NPCs they made. Users can also search for NPCs.",
         backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "This was a personal project for an idea I had after looking at AdventureLookup and Undead.live. I refined the skills I learned making the Voting website by routing the individual pages better, incorporating Angular to display the data, experimenting with a comment section. Next steps are replying to comments, deleting and editing comments, and changing passwords.",
+        productPaper: "I refined and expanded on the skills learned making the voting website and experimented with Angular and a comment section.",
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
         websiteLink: "https://npclookup.glitch.me/"
     }, {
@@ -24,10 +24,10 @@ app.controller('portfolioControllers', function($scope) {
 		color: "#A61C88",
         picture: " Images/votingApp.png ",
         title: "Polling Website",
-        shortDesc: "This is my first attempt at a fullstack website. The website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.",
-        backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport",
+        shortDesc: "This fullstack website lets users create, view, and vote on polls. If the user logs in, the user can link a poll in its creation to the user's account. The user can edit or delete the poll at any time afterwards if it's linked.",
+        backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Chart.js",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's backend curriculum. This is my first fullstack website and I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to build this. Once I find the time, I'll improve on this with the skills I learned making the NPC website. I really enjoyed seeing the progress I made from the initial boilerplate I used to the current website.",
+        productPaper: "This is my first fullstack website and I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to build this.",
         codeLink: "https://github.com/CrumrineCoder/VotingApp",
         websiteLink: "https://joinordie.glitch.me/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
@@ -39,7 +39,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area. The website not only shows information about the shops but also how many users from the site are planning to go there. Users who are logged in can RSVP.",
         backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular, Yelp API",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's backend curriculum. I changed it from finding bars to finding Tabletop shops. I had to teach myself Angular for this project and learned how to incorporate an API with a database. I dislike how impersonal the site feels right now and I'm going to work on making it more sociably friendly once I find my Muse.",
+        productPaper: "I had to teach myself Angular for this project and learned how to incorporate an API with a database.",
         codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp",
         websiteLink: "https://tabletop.glitch.me/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
@@ -51,7 +51,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.",
         backend: "Javascript, jQuery, Angular, Twitch.tv API",
         frontend: "HTML, CSS, Font Awesome, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's frontend curriculum. I revisited this project and am incredibly proud how much I've grown since I made this. I decided to display the data with Angular this time and this was the first time I've used a one page design with Angular, which meant I had to be sending data back and forth. This was the main struggle with this project but the rest which would've taken me weeks to do now took me only two days.",
+        productPaper: "I taught myself about one-page Angular design for this project as well as using multiple APIs alongside Angular.",
         codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
         websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
@@ -63,7 +63,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a web app that uses the Geolocation API to find the user's location and displays the local weather with the Forecast.io API. The user can search for the weather in other areas as well.",
         backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,",
         frontend: "HTML, CSS, Font Awesome, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's frontend curriculum. This was the first project I was really proud to make. The revision process actually didn't change that much other than making the search bar work, improving the time zone marker, and cleaning up the backend functions and the page layout. I'm thinking about using Graph.JS like I did with the voting website for something with the forecast, but I need to think on it.",
+        productPaper: "This was one of my first projects and experimented with multiple APIs and User Experience.",
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
@@ -75,7 +75,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a website that uses Angular to display quotes from various sources.",
         backend: "Javascript, jQuery, Angular",
         frontend: "HTML, CSS, Font Awesome, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's frontend curriculum. I displayed the data with Angular during the revision and experimented with using different sources for quotes and allowing users to pick those sources. I also experimented with changing color schemes depending on which sources were picked, but that didn't work when I decided users could have more than one source for quotes. I also wanted something where users can add quotes, but I think that's a future project at this point.",
+        productPaper: "This was initially my first project and I've revised it. I practiced Functional Programming in Angular and refined the design and User Experience.",
         codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
@@ -84,10 +84,10 @@ app.controller('portfolioControllers', function($scope) {
 		color: "#E5000F",
         picture: " Images/pomodoroApp.png ",
         title: "Pomodoro Clock",
-        shortDesc: "This is a web app that acts as a minimalist Pomodoro clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on. A Pomodoro clock is used for time management.",
+        shortDesc: "This is a web app that acts as a minimalist Pomodoro (time management) clock with options. The app also uses jQueryProgress to display to the user the progress of the current Pomodoro the user is on.",
         backend: "Javascript, jQuery",
         frontend: "HTML, CSS, Font Awesome, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's frontend curriculum. I learned about intervals for this one and about minimalistic design: initially I had a large amount of buttons, but I was able to streamline them into a UI design I like. I want to learn about sessions and be able to store a user's preferences.",
+        productPaper: "I practiced Asynch Javascript design and minimalistic front end design.",
         codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
@@ -99,7 +99,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a web app that uses the Wikipedia API to searching for multiple Wikipedia pages by term or by randomness.",
         backend: "Javascript, jQuery, Wikipedia API",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's frontend curriculum. I like the colors I picked out for this design as well as its layout. The Wikipedia API doesn't give that much information so once I teach myself React I'm going to redo this project to get proper data in a layout similar to the revised Twtich.tv viewer. I'd like to do this same website but for the TvTropes website instead of Wikipedia, but their API doesn't work.",
+        productPaper: "I learned more about APIs and Ajax with this project as well as color design.",
         codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2",
         websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
@@ -111,7 +111,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a web app that resembles a basic calculator.",
         backend: "Javascript",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "This was built as part of FreeCodeCamp's backend curriculum. This one was pure javascript and algorithm scripting. I like that I changed the normal function of the -/+ button because it makes more sense the way I have it than the ones on the TI-84s, but that's just my opinion.",
+        productPaper: "I practiced Javascript algorithm scripting with this project.",
         codeLink: "https://github.com/CrumrineCoder/Calculator",
         websiteLink: " https://crumrinecoder.github.io/Calculator/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
@@ -123,7 +123,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.",
         backend: "Javascript",
         frontend: "HTML, CSS",
-        productPaper: "This was built as part of FreeCodeCamp's frontend curriculum. I've built about three Tic-Tac-Toe games in my time so I got bored and made a Connect Four instead of the suggested Tic Tac Toe game. My five year old sister got bored of this game in like 3 minutes so I want to figure out how to make this more engaging.",
+        productPaper: "This was more practice with Javascript algorithm scripting.",
         codeLink: "https://github.com/CrumrineCoder/Connect-Four",
         websiteLink: " https://crumrinecoder.github.io/Connect-Four/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
@@ -132,10 +132,10 @@ app.controller('portfolioControllers', function($scope) {
 		color: "#2D2D2D",
         picture: " Images/simonSays.png ",
         title: "Simon Says",
-        shortDesc: "This is a web app that uses Javascript to play Simon Says. jQuery is used to change classes but other than that it is not used.",
+        shortDesc: "This is a web app that uses Javascript to play Simon Says.",
         backend: "Javascript, jQuery",
         frontend: "HTML, CSS",
-        productPaper: "This was built as part of FreeCodeCamp's front curriculum. The CSS took a while to figure out, but I got there eventually. I'm not happy with the Simon Says being loaded with position: absolute but if I return to this project I'll figure out a way to do it more elegantly.",
+        productPaper: "This was both more practice with Javascript algorithm scripting and with CSS styling.",
         codeLink: "https://github.com/CrumrineCoder/Simon-Says-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Simon-Says-Version-2/",
 		freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-simon-game"

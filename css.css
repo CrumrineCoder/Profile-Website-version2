@@ -271,7 +271,7 @@
  #index{
      display: none;
 }
- @media screen and (max-width: 1000px) {
+ @media screen and (max-width: 850px) {
 	 /* SPLASH PAGE */
 	#splash button{
          height: 250px;
@@ -308,7 +308,7 @@
 	}
 	
  }
- @media screen and (max-width: 820px) {
+ @media screen and (max-width: 700px) {
 	 #aboutMeText{
 		font-size: 16px;
 	}
@@ -321,7 +321,7 @@
          text-align: center;
     }
      nav ul li {
-         width: 24%;
+         width: 32.5%;
          text-align: center;
     }
      nav ul li:first-child {
