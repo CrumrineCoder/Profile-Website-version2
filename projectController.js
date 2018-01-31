@@ -163,7 +163,14 @@ app.controller('portfolioControllers', function($scope) {
 		$scope.projectInfo.productPaper = $scope.projects[projectID].productPaper;
 		$scope.projectInfo.codeLink = $scope.projects[projectID].codeLink;
 		$scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
-		$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
+		//$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
+		
+		document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
+		if($scope.projects[projectID].title == "Connect Four" || $scope.projects[projectID].title == "Wikipedia Viewer"){
+			document.getElementById("contactInfo").style.color = "black";
+		}  else{
+			document.getElementById("contactInfo").style.color = "white";
+		}
 		
 		$scope.selectedProject = projectID;
 	}
