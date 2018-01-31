@@ -1,6 +1,6 @@
 /* Entire Document */
  html, body {
-    height: 100%;
+     height: 100%;
 }
  body {
      margin: 0;
@@ -12,7 +12,6 @@
  button:focus {
      outline: 0;
 }
-
 /* !Nav! */
  nav {
      background-color: #3B3738;
@@ -21,11 +20,11 @@
      color: white;
      border-bottom-color: yellow;
      border-bottom-style: solid;
-	 height: 70px;
+     height: 70px;
      width: 100%;
      top: 0;
      z-index: 99;
-	 position: fixed;
+     position: fixed;
 }
 /* Leftside of Nav */
  #nic {
@@ -53,10 +52,10 @@
      color: white;
      background-color: #521A19;
      display: block;
-    height: 100%;
-     padding: 5px 20px; 
+     height: 100%;
+     padding: 5px 20px;
      text-decoration: none;
-	padding-top: 12px;
+     padding-top: 12px;
 }
  nav ul li:first-child {
      margin-right: auto;
@@ -65,81 +64,70 @@
  nav ul li a:hover {
      background-color: #B20D0C;
 }
-
-
-
 /* About me Section */
-#aboutMeButton{
-	 color: #CDCCFF; 
+ #aboutMeButton{
+     color: #CDCCFF;
      cursor:pointer;
-	 background:none!important;
-     border:none; 
+     background:none!important;
+     border:none;
      padding:0!important;
-	 font-size: 10px;
+     font-size: 10px;
 }
-
-#aboutMeButton:hover{
- text-decoration:underline;
+ #aboutMeButton:hover{
+     text-decoration:underline;
 }
-
-#aboutMeOverlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.9);
-    z-index: 2;
-    cursor: pointer;
+ #aboutMeOverlay {
+     position: fixed;
+     display: none;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0,0,0,0.9);
+     z-index: 2;
+     cursor: pointer;
 }
-
-#aboutMeText{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+ #aboutMeText{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     font-size: 20px;
+     color: white;
+     transform: translate(-50%,-50%);
+     -ms-transform: translate(-50%,-50%);
 }
-
-
 /* !Projects! */
  #projects{
-	margin: 0 auto; 
-	width: 100%;
-	position: relative; 
-	margin-top: 57px; 
-	height: auto; 
- }
-
-#projectInfoText{
-   position: absolute;
-   bottom: 0px;
-   color: white; 
-   background: rgb(0, 0, 0); 
-   background: rgba(0, 0, 0, 0.7);
-   width: 100%;
-   height: 100%;
+     margin: 0 auto;
+     width: 100%;
+     position: relative;
+     margin-top: 57px;
+     height: auto;
 }
-
-#content{
-	max-width: 700px;
-	margin: 0 auto;
-	padding-bottom: 30px;
+ #projectInfoText{
+     position: absolute;
+     bottom: 0px;
+     color: white;
+     background: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0.7);
+     width: 100%;
+     height: 100%;
 }
-#projectTitle{
-	padding-top: 4%; 
+ #content{
+     max-width: 700px;
+     margin: 0 auto;
+     padding-bottom: 30px;
+}
+ #projectTitle{
+     padding-top: 4%;
 }
  #projects ul{
-	 padding: 0px; 
- }
- 
-#projectBackEnd, #projectFrontEnd{
-	width: 95%;
+     padding: 0px;
+}
+ #projectBackEnd, #projectFrontEnd{
+     width: 95%;
 }
  #projectFrontEnd li, #projectBackEnd li {
      border-radius: 5px;
@@ -151,13 +139,12 @@
 }
  #projectFrontEnd li {
      border: 1px solid #E39C8A;
-	 background: #E39C8A
+     background: #E39C8A 
 }
  #projectBackEnd li {
      border: 1px solid #C198D3;
-	 background: #C198D3;
- }
- 
+     background: #C198D3;
+}
  #projectLinks {
      text-align: center;
      padding-left: 0px;
@@ -170,15 +157,15 @@
      border: 2px solid #2D304C;
      text-transform: uppercase;
      letter-spacing: 0.2em;
-	 background: white; 
-	 -webkit-transition:  .5s;
-     -moz-transition:  .5s;
-     -ms-transition:  .5s;
-     -o-transition:  .5s;
-     transition:  .5s;
+     background: white;
+     -webkit-transition: .5s;
+     -moz-transition: .5s;
+     -ms-transition: .5s;
+     -o-transition: .5s;
+     transition: .5s;
 }
  .fa-code,.fa-external-link, .fa-free-code-camp {
-	 padding: 3px 5px 3px 5px;
+     padding: 3px 5px 3px 5px;
      color: black;
      -webkit-transition: color .5s;
      -moz-transition: color .5s;
@@ -187,26 +174,23 @@
      transition: color .5s;
 }
  #projectLinks li:hover {
-	 background: #2D304C;
- }
+     background: #2D304C;
+}
  .fa-code:hover, .fa-external-link:hover, .fa-free-code-camp:hover{
-	color: white; 
+     color: white;
 }
-
  #projectPicture {
-     display: block; 
-	 opacity: 0.6;
-	 width: 100%;
-	height: auto;
+     display: block;
+     opacity: 0.6;
+     width: 100%;
+     height: auto;
 }
-
-
 /* Project Buttons */
  #projectSelectBoxes {
      width: 100%;
      overflow-x:scroll;
      white-space: nowrap;
-     margin: 0 auto; 
+     margin: 0 auto;
 }
  .projectSelectImage {
      width: 100%;
@@ -225,21 +209,16 @@
      padding: 0;
      border: none;
 }
-
-
-
-
 /* !!CONTACT!! */
  #contactInfo{
      text-align: center;
      clear: both;
-	 padding-top: 50px;
-	 font-size: 25px;
-	 height: 300px;
-	 background-color: #3B3738;
-	 color: white; 
+     padding-top: 50px;
+     font-size: 25px;
+     height: 300px;
+     background-color: #3B3738;
+     color: white;
 }
-
  #nameContainer{
      float: left;
 }
@@ -255,15 +234,13 @@
  #credit{
      font-size: 10px;
 }
-
-
 /* Splash page */
  #splash button{
      width: 19.5%;
-	 height: 100%;
+     height: 100%;
      margin: 0px;
      border: none;
-	 padding: 0px;
+     padding: 0px;
 }
  #splash button img{
      width: 100%;
@@ -273,60 +250,56 @@
      margin: 0;
      padding: 0;
      width: 100%;
-	 height: 100%;
+     height: 100%;
 }
  #index{
      display: none;
 }
  @media screen and (max-width: 850px) {
-	 /* SPLASH PAGE */
-	#splash button{
+    /* SPLASH PAGE */
+     #splash button{
          height: 250px;
          width: 100%;
     }
      #splash{
-		margin-top: 70px;
+         margin-top: 70px;
          width: 100%;
     }
      #splash button img{
          width: 150px;
     }
-	
-	#aboutMeText{
-		font-size: 18px;
-	}
-	 
-
-	/* Projects */
-	#projectTitle{
-		padding-top: 1.5%;
-	}
-	#projectLinks{
-		margin: 0px; 
-	}
-	 #projectLinks li {
-		font-size: 12px; 
-	 }
-	  #projectFrontEnd li, #projectBackEnd li {
-		font-size: 12px; 
-	  }
-	h1 {
-	  margin: .37em 0px; 
-	  font-size: 1.4em;
-	}
-	
- }
+     #aboutMeText{
+         font-size: 18px;
+    }
+    /* Projects */
+     #projectTitle{
+         padding-top: 1.5%;
+    }
+     #projectLinks{
+         margin: 0px;
+    }
+     #projectLinks li {
+         font-size: 12px;
+    }
+     #projectFrontEnd li, #projectBackEnd li {
+         font-size: 12px;
+    }
+     h1 {
+         margin: .37em 0px;
+         font-size: 1.4em;
+    }
+}
  @media screen and (max-width: 700px) {
-	 #aboutMeText{
-		font-size: 16px;
-	}
-	 #splash{
-		margin-top: 100px;
-	 }
-	 /* NAV */
-	 nav{
-		 height: 100px; 
-	 }
+     #aboutMeText{
+         font-size: 16px;
+    }
+     #splash{
+         margin-top: 100px;
+    }
+    /* NAV */
+     nav{
+         height: 100px;
+    }
      nav ul{
          display: block;
          text-align: center;
@@ -344,52 +317,69 @@
          display: block;
          font-size: 8px;
     }
-	.projectSelectButton {
-     max-width: 100px;
-     max-height: 100px;
-     min-width: 50px;
-     min-height: 50px;
-	}
-	#projectTitle{
-		padding-top: 40px; 
-	}
-	 #projectLinks li {
-		width: 90%; 
-		font-size: 18px;
-	 }
-
-	#projectInfoText{
-	   position: relative;   
-	   margin-bottom: 10px; 
-	}
-	#projectPicture{
-        display: none;
+     .projectSelectButton {
+         max-width: 100px;
+         max-height: 100px;
+         min-width: 50px;
+         min-height: 50px;
     }
-	nav ul li img{
-		height: 25px; 
-		width: 25px; 
-	}
-	nav ul li a{
-		padding: 0px; 
-		padding-top: 4px; 
-	}
- }
+     #projectTitle{
+         padding-top: 40px;
+    }
+     #projectLinks li {
+         width: 90%;
+         font-size: 18px;
+    }
+     #projectInfoText{
+         position: relative;
+         margin-bottom: 10px;
+    }
+     #projectPicture{
+         display: none;
+    }
+     nav ul li img{
+         height: 25px;
+         width: 25px;
+    }
+     nav ul li a{
+         padding: 0px;
+         padding-top: 4px;
+    }
+}
  @media screen and (max-width: 600px) {
-		#aboutMeText{
-			font-size: 14px;
-		}
-	 
-		.projectSelectButton{
-			width: 100%;
-			max-width: 100%;
-			height: 100px;
-			white-space: normal;
-		}
-		#projectSelectBoxes{
-			overflow-x: visible;
-			white-space: normal; 
-		}
-		.projectSelectImage{
-			width: 100px;
-		}
- }
+     #aboutMeText{
+         font-size: 12px;
+    }
+     #nic{
+         margin: 3px 0px;
+         font-size: 14px 
+    }
+     #nicJob {
+         margin: 5px 0px 10px 5px;
+         font-size: 12px;
+    }
+     #nameNavContainer {
+         padding: 0px;
+    }
+     #aboutMeButton{
+         display: block;
+         font-size: 15px;
+         margin: 0 auto;
+    }
+     #contactInfo{
+         font-size: 20px;
+    }
+     .projectSelectButton{
+         width: 100%;
+         max-width: 100%;
+         height: 100px;
+         white-space: normal;
+    }
+     #projectSelectBoxes{
+         overflow-x: visible;
+         white-space: normal;
+    }
+     .projectSelectImage{
+         width: 100px;
+    }
+}
