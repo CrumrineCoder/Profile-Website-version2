@@ -72,6 +72,7 @@
      border:none;
      padding:0!important;
      font-size: 10px;
+	 margin-left: 10px;
 }
  #aboutMeButton:hover{
      text-decoration:underline;
