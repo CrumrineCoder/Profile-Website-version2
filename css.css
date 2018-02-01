@@ -282,9 +282,7 @@
      #projectLinks{
          margin: 0px;
     }
-     #projectLinks li {
-         font-size: 12px;
-    }
+
      #projectFrontEnd li, #projectBackEnd li {
          font-size: 12px;
     }
