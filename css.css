@@ -158,7 +158,8 @@
      border: 2px solid #2D304C;
      text-transform: uppercase;
      letter-spacing: 0.2em;
-     background: white;
+	   background: #2D304C;
+    
      -webkit-transition: .5s;
      -moz-transition: .5s;
      -ms-transition: .5s;
@@ -167,7 +168,7 @@
 }
  .fa-code,.fa-external-link, .fa-free-code-camp {
      padding: 3px 5px 3px 5px;
-     color: black;
+     color: white;
      -webkit-transition: color .5s;
      -moz-transition: color .5s;
      -ms-transition: color .5s;
@@ -175,11 +176,10 @@
      transition: color .5s;
 }
  #projectLinks li:hover {
-     background: #2D304C;
+    background: #181A29;
+	border-color: #181A29;
 }
- .fa-code:hover, .fa-external-link:hover, .fa-free-code-camp:hover{
-     color: white;
-}
+
  #projectPicture {
      display: block;
      opacity: 0.6;
