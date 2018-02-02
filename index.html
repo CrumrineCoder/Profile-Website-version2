@@ -80,7 +80,7 @@
 	</div>
 	<div id="projectSelectBoxes">
 			<span ng-repeat="project in buttons">
-				<a href="#index">
+				<a ng-click="scrollTo('index')">
 					<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)" ng-style="{'background-color': project.color}">
 						<img src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 					</button>
@@ -102,6 +102,7 @@
       <li> Tabletop logo by Andrew Doane of the Noun Project </li>
       <li> Simon Says logo adapted from Creaticca Creative Agency of the Noun Project </li>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
   <script type="text/javascript" src="projectController.js">
   </script>
