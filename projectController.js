@@ -7,6 +7,7 @@ function off() {
 }
 var app = angular.module('portfolio', []);
 app.controller('portfolioControllers', function($scope) {
+	// Slow scroll functionality.
     $scope.scrollTo = function(eID) {
 		console.log("Testing!");
         // This scrolling function 
@@ -211,6 +212,7 @@ app.controller('portfolioControllers', function($scope) {
         $scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
+		document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         if ($scope.projects[projectID].title == "Connect Four" || $scope.projects[projectID].title == "Wikipedia Viewer") {
             document.getElementById("contactInfo").style.color = "black";
         } else {
