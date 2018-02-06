@@ -12,6 +12,14 @@
  button:focus {
      outline: 0;
 }
+h2{
+	position: absolute; 
+   bottom: 0px; 
+    color: white;  
+	width: 100%;
+   font-size: 20px; 
+   margin: 0px; 
+}
 /* !Nav! */
  nav {
      background-color: #3B3738;
@@ -209,6 +217,7 @@
      min-height: 100px;
      padding: 0;
      border: none;
+	 position: relative; 
 }
 /* !!CONTACT!! */
  #contactInfo{
@@ -325,6 +334,9 @@
          min-width: 50px;
          min-height: 50px;
     }
+	h2{
+		font-size: 13px; 
+	}
      #projectTitle{
          padding-top: 40px;
     }
@@ -351,7 +363,7 @@
          padding-top: 4px;
     }
 }
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 500px) {
      #aboutMeText{
          font-size: 12px;
     }
@@ -380,6 +392,9 @@
          height: 100px;
          white-space: normal;
     }
+	h2{
+		font-size: 22px; 
+	}
      #projectSelectBoxes{
          overflow-x: visible;
          white-space: normal;

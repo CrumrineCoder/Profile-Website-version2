@@ -76,7 +76,7 @@ app.controller('portfolioControllers', function($scope) {
         logo: " Images/votingAppLogo.png ",
         color: "#A61C88",
         picture: " Images/votingApp.png ",
-        title: "Polling Website",
+        title: "Polling",
         shortDesc: "This fullstack website lets users create, view, and vote on polls.",
         backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Chart.js",
         frontend: "HTML, CSS, Responsive",
@@ -112,7 +112,7 @@ app.controller('portfolioControllers', function($scope) {
         logo: " Images/weatherApp%20logo.png ",
         color: "#4BC42D",
         picture: " Images/weatherApp.png ",
-        title: "Weather App",
+        title: "Weather",
         shortDesc: "This is a web app that shows the weather based on location.",
         backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,",
         frontend: "HTML, CSS, Font Awesome, Responsive",
@@ -124,7 +124,7 @@ app.controller('portfolioControllers', function($scope) {
         logo: " Images/quotesAppLogo.png ",
         color: "#35301C",
         picture: " Images/quotesApp.png ",
-        title: "Quotes App",
+        title: "Quotes",
         shortDesc: "This is a website that uses Angular to display quotes from various sources.",
         backend: "Javascript, jQuery, Angular",
         frontend: "HTML, CSS, Font Awesome, Responsive",
@@ -136,7 +136,7 @@ app.controller('portfolioControllers', function($scope) {
         logo: " Images/pomodoroAppLogo.png",
         color: "#E5000F",
         picture: " Images/pomodoroApp.png ",
-        title: "Pomodoro Clock",
+        title: "Pomodoro",
         shortDesc: "This is a web app that acts as a minimalist Pomodoro (time management) clock with options.",
         backend: "Javascript, jQuery",
         frontend: "HTML, CSS, Font Awesome, Responsive",
@@ -148,7 +148,7 @@ app.controller('portfolioControllers', function($scope) {
         logo: " Images/wikipediaViewerLogo.png ",
         color: "#00AEFF",
         picture: " Images/wikipediaViewer.png ",
-        title: "Wikipedia Viewer",
+        title: "Wiki Viewer",
         shortDesc: "This is a web app that uses the Wikipedia API to searching for multiple Wikipedia pages by term or by randomness.",
         backend: "Javascript, jQuery, Wikipedia API",
         frontend: "HTML, CSS, Responsive",
@@ -225,7 +225,8 @@ app.controller('portfolioControllers', function($scope) {
         $scope.buttons.push({
             logo: $scope.projects[i].logo,
             id: i,
-            color: $scope.projects[i].color
+            color: $scope.projects[i].color,
+			title: $scope.projects[i].title
         });
     }
     $scope.change = function(x) {
