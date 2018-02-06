@@ -12,6 +12,7 @@
 	</script>
 
   <title>Nicolas Crumrine</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
@@ -40,24 +41,15 @@
 	</div>
 	<!-- Initial/Splash page -->
   <div id="splash">
-
-    <button ng-click="change(0)" style="background: #FF7B00"> 
-			<img src="Images/npcLookUpLogo.png"></img>
-		</button>
-    <button ng-click="change(1)" style="background: #A61C88"> 
-			<img src="Images/votingAppLogo.png"></img>
-		</button>
-    <button ng-click="change(2)" style="background: #6100FF"> 
-			<img src="Images/tabletopAppLogo.png"></img>
-		</button>
-    <button ng-click="change(3)" style="background: #6441A4"> 
-			<img src="Images/twitchViewerLogo.png"></img>
-		</button>
-    <button ng-click="change(4)" style="background: #4BC42D"> 
-			<img src="Images/weatherApp%20logo.png"></img>
-		</button>
-		
+	<span ng-repeat="project in buttons | limitTo:5">
+		<button type="image" ng-click="change(project.id)" ng-style="{'background-color': project.color}" style="position: relative;" > 
+				<img src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
+						<p class="splashText"> {{project.title}} </p>
+			</button>
+	</span>
   </div>
+  
+
   <div id="index">
 	
    test
@@ -93,7 +85,7 @@
 				<a ng-click="scrollTo('index')">
 					<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)" ng-style="{'background-color': project.color}">
 						<img src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
-						<h2> {{project.title}} </h2>
+						<p class="logoText"> {{project.title}} </p>
 					</button>
 				</a>
 			</span>
