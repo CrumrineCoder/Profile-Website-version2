@@ -205,11 +205,14 @@
 }
 
 .logoText{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold; 
+	  font-size: 20px;
 	position: absolute; 
    bottom: 0px; 
     color: white;  
 	width: 100%;
-   font-size: 20px; 
+  
    margin: 0px; 
 }
 

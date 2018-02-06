@@ -63,7 +63,7 @@ app.controller('portfolioControllers', function($scope) {
     };
     $scope.projects = [{
         logo: " Images/npcLookUpLogo.png ",
-        color: "#FF7B00",
+        color: "#EF281A",
         picture: " Images/npcLookUp.png ",
         title: "NPC Lookup",
         shortDesc: "This fullstack website lets users add Non Playable Characters (NPCs) to a database and view them with Angular.",
@@ -110,7 +110,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
     }, {
         logo: " Images/weatherApp%20logo.png ",
-        color: "#4BC42D",
+        color: "#046E25",
         picture: " Images/weatherApp.png ",
         title: "Weather",
         shortDesc: "This is a web app that shows the weather based on location.",
@@ -158,7 +158,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
     }, {
         logo: " Images/calculatorAppLogo.png ",
-        color: "#CCBE00",
+        color: "#3A284C",
         picture: " Images/calculatorApp.png ",
         title: "Calculator",
         shortDesc: "This is a web app that resembles a basic calculator.",
@@ -170,7 +170,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
     }, {
         logo: " Images/connectFourAppLogo.png ",
-        color: "#FFDC46",
+        color: "#C6AA39",
         picture: " Images/connectFourApp.png ",
         title: "Connect Four",
         shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.",
@@ -213,7 +213,7 @@ app.controller('portfolioControllers', function($scope) {
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
 		document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
-        if ($scope.projects[projectID].title == "Connect Four" || $scope.projects[projectID].title == "Wikipedia Viewer") {
+        if ($scope.projects[projectID].title == "Wikipedia Viewer") {
             document.getElementById("contactInfo").style.color = "black";
         } else {
             document.getElementById("contactInfo").style.color = "white";
