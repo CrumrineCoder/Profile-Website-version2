@@ -88,12 +88,12 @@ app.controller('portfolioControllers', function($scope) {
         logo: " Images/tabletopAppLogo.png ",
         color: "#6100FF",
         picture: " Images/tabletopApp.png ",
-        title: "Tabletop Coordination",
+        title: "Tabletop United",
         shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area.",
         backend: "Javascript, Node.js, Glitch, MongoDB, Express, Mongoose, Passport, Angular, Yelp API",
         frontend: "HTML, CSS, Responsive",
         productPaper: "I taught myself Angular with this project and learned how to incorporate an API with a database.",
-        codeLink: "https://github.com/CrumrineCoder/TabletopCoordinationApp",
+        codeLink: "https://github.com/CrumrineCoder/TabletopUnited",
         websiteLink: "https://tabletop.glitch.me/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
     }, {
