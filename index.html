@@ -41,7 +41,7 @@
 	</div>
 	<!-- Initial/Splash page -->
   <div id="splash">
-	<span ng-repeat="project in buttons | limitTo:5">
+	<span id="removeMargin" ng-repeat="project in buttons | limitTo:5">
 		<button type="image" ng-click="change(project.id)" ng-style="{'background-color': project.color}" style="position: relative;" > 
 				<img src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 						<p class="splashText"> {{project.title}} </p>

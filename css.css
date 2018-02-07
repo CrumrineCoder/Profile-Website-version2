@@ -196,6 +196,7 @@
      overflow-x:scroll;
      white-space: nowrap;
      margin: 0 auto;
+	 font-size: 0px; 
 }
  .projectSelectImage {
      width: 100%;
@@ -227,6 +228,7 @@
      padding: 0;
      border: none;
 	 position: relative; 
+	 font-size: 0px; 
 }
 /* !!CONTACT!! */
  #contactInfo{
@@ -258,11 +260,14 @@
 }
 /* Splash page */
  #splash button{
-     width: 19.5%;
+     width: 20%;
      height: 100%;
      margin: 0px;
      border: none;
      padding: 0px;
+}
+#removeMargin{
+	font-size: 0px; 
 }
  #splash button img{
      width: 100%;
