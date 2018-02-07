@@ -80,15 +80,11 @@
 		</div>
 
 	</div>
-	<div id="projectSelectBoxes">
-			<span ng-repeat="project in buttons">
-				<a ng-click="scrollTo('index')">
-					<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)" ng-style="{'background-color': project.color}">
+	<div id="projectSelectBoxes">			
+				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) || scrollTo('index')" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
 						<img src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 						<p class="logoText"> {{project.title}} </p>
-					</button>
-				</a>
-			</span>
+				</button>
 		</div>
 	<!-- Contact Section -->
     <div id="contactInfo"> <i class="fa fa-envelope-o fa-2x"> </i>
@@ -96,15 +92,7 @@
       <p id="gmailTagLine">crumrinecoding at gmail dot com </p>
     </div>
 	
-	<!-- Credits for logos -->
-    <ul id="credit"> Logo Credits
-	  <li> NPC Lookup logo by Björn Andersson of the Noun Project </li>
-      <li>Poll Website logo by Misha of the Noun Project </li>
-      <li> Weather App logo by João Proença of the Noun Project </li>
-      <li> Clock logo by mikicon of the Noun Project </li>
-      <li> Calculator logo by Ralf Schmitzer of the Noun Project </li>
-      <li> Tabletop logo by Andrew Doane of the Noun Project </li>
-      <li> Simon Says logo adapted from Creaticca Creative Agency of the Noun Project </li>
+	
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>

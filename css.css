@@ -1,4 +1,5 @@
 /* Entire Document */
+
  html, body {
      height: 100%;
 }
@@ -8,6 +9,7 @@
      font-size: 14px;
      font-family: 'Droid Serif', serif;
      z-index: 0;
+	 background: black;
 }
  button:focus {
      outline: 0;
@@ -287,10 +289,7 @@
  #index{
      display: none;
 }
-span{
-	margin: 0px; 
-	padding: 0px;
-}
+
  @media screen and (max-width: 850px) {
     /* SPLASH PAGE */
      #splash button{
