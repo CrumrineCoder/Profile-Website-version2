@@ -39,9 +39,7 @@
      font-style: italic;
      margin-top: -15px;
 }
- #nameNavContainer {
-     padding-left: 15px;
-}
+
 /* Nav Positioning */
  nav ul {
      margin: 0;
@@ -63,6 +61,9 @@
 }
  nav ul li:first-child {
      margin-right: auto;
+}
+#nameNavContainer {
+     padding-left: 15px;
 }
 /* Right links */
  nav ul li a:hover {
@@ -328,6 +329,9 @@
     }
 }
  @media screen and (max-width: 700px) {
+	 #nameNavContainer{
+		 margin: 0px; 
+	 }
      #aboutMeText{
          font-size: 16px;
     }
@@ -341,9 +345,13 @@
      nav ul{
          display: block;
          text-align: center;
+		 font-size: 0px; 
     }
+	#nicJob{
+		font-size: 14px; 
+	}
      nav ul li {
-         width: 32.5%;
+         width: 33.3%;
          text-align: center;
     }
      nav ul li:first-child {
