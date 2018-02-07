@@ -9,7 +9,6 @@ var app = angular.module('portfolio', []);
 app.controller('portfolioControllers', function($scope) {
 	// Slow scroll functionality.
     $scope.scrollTo = function(eID) {
-		console.log("Testing!");
         // This scrolling function 
         // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
         var startY = currentYPosition();
