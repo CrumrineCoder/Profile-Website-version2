@@ -5,6 +5,14 @@ function on() {
 function off() {
     document.getElementById("aboutMeOverlay").style.display = "none";
 }
+
+function creditsOn() {
+    document.getElementById("logoCreditsOverlay").style.display = "block";
+}
+
+function creditsOff() {
+    document.getElementById("logoCreditsOverlay").style.display = "none";
+}
 var app = angular.module('portfolio', []);
 app.controller('portfolioControllers', function($scope) {
 	// Slow scroll functionality.

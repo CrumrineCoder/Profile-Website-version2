@@ -70,7 +70,7 @@
      background-color: #B20D0C;
 }
 /* About me Section */
- #aboutMeButton{
+ #aboutMeButton, #logoCredits{
      color: #CDCCFF;
      cursor:pointer;
      background:none!important;
@@ -79,10 +79,14 @@
      font-size: 10px;
 	 margin-left: 10px;
 }
- #aboutMeButton:hover{
+ #aboutMeButton:hover, #logoCredits:hover{
      text-decoration:underline;
 }
- #aboutMeOverlay {
+#logoCredits{
+	position: absolute;
+	left: 0xp;
+}
+ #aboutMeOverlay, #logoCreditsOverlay {
      position: fixed;
      display: none;
      width: 100%;
@@ -95,7 +99,7 @@
      z-index: 2;
      cursor: pointer;
 }
- #aboutMeText{
+ #aboutMeText, #credit{
      position: absolute;
      top: 50%;
      left: 50%;
@@ -209,7 +213,7 @@
 }
 
 .logoText{
-
+font-family: 'Roboto', sans-serif;
 	font-weight: bold; 
 	  font-size: 20px;
 	position: absolute; 
@@ -309,7 +313,7 @@
      #splash button img{
          width: 150px;
     }
-     #aboutMeText{
+     #aboutMeText, #credit{
          font-size: 18px;
     }
     /* Projects */
@@ -327,13 +331,13 @@
          margin: .37em 0px;
          font-size: 1.4em;
     }
+	
+}
+ @media screen and (max-width: 700px) {
 	 #nameNavContainer{
 		 padding: 0px; 
 	 }
-}
- @media screen and (max-width: 700px) {
-	
-     #aboutMeText{
+    #aboutMeText, #credit{
          font-size: 16px;
     }
      #splash{
@@ -399,7 +403,7 @@
     }
 }
  @media screen and (max-width: 500px) {
-     #aboutMeText{
+     #aboutMeText, #credit{
          font-size: 12px;
     }
      #nic{
@@ -410,7 +414,7 @@
          margin: 5px 0px 10px 5px;
          font-size: 12px;
     }
-     #aboutMeButton{
+     #aboutMeButton, #logoCredits{
          display: block;
          font-size: 15px;
          margin: 0 auto;
