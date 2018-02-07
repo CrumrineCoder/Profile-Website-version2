@@ -170,7 +170,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
     }, {
         logo: " Images/connectFourAppLogo.png ",
-        color: "#C6AA39",
+        color: "#ffdc46",
         picture: " Images/connectFourApp.png ",
         title: "Connect Four",
         shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.",
