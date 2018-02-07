@@ -20,7 +20,7 @@
      margin: 0;
      overflow: hidden;
      color: white;
-     border-bottom-color: yellow;
+     border-bottom-color: #C9C9C9;
      border-bottom-style: solid;
      height: 70px;
      width: 100%;
@@ -353,7 +353,7 @@
          min-width: 50px;
          min-height: 50px;
     }
-	h2{
+	.logoText{
 		font-size: 13px; 
 	}
      #projectTitle{

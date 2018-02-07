@@ -86,7 +86,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
     }, {
         logo: " Images/tabletopAppLogo.png ",
-        color: "#6100FF",
+        color: "#E96969",
         picture: " Images/tabletopApp.png ",
         title: "Tabletop United",
         shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area.",
@@ -109,20 +109,8 @@ app.controller('portfolioControllers', function($scope) {
         websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
     }, {
-        logo: " Images/weatherApp%20logo.png ",
-        color: "#046E25",
-        picture: " Images/weatherApp.png ",
-        title: "Weather",
-        shortDesc: "This is a web app that shows the weather based on location.",
-        backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,",
-        frontend: "HTML, CSS, Font Awesome, Responsive",
-        productPaper: "This was one of my first projects and I experimented with multiple APIs and User Experience.",
-        codeLink: "https://github.com/CrumrineCoder/Weather-App",
-        websiteLink: "https://crumrinecoder.github.io/Weather-App/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
-    }, {
         logo: " Images/quotesAppLogo.png ",
-        color: "#35301C",
+        color: "#008080",
         picture: " Images/quotesApp.png ",
         title: "Quotes",
         shortDesc: "This is a website that uses Angular to display quotes from various sources.",
@@ -133,8 +121,20 @@ app.controller('portfolioControllers', function($scope) {
         websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
     }, {
+        logo: " Images/weatherApp%20logo.png ",
+        color: "#048027",
+        picture: " Images/weatherApp.png ",
+        title: "Weather",
+        shortDesc: "This is a web app that shows the weather based on location.",
+        backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,",
+        frontend: "HTML, CSS, Font Awesome, Responsive",
+        productPaper: "This was one of my first projects and I experimented with multiple APIs and User Experience.",
+        codeLink: "https://github.com/CrumrineCoder/Weather-App",
+        websiteLink: "https://crumrinecoder.github.io/Weather-App/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
+    }, {
         logo: " Images/pomodoroAppLogo.png",
-        color: "#E5000F",
+        color: "#E90000",
         picture: " Images/pomodoroApp.png ",
         title: "Pomodoro",
         shortDesc: "This is a web app that acts as a minimalist Pomodoro (time management) clock with options.",
@@ -146,7 +146,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
     }, {
         logo: " Images/wikipediaViewerLogo.png ",
-        color: "#00AEFF",
+        color: "#007CB6",
         picture: " Images/wikipediaViewer.png ",
         title: "Wiki Viewer",
         shortDesc: "This is a web app that uses the Wikipedia API to searching for multiple Wikipedia pages by term or by randomness.",
@@ -158,7 +158,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
     }, {
         logo: " Images/calculatorAppLogo.png ",
-        color: "#3A284C",
+        color: "#865DAF",
         picture: " Images/calculatorApp.png ",
         title: "Calculator",
         shortDesc: "This is a web app that resembles a basic calculator.",
@@ -170,7 +170,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
     }, {
         logo: " Images/connectFourAppLogo.png ",
-        color: "#ffdc46",
+        color: "#D8AD00",
         picture: " Images/connectFourApp.png ",
         title: "Connect Four",
         shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.",
@@ -213,11 +213,6 @@ app.controller('portfolioControllers', function($scope) {
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
 		document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
-        if ($scope.projects[projectID].title == "Wikipedia Viewer") {
-            document.getElementById("contactInfo").style.color = "black";
-        } else {
-            document.getElementById("contactInfo").style.color = "white";
-        }
         $scope.selectedProject = projectID;
     }
     $scope.buttons = [];
