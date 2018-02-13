@@ -123,7 +123,7 @@ app.controller('portfolioControllers', function($scope) {
         shortDesc: "This is a web app that shows the weather based on location.",
         backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,",
         frontend: "HTML, CSS, Font Awesome, Responsive, Angular, Sass",
-        productPaper: "This was one of my first projects and I experimented with multiple APIs and User Experience.",
+        productPaper: "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
