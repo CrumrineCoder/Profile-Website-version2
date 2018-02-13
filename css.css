@@ -149,12 +149,12 @@
      margin: 0px 3px 4px 3px;
 }
  #projectFrontEnd li {
-     border: 1px solid #E39C8A;
-     background: #E39C8A 
+     border: 1px solid #C54E30;
+     background: #C54E30; 
 }
  #projectBackEnd li {
-     border: 1px solid #C198D3;
-     background: #C198D3;
+     border: 1px solid #9952B7;
+     background: #9952B7;
 }
  #projectLinks {
      text-align: center;
@@ -176,7 +176,7 @@
      -o-transition: .5s;
      transition: .5s;
 }
- .fa-code,.fa-external-link, .fa-free-code-camp {
+ .fa-code,.fa-external-link{
      padding: 3px 5px 3px 5px;
      color: white;
      -webkit-transition: color .5s;
