@@ -16,7 +16,6 @@
      outline: 0;
 }
 
-
 /* !Nav! */
  nav {
      background-color: #3B3738;
@@ -304,6 +303,16 @@ font-family: 'Roboto', sans-serif;
 }
  #index{
      display: none;
+}
+
+
+.projectSelectButton img, .projectSelectImage {
+		opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.projectSelectButton:hover img, .projectSelectImage:hover {
+	opacity: .5;
 }
 
  @media screen and (max-width: 850px) {
