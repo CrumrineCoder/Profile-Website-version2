@@ -308,8 +308,8 @@ font-family: 'Roboto', sans-serif;
 
 .projectSelectButton img, .projectSelectImage {
 		opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
 }
 .projectSelectButton:hover img, .projectSelectImage:hover {
 	opacity: .5;
