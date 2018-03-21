@@ -175,7 +175,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Calculator",
         websiteLink: " https://crumrinecoder.github.io/Calculator/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
-    }, {
+    }/*, {
         logo: " Images/connectFourAppLogo.png ",
         color: "#D8AD00",
         picture: " Images/connectFourApp.png ",
@@ -187,7 +187,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Connect-Four",
         websiteLink: " https://crumrinecoder.github.io/Connect-Four/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
-    }, {
+    }*/, {
         logo: " Images/simonSaysLogo.png ",
         color: "#2D2D2D",
         picture: " Images/simonSays.png ",
