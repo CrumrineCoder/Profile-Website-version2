@@ -140,7 +140,7 @@
      width: 95%;
 }
  #projectFrontEnd li, #projectBackEnd li {
-     border: none; 
+     border-radius: 5px; 
      display: inline-block;
      text-transform: uppercase;
      letter-spacing: 0.2em;
