@@ -167,11 +167,11 @@
      letter-spacing: 0.2em;
 	   background: #2D304C;
     
-     -webkit-transition: .5s;
-     -moz-transition: .5s;
-     -ms-transition: .5s;
-     -o-transition: .5s;
-     transition: .5s;
+     -webkit-transition: 2s;
+     -moz-transition: 2s;
+     -ms-transition: 2s;
+     -o-transition: 2s;
+     transition: 2s;
 }
  .fa-code,.fa-external-link{
      padding: 3px 5px 3px 5px;
