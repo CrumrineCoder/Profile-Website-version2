@@ -69,29 +69,6 @@ app.controller('portfolioControllers', function($scope) {
         }
     };
     $scope.projects = [{
-        logo: " Images/npcLookUpLogo.png ",
-        color: "#EF281A",
-        picture: " Images/npcLookUp.png ",
-        title: "NPC Lookup",
-        shortDesc: "This fullstack website lets users add Non Playable Characters (NPCs) to a database and view them with Angular.",
-        backend: "Javascript, Node.js, Express, MongoDB, Mongoose, Passport",
-        frontend: "HTML, CSS, Responsive, Angular",
-        productPaper: "I refined and expanded on Node.JS and Express and experimented with Angular alongside a database.",
-        codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
-        websiteLink: "https://npclookup.glitch.me/"
-    }, {
-        logo: " Images/votingAppLogo.png ",
-        color: "#A61C88",
-        picture: " Images/votingApp.png ",
-        title: "Polling",
-        shortDesc: "This fullstack website lets users create, view, and vote on polls.",
-        backend: "Javascript, Node.js, Express, MongoDB, Mongoose, Passport, Chart.js",
-        frontend: "HTML, CSS, Responsive",
-        productPaper: "I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to make my first fullstack website.",
-        codeLink: "https://github.com/CrumrineCoder/VotingApp",
-        websiteLink: "https://joinordie.glitch.me/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
-    }, {
         logo: " Images/twitchViewerLogo.png ",
         color: "#6441A4",
         picture: " Images/twitchViewer.png ",
@@ -103,19 +80,31 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
         websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
-    }, {
-        logo: " Images/quotesAppLogo.png ",
-        color: "#008080",
-        picture: " Images/quotesApp.png ",
-        title: "Quotes",
-        shortDesc: "This is a website that uses Angular to display quotes from various sources.",
-        backend: "Javascript, jQuery",
-        frontend: "HTML, CSS, Responsive, Angular",
-        productPaper: "I practiced Functional Programming and one page design in Angular and refined the design and User Experience.",
-        codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
-        websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
-    }, {
+    },{
+        logo: " Images/connectFourAppLogo.png ",
+        color: "#FF7F11",
+        picture: " Images/connectFourApp.png ",
+        title: "Connect Four",
+        shortDesc: "This is a web app that uses plain Javascript to play Connect Four either against an AI that uses alpha-beta minimaxing or locally with another player.",
+        backend: "Javascript",
+        frontend: "HTML, CSS",
+        productPaper: "This was practice with independent research, Javascript algorithm scripting, UI design for games, and artificial intelligence.",
+        codeLink: "https://crumrinecoder.github.io/connect4-version2/",
+        websiteLink: "https://crumrinecoder.github.io/connect4-version2/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
+    },{
+        logo: " Images/votingAppLogo.png ",
+        color: "#A61C88",
+        picture: " Images/votingApp.png ",
+        title: "Polling",
+        shortDesc: "This fullstack website lets users create, view, and vote on polls.",
+        backend: "Javascript, Node.js, Express, MongoDB, Mongoose, Passport, Chart.js",
+        frontend: "HTML, CSS, Responsive",
+        productPaper: "I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to make my first fullstack website.",
+        codeLink: "https://github.com/CrumrineCoder/VotingApp",
+        websiteLink: "https://joinordie.glitch.me/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
+    },{
         logo: " Images/weatherApp%20logo.png ",
         color: "#048027",
         picture: " Images/weatherApp.png ",
@@ -127,42 +116,29 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
-    }, {
-        logo: " Images/tabletopAppLogo.png ",
-        color: "#E96969",
-        picture: " Images/tabletopApp.png ",
-        title: "Tabletop United",
-        shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area.",
-        backend: "Javascript, Node.js, Express.js, MongoDB, Mongoose, Passport, Yelp API, Geolocation API",
-        frontend: "HTML, CSS, Responsive, Angular",
-        productPaper: "I taught myself Angular with this project and learned how to incorporate an API with a database.",
-        codeLink: "https://github.com/CrumrineCoder/TabletopUnited",
-        websiteLink: "https://tabletop.glitch.me/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
-    }, {
-        logo: " Images/pomodoroAppLogo.png",
-        color: "#E90000",
-        picture: " Images/pomodoroApp.png ",
-        title: "Pomodoro",
-        shortDesc: "This is a web app that acts as a minimalist Pomodoro (time management) clock with options.",
+    },  {
+        logo: " Images/quotesAppLogo.png ",
+        color: "#008080",
+        picture: " Images/quotesApp.png ",
+        title: "Quotes",
+        shortDesc: "This is a website that uses Angular to display quotes from various sources.",
         backend: "Javascript, jQuery",
-        frontend: "HTML, CSS, Responsive",
-        productPaper: "I practiced Asynch Javascript design and minimalistic front end design.",
-        codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
-        websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
-    }, {
-        logo: " Images/wikipediaViewerLogo.png ",
-        color: "#007CB6",
-        picture: " Images/wikipediaViewer.png ",
-        title: "Wiki Viewer",
-        shortDesc: "This is a web app that uses the Wikipedia API to searching for multiple Wikipedia pages by term or by randomness.",
-        backend: "Javascript, jQuery, Wikipedia API",
-        frontend: "HTML, CSS, Responsive",
-        productPaper: "I taught myself APIs and Ajax with this project.",
-        codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2",
-        websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
+        frontend: "HTML, CSS, Responsive, Angular",
+        productPaper: "I practiced Functional Programming and one page design in Angular and refined the design and User Experience.",
+        codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
+        websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
+    },{
+        logo: " Images/npcLookUpLogo.png ",
+        color: "#EF281A",
+        picture: " Images/npcLookUp.png ",
+        title: "NPC Lookup",
+        shortDesc: "This fullstack website lets users add Non Playable Characters (NPCs) to a database and view them with Angular.",
+        backend: "Javascript, Node.js, Express, MongoDB, Mongoose, Passport",
+        frontend: "HTML, CSS, Responsive, Angular",
+        productPaper: "I refined and expanded on Node.JS and Express and experimented with Angular alongside a database.",
+        codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
+        websiteLink: "https://npclookup.glitch.me/"
     }, {
         logo: " Images/calculatorAppLogo.png ",
         color: "#865DAF",
@@ -175,19 +151,19 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Calculator",
         websiteLink: " https://crumrinecoder.github.io/Calculator/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
-    }/*, {
-        logo: " Images/connectFourAppLogo.png ",
-        color: "#D8AD00",
-        picture: " Images/connectFourApp.png ",
-        title: "Connect Four",
-        shortDesc: "This is a web app that uses plain Javascript to play Connect Four locally between two players.",
-        backend: "Javascript",
-        frontend: "HTML, CSS",
-        productPaper: "This was more practice with Javascript algorithm scripting.",
-        codeLink: "https://github.com/CrumrineCoder/Connect-Four",
-        websiteLink: " https://crumrinecoder.github.io/Connect-Four/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
-    }*/, {
+    }, {
+        logo: " Images/pomodoroAppLogo.png",
+        color: "#E90000",
+        picture: " Images/pomodoroApp.png ",
+        title: "Pomodoro",
+        shortDesc: "This is a web app that acts as a minimalist Pomodoro (time management) clock with options.",
+        backend: "Javascript, jQuery",
+        frontend: "HTML, CSS, Responsive",
+        productPaper: "I practiced Asynch Javascript design and minimalistic front end design.",
+        codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
+        websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
+    },   {
         logo: " Images/simonSaysLogo.png ",
         color: "#2D2D2D",
         picture: " Images/simonSays.png ",
@@ -199,6 +175,30 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Simon-Says-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Simon-Says-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-simon-game"
+    }, {
+        logo: " Images/tabletopAppLogo.png ",
+        color: "#E96969",
+        picture: " Images/tabletopApp.png ",
+        title: "Tabletop United",
+        shortDesc: "This is a fullstack webiste that allows user to search for Tabletop shops in an area.",
+        backend: "Javascript, Node.js, Express.js, MongoDB, Mongoose, Passport, Yelp API, Geolocation API",
+        frontend: "HTML, CSS, Responsive, Angular",
+        productPaper: "I taught myself Angular with this project and learned how to incorporate an API with a database.",
+        codeLink: "https://github.com/CrumrineCoder/TabletopUnited",
+        websiteLink: "https://tabletop.glitch.me/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
+    },  {
+        logo: " Images/wikipediaViewerLogo.png ",
+        color: "#007CB6",
+        picture: " Images/wikipediaViewer.png ",
+        title: "Wiki Viewer",
+        shortDesc: "This is a web app that uses the Wikipedia API to searching for multiple Wikipedia pages by term or by randomness.",
+        backend: "Javascript, jQuery, Wikipedia API",
+        frontend: "HTML, CSS, Responsive",
+        productPaper: "I taught myself APIs and Ajax with this project.",
+        codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2",
+        websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
     }]
     $scope.projectInfo = {};
     $scope.changeProject = function(projectID) {

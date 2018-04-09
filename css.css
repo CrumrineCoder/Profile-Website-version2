@@ -166,12 +166,13 @@
      text-transform: uppercase;
      letter-spacing: 0.2em;
 	   background: #2D304C;
+	    padding: 4px 10px; 
     
-     -webkit-transition: 2s;
-     -moz-transition: 2s;
-     -ms-transition: 2s;
-     -o-transition: 2s;
-     transition: 2s;
+     -webkit-transition: color 2s;
+     -moz-transition: color 2s;
+     -ms-transition: color 2s;
+     -o-transition: color 2s;
+     transition: color 2s;
 }
  .fa-code,.fa-external-link{
      padding: 3px 5px 3px 5px;
@@ -395,6 +396,7 @@ font-family: 'Roboto', sans-serif;
      #projectLinks li {
          width: 90%;
          font-size: 18px;
+		
     }
      #projectInfoText{
          position: relative;
