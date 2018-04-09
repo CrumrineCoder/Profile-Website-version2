@@ -89,7 +89,7 @@ app.controller('portfolioControllers', function($scope) {
         backend: "Javascript",
         frontend: "HTML, CSS",
         productPaper: "This was practice with independent research, Javascript algorithm scripting, UI design for games, and artificial intelligence.",
-        codeLink: "https://crumrinecoder.github.io/connect4-version2/",
+        codeLink: "https://github.com/CrumrineCoder/connect4-version2",
         websiteLink: "https://crumrinecoder.github.io/connect4-version2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
     },{
