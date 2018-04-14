@@ -167,6 +167,8 @@
      letter-spacing: 0.2em;
 	   background: #2D304C;
 	    padding: 4px 10px; 
+	border: 1px solid transparent; 
+	border-radius: 10px; 
     
      -webkit-transition: color 2s;
      -moz-transition: color 2s;
