@@ -69,6 +69,39 @@ app.controller('portfolioControllers', function($scope) {
         }
     };
     $scope.projects = [{
+        logo: " Images/cookiesWebsiteLogo3.png ",
+        color: "#18788C",
+        picture: " Images/cookiesWebsite.png ",
+        title: "Penny's Cookies",
+        shortDesc: "This is a portfolio website for a local NYC cookie bakery and decorating business.",
+        backend: "Javascript, PHP, jQuery",
+        frontend: "HTML, CSS, Responsive, Slider, IntenseImages, MailChimp",
+        productPaper: "I taught myself about developing a marketing strategy, competitive analysis, scheduling, and writing user stories with a client. I also learned about working with a designer. I taught myself PHP to develop the email forms.",
+        codeLink: "https://github.com/CrumrineCoder/PJRevised",
+        websiteLink: "http://pennyjanescookies.com/"
+    },{
+        logo: " Images/cookiesWebsiteLogo2.png ",
+        color: "#18788C",
+        picture: " Images/cookiesWebsite.png ",
+        title: "Penny's Cookies",
+        shortDesc: "This is a portfolio website for a local NYC cookie bakery and decorating business.",
+        backend: "Javascript, PHP, jQuery",
+        frontend: "HTML, CSS, Responsive, Slider, IntenseImages, MailChimp",
+        productPaper: "I taught myself about developing a marketing strategy, competitive analysis, scheduling, and writing user stories with a client. I also learned about working with a designer. I taught myself PHP to develop the email forms.",
+        codeLink: "https://github.com/CrumrineCoder/PJRevised",
+        websiteLink: "http://pennyjanescookies.com/"
+    },{
+        logo: " Images/cookiesWebsiteLogo.png ",
+        color: "#18788C",
+        picture: " Images/cookiesWebsite.png ",
+        title: "Penny's Cookies",
+        shortDesc: "This is a portfolio website for a local NYC cookie bakery and decorating business.",
+        backend: "Javascript, PHP, jQuery",
+        frontend: "HTML, CSS, Responsive, Slider, IntenseImages, MailChimp",
+        productPaper: "I taught myself about developing a marketing strategy, competitive analysis, scheduling, and writing user stories with a client. I also learned about working with a designer. I taught myself PHP to develop the email forms.",
+        codeLink: "https://github.com/CrumrineCoder/PJRevised",
+        websiteLink: "http://pennyjanescookies.com/"
+    },{
         logo: " Images/twitchViewerLogo.png ",
         color: "#6441A4",
         picture: " Images/twitchViewer.png ",
