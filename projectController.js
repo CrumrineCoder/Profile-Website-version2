@@ -75,8 +75,8 @@ app.controller('portfolioControllers', function($scope) {
         title: "Penny's Cookies",
         shortDesc: "This is a portfolio website for a local NYC cookie bakery and decorating business.",
         backend: "Javascript, PHP, jQuery",
-        frontend: "HTML, CSS, Responsive, Slider, IntenseImages, MailChimp",
-        productPaper: "I taught myself about developing a marketing strategy, competitive analysis, scheduling, and writing user stories with a client. I also learned about working with a designer. I taught myself PHP to develop the email forms.",
+        frontend: "HTML, CSS, Responsive, Slider, Intense Images, Mail Chimp",
+        productPaper: "I taught myself about developing a marketing strategy, writing a competitive analysis, scheduling, and writing user stories with a client. I also learned about working with another designer. I taught myself PHP to develop the email forms. I also taught myself a few other minor libraries and services.",
         codeLink: "https://github.com/CrumrineCoder/PJRevised",
         websiteLink: "http://pennyjanescookies.com/"
     },{
