@@ -92,7 +92,14 @@
 		<!-- Select a project section -->
 		
 		 <img id="projectPicture" ng-src="{{projectInfo.picture}}" /> 
+		
 		<div id="projectInfoText">
+				<button ng-click="carouselProject(-1)" class="sliderBtn" id="backBtn"> 
+						<i class="fa fa-chevron-left"></i>
+					</button>
+					<button ng-click="carouselProject(1)" class="sliderBtn" id="nextBtn"> 
+						<i class="fa fa-chevron-right"></i>
+					</button>
 			<div id="content">
 				<h1 id="projectTitle"> {{projectInfo.title}} </h1>
 				<ul>

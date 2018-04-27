@@ -16,6 +16,47 @@
      outline: 0;
 }
 
+#backBtn{
+    left: 10px;
+}
+ 
+ #nextBtn{
+    right: 10px;
+ }
+ #backBtn i{
+     padding-right: 3px;
+ }
+
+ #nextBtn i{
+     padding-left: 3px;
+ }
+ 
+ .sliderBtn i{
+    color: rgb(188, 188, 188); 
+    width: 52px;
+    height: 52px;
+    font-size: 30px;
+}
+
+.sliderBtn i:hover{
+    color: rgb(255, 255, 255); 
+}
+
+ .sliderBtn{
+    position: absolute;
+    top: 40%;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+   /* border: 3px solid black; */
+   border: none; 
+    background: rgba(207, 208, 209, 0);
+ }
+/*
+ .sliderBtn:hover{
+    background: rgb(113, 113, 113);
+ }
+*/
 /* !Nav! */
  nav {
      background-color: #3B3738;

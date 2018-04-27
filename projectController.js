@@ -235,7 +235,17 @@ app.controller('portfolioControllers', function($scope) {
 		document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         $scope.selectedProject = projectID;
     }
+    $scope.carouselProject = function(increment){
+        if($scope.selectedProject == 0 && increment == -1){
+            $scope.changeProject($scope.projects.length-1);
+        } else if($scope.selectedProject == $scope.projects.length-1 && increment == 1){
+            $scope.changeProject(0);
+        } else{
+          $scope.changeProject($scope.selectedProject + increment);
+        }
+    }
     $scope.buttons = [];
+
     for (var i = 0; i < $scope.projects.length; i++) {
         $scope.buttons.push({
             logo: $scope.projects[i].logo,
