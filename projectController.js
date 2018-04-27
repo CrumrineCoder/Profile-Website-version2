@@ -235,7 +235,11 @@ app.controller('portfolioControllers', function($scope) {
 		document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         $scope.selectedProject = projectID;
     }
+    $scope.carouselProject = function(increment){
+        $scope.changeProject($scope.selectedProject + increment);
+    }
     $scope.buttons = [];
+
     for (var i = 0; i < $scope.projects.length; i++) {
         $scope.buttons.push({
             logo: $scope.projects[i].logo,

@@ -94,10 +94,10 @@
 		 <img id="projectPicture" ng-src="{{projectInfo.picture}}" /> 
 		
 		<div id="projectInfoText">
-				<button onclick="console.log('back')" class="sliderBtn" id="backBtn"> 
+				<button ng-click="carouselProject(-1)" class="sliderBtn" id="backBtn"> 
 						<i class="fa fa-chevron-left"></i>
 					</button>
-					<button onclick="console.log('next')" class="sliderBtn" id="nextBtn"> 
+					<button ng-click="carouselProject(1)" class="sliderBtn" id="nextBtn"> 
 						<i class="fa fa-chevron-right"></i>
 					</button>
 			<div id="content">
