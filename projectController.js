@@ -236,7 +236,13 @@ app.controller('portfolioControllers', function($scope) {
         $scope.selectedProject = projectID;
     }
     $scope.carouselProject = function(increment){
-        $scope.changeProject($scope.selectedProject + increment);
+        if($scope.selectedProject == 0 && increment == -1){
+            $scope.changeProject($scope.projects.length-1);
+        } else if($scope.selectedProject == $scope.projects.length-1 && increment == 1){
+            $scope.changeProject(0);
+        } else{
+          $scope.changeProject($scope.selectedProject + increment);
+        }
     }
     $scope.buttons = [];
 
