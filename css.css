@@ -44,7 +44,7 @@
 
  .sliderBtn{
     position: absolute;
-    top: 10%;
+    bottom: 0px;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -170,7 +170,6 @@
      max-width: 700px;
      margin: 0 auto;
      padding-bottom: 30px;
-     padding-top: 50px;
 }
  #projectTitle{
      padding-top: 4%;
@@ -345,6 +344,7 @@ font-family: 'Roboto', sans-serif;
 }
  #index{
      display: none;
+     height: 100%;
 }
 
 
@@ -449,7 +449,8 @@ font-family: 'Roboto', sans-serif;
          display: none;
     }
 	#content{
-		margin: 10px; 
+        margin: 10px; 
+        padding-bottom: 60px;
 	}
      nav ul li img{
          height: 25px;
