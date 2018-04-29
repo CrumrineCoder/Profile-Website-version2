@@ -13,7 +13,7 @@
 
 
   <title>Nicolas Crumrine</title>
-  <meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
@@ -95,12 +95,7 @@
 		 <img id="projectPicture" ng-src="{{projectInfo.picture}}" /> 
 		
 		<div id="projectInfoText">
-				<button ng-click="carouselProject(-1)" class="sliderBtn" id="backBtn"> 
-						<i class="fa fa-chevron-left"></i>
-					</button>
-					<button ng-click="carouselProject(1)" class="sliderBtn" id="nextBtn"> 
-						<i class="fa fa-chevron-right"></i>
-					</button>
+		
 			<div id="content">
 				<h1 id="projectTitle"> {{projectInfo.title}} </h1>
 				<ul>
@@ -120,7 +115,12 @@
 				</ul>
 			</div>
 		</div>
-
+		<button ng-click="carouselProject(-1)" class="sliderBtn" id="backBtn"> 
+			<i class="fa fa-chevron-left"></i>
+		</button>
+		<button ng-click="carouselProject(1)" class="sliderBtn" id="nextBtn"> 
+			<i class="fa fa-chevron-right"></i>
+		</button>
 	</div>
 	<div id="projectSelectBoxes">			
 				<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) || scrollTo('index')" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
