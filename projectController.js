@@ -142,7 +142,7 @@ app.controller('portfolioControllers', function($scope) {
     },{
         logo: " Images/npcLookUpLogo.png ",
         color: "#EF281A",
-        picture: " Images/npcLookUp.png ",
+        picture: " Images/npcLookUpv2.png ",
         title: "NPC Lookup",
         shortDesc: "This fullstack website lets users add Non Playable Characters (NPCs) to a database and view them with Angular.",
         backend: "Javascript, Node.js, Express, MongoDB, Mongoose, Passport",
