@@ -151,6 +151,18 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
         websiteLink: "https://npclookup.glitch.me/"
     }, {
+        logo: " Images/wikipediaViewerLogo.png ",
+        color: "#007CB6",
+        picture: " Images/wikipediaViewer.png ",
+        title: "Wiki Viewer",
+        shortDesc: "This is a web app that uses the Wikipedia API to search for multiple Wikipedia pages by term or by randomness.",
+        backend: "Javascript, jQuery, Wikipedia API",
+        frontend: "HTML, CSS, React.js, Responsive",
+        productPaper: "I taught myself about using APIs with React and more about state management with this project.",
+        codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
+        websiteLink: "http://dark-yarn.surge.sh/",
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
+    },{
         logo: " Images/calculatorAppLogo.png ",
         color: "#865DAF",
         picture: " Images/calculatorApp.png ",
@@ -198,18 +210,6 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/TabletopUnited",
         websiteLink: "https://tabletop.glitch.me/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
-    },  {
-        logo: " Images/wikipediaViewerLogo.png ",
-        color: "#007CB6",
-        picture: " Images/wikipediaViewer.png ",
-        title: "Wiki Viewer",
-        shortDesc: "This is a web app that uses the Wikipedia API to searching for multiple Wikipedia pages by term or by randomness.",
-        backend: "Javascript, jQuery, Wikipedia API",
-        frontend: "HTML, CSS, Responsive",
-        productPaper: "I taught myself APIs and Ajax with this project.",
-        codeLink: "https://github.com/CrumrineCoder/Wikipedia-Viewer-Version2",
-        websiteLink: "https://crumrinecoder.github.io/Wikipedia-Viewer-Version2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
     }]
     $scope.projectInfo = {};
     $scope.changeProject = function(projectID) {
