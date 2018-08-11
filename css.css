@@ -176,6 +176,9 @@
 }
  #projectTitle{
     /* padding-top: 4%; */
+
+}
+#topLeftContent{
     position: absolute;
     left: 10px;
 }

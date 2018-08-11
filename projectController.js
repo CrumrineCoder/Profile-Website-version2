@@ -5,6 +5,16 @@ function on() {
 function off() {
     document.getElementById("aboutMeOverlay").style.display = "none";
 }
+
+function moreinfo() {
+    document.getElementById("projectAdditionalInformation").style.display = "block";
+}
+
+
+function lessinfo() {
+    document.getElementById("projectAdditionalInformation").style.display = "none";
+}
+
 /*
 function creditsOn() {
     document.getElementById("logoCreditsOverlay").style.display = "block";
