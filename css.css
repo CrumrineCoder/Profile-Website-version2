@@ -185,7 +185,17 @@
 #projectAdditionalInformation{
     display: none;
 }
-
+#toggleButton{
+    background: rgb(42, 42, 42); 
+    border: 1px solid black; 
+    color: rgb(255, 255, 255);
+    padding: 15px; 
+    font-size: 16px; 
+    border-radius: 10px; 
+}
+#toggleButton:hover{
+    border-color: white; 
+}
  #projects ul{
      padding: 0px;
 }

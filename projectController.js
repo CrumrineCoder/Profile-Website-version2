@@ -243,6 +243,7 @@ app.controller('portfolioControllers', function ($scope) {
         $scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
+        document.getElementById("toggleButton").style.background = $scope.projects[projectID].color;
         document.getElementById("code-link").style.background = $scope.projects[projectID].color;
         document.getElementById("website-link").style.background = $scope.projects[projectID].color;
         document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
