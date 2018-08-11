@@ -99,16 +99,18 @@
 		
 			<div id="content">
 				<h1 id="projectTitle"> {{projectInfo.title}} </h1>
-				<ul>
-					<div id="projectFrontEnd">
-						<li class="frontend"> {{projectInfo.frontTechnologies}} </li>
-					</div>
-					<div id="projectBackEnd">
-						<li class="backend"> {{projectInfo.backTechnologies}} </li>
-					</div>
-				</ul>
-				<p> {{projectInfo.projectDescription}} </p>
-				<p> {{projectInfo.productPaper}} </p>
+				<div id="projectAdditionalInformation">
+					<ul>
+						<div id="projectFrontEnd">
+							<li class="frontend"> {{projectInfo.frontTechnologies}} </li>
+						</div>
+						<div id="projectBackEnd">
+							<li class="backend"> {{projectInfo.backTechnologies}} </li>
+						</div>
+					</ul>
+					<p> {{projectInfo.projectDescription}} </p>
+					<p> {{projectInfo.productPaper}} </p>
+				</div>
 				<ul id="projectLinks">
 				  <a href="{{projectInfo.codeLink}}" target="_blank"><li id="code-link"><i class="fa fa-code" rgb="(0,0,0)"> See Code </i></li></a>
 				  <a href="{{projectInfo.websiteLink}}" class="externalLinks" target="_blank"><li id="website-link"> <i class="fa fa-external-link"> Visit Website </i></li> </a>

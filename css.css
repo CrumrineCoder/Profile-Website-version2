@@ -167,13 +167,22 @@
      height: 100%;
 }
  #content{
-     max-width: 700px;
-     margin: 0 auto;
-     padding-bottom: 30px;
+    position: relative;
+    /* max-width: 700px; */
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 90%;
 }
  #projectTitle{
-     padding-top: 4%;
+    /* padding-top: 4%; */
+    position: absolute;
+    left: 10px;
 }
+#projectAdditionalInformation{
+    display: none;
+}
+
  #projects ul{
      padding: 0px;
 }
@@ -196,8 +205,13 @@
      background: #9952B7;
 }
  #projectLinks {
-     text-align: center;
-     padding-left: 0px;
+    padding: 0px;
+    position: absolute;
+    left: calc(50% - 418px);
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
  #projectLinks li {
      display: inline-block;
