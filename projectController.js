@@ -6,14 +6,17 @@ function off() {
     document.getElementById("aboutMeOverlay").style.display = "none";
 }
 
-function moreinfo() {
-    document.getElementById("projectAdditionalInformation").style.display = "block";
-}
-
-
-function lessinfo() {
+function toggleInfo() {
+    if (document.getElementById("toggleButton").value == "Show Less") {
+        document.getElementById("toggleButton").value = "Show More";
     document.getElementById("projectAdditionalInformation").style.display = "none";
+
+    } else if (document.getElementById("toggleButton").value == "Show More") {
+        document.getElementById("toggleButton").value = "Show Less";
+        document.getElementById("projectAdditionalInformation").style.display = "block";
+    }
 }
+
 
 /*
 function creditsOn() {
@@ -24,9 +27,9 @@ function creditsOff() {
     document.getElementById("logoCreditsOverlay").style.display = "none";
 }*/
 var app = angular.module('portfolio', []);
-app.controller('portfolioControllers', function($scope) {
-	// Slow scroll functionality.
-    $scope.scrollTo = function(eID) {
+app.controller('portfolioControllers', function ($scope) {
+    // Slow scroll functionality.
+    $scope.scrollTo = function (eID) {
         // This scrolling function 
         // is from http://www.itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
         var startY = currentYPosition();
@@ -89,7 +92,7 @@ app.controller('portfolioControllers', function($scope) {
         productPaper: "I taught myself about developing a marketing strategy, writing a competitive analysis, scheduling, and writing user stories with a client. I also learned about working with another designer. I taught myself PHP to develop the email forms. I also taught myself a few other minor libraries and services.",
         codeLink: "https://github.com/CrumrineCoder/PJRevised",
         websiteLink: "http://pennyjanescookies.com/"
-    },{
+    }, {
         logo: " Images/twitchViewerLogo.png ",
         color: "#6441A4",
         picture: " Images/twitchViewer.png ",
@@ -101,7 +104,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
         websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
-    },{
+    }, {
         logo: " Images/connectFourAppLogo.png ",
         color: "#FF7F11",
         picture: " Images/connectFourApp.png ",
@@ -113,7 +116,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/connect4-version2",
         websiteLink: "https://crumrinecoder.github.io/connect4-version2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
-    },{
+    }, {
         logo: " Images/votingAppLogo.png ",
         color: "#A61C88",
         picture: " Images/votingApp.png ",
@@ -125,19 +128,19 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/VotingApp",
         websiteLink: "https://joinordie.glitch.me/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
-    },{
+    }, {
         logo: " Images/weatherApp%20logo.png ",
         color: "#048027",
         picture: " Images/weatherApp.png ",
         title: "Weather",
         shortDesc: "This is a web app that shows the weather based on location.",
         backend: "Javascript, jQuery, Google Geolocation API, Forecast.io API,",
-       frontend: "HTML, CSS, Responsive, Angular, Sass",
+        frontend: "HTML, CSS, Responsive, Angular, Sass",
         productPaper: "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
-    },  {
+    }, {
         logo: " Images/quotesAppLogo.png ",
         color: "#008080",
         picture: " Images/quotesApp.png ",
@@ -149,7 +152,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
-    },{
+    }, {
         logo: " Images/npcLookUpLogo.png ",
         color: "#EF281A",
         picture: " Images/npcLookUpv2.png ",
@@ -172,7 +175,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
         websiteLink: "http://dark-yarn.surge.sh/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
-    },{
+    }, {
         logo: " Images/calculatorAppLogo.png ",
         color: "#865DAF",
         picture: " Images/calculatorApp.png ",
@@ -196,7 +199,7 @@ app.controller('portfolioControllers', function($scope) {
         codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
-    },   {
+    }, {
         logo: " Images/simonSaysLogo.png ",
         color: "#2D2D2D",
         picture: " Images/simonSays.png ",
@@ -222,7 +225,7 @@ app.controller('portfolioControllers', function($scope) {
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
     }]
     $scope.projectInfo = {};
-    $scope.changeProject = function(projectID) {
+    $scope.changeProject = function (projectID) {
         if ($scope.selectedProject != null) {
             document.getElementById($scope.selectedProject).style.opacity = "1";
             document.getElementById($scope.selectedProject).disabled = false;
@@ -240,18 +243,18 @@ app.controller('portfolioControllers', function($scope) {
         $scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
-		document.getElementById("code-link").style.background = $scope.projects[projectID].color;
-		document.getElementById("website-link").style.background = $scope.projects[projectID].color;
-		document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
+        document.getElementById("code-link").style.background = $scope.projects[projectID].color;
+        document.getElementById("website-link").style.background = $scope.projects[projectID].color;
+        document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         $scope.selectedProject = projectID;
     }
-    $scope.carouselProject = function(increment){
-        if($scope.selectedProject == 0 && increment == -1){
-            $scope.changeProject($scope.projects.length-1);
-        } else if($scope.selectedProject == $scope.projects.length-1 && increment == 1){
+    $scope.carouselProject = function (increment) {
+        if ($scope.selectedProject == 0 && increment == -1) {
+            $scope.changeProject($scope.projects.length - 1);
+        } else if ($scope.selectedProject == $scope.projects.length - 1 && increment == 1) {
             $scope.changeProject(0);
-        } else{
-          $scope.changeProject($scope.selectedProject + increment);
+        } else {
+            $scope.changeProject($scope.selectedProject + increment);
         }
     }
     $scope.buttons = [];
@@ -261,10 +264,10 @@ app.controller('portfolioControllers', function($scope) {
             logo: $scope.projects[i].logo,
             id: i,
             color: $scope.projects[i].color,
-			title: $scope.projects[i].title
+            title: $scope.projects[i].title
         });
     }
-    $scope.change = function(x) {
+    $scope.change = function (x) {
         document.getElementById("index").style.display = "block";
         document.getElementById("splash").style.display = "none";
         //	document.getElementById("nav").style.position = "fixed";
