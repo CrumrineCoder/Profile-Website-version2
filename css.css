@@ -1,183 +1,175 @@
 /* Entire Document */
-
- html, body {
-     height: 100%;
+html, body {
+    height: 100%;
 }
- body {
-     margin: 0;
-     padding: 0;
-     font-size: 14px;
-    	font-family: 'Roboto', sans-serif;
-     z-index: 0;
-	 background: black;
-	 
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 0;
+    background: black;
 }
- button:focus {
-     outline: 0;
+button:focus {
+    outline: 0;
 }
-
 #backBtn{
     left: 10px;
 }
- 
- #nextBtn{
+#nextBtn{
     right: 10px;
- }
- #backBtn i{
-     padding-right: 3px;
- }
-
- #nextBtn i{
-     padding-left: 3px;
- }
- 
- .sliderBtn i{
-    color: rgb(188, 188, 188); 
+}
+#backBtn i{
+    padding-right: 3px;
+}
+#nextBtn i{
+    padding-left: 3px;
+}
+.sliderBtn i{
+    color: rgb(188, 188, 188);
     width: 52px;
     height: 52px;
     font-size: 30px;
 }
-
 .sliderBtn i:hover{
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
-
- .sliderBtn{
+.sliderBtn{
     position: absolute;
     bottom: 0px;
     width: 52px;
     height: 52px;
     border-radius: 50%;
-   /* border: 3px solid black; */
-   border: none; 
+   /* border: 3px solid black;
+    */
+    border: none;
     background: rgba(207, 208, 209, 0);
- }
-/*
- .sliderBtn:hover{
+}
+/* .sliderBtn:hover{
     background: rgb(113, 113, 113);
- }
+}
 */
 /* !Nav! */
- nav {
-     background-color: #3B3738;
-     margin: 0;
-     overflow: hidden;
-     color: white;
-     border-bottom-color: #C9C9C9;
-     border-bottom-style: solid;
-     height: 70px;
-     width: 100%;
-     top: 0;
-     z-index: 99;
-     position: fixed;
+nav {
+    background-color: #3B3738;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    border-bottom-color: #C9C9C9;
+    border-bottom-style: solid;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    position: fixed;
 }
 /* Leftside of Nav */
- #nic {
-     font-size: 16px;
-     font-weight: bold;
+#nic {
+    font-size: 16px;
+    font-weight: bold;
 }
- #nicJob {
-     font-style: italic;
-     margin-top: -15px;
+#nicJob {
+    font-style: italic;
+    margin-top: -15px;
 }
-
 /* Nav Positioning */
- nav ul {
-     margin: 0;
-     padding: 0;
-     display: flex;
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
- nav ul li {
-     display: inline-block;
-     list-style-type: none;
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
 }
- nav ul li a {
-     color: white;
-     background-color: #521A19;
-     display: block;
-     height: 100%;
-     padding: 5px 20px;
-     text-decoration: none;
-     padding-top: 12px;
+nav ul li a {
+    color: white;
+    background-color: #521A19;
+    display: block;
+    height: 100%;
+    padding: 5px 20px;
+    text-decoration: none;
+    padding-top: 12px;
 }
- nav ul li:first-child {
-     margin-right: auto;
+nav ul li:first-child {
+    margin-right: auto;
 }
 #nameNavContainer {
-     padding-left: 15px;
+    padding-left: 15px;
 }
 /* Right links */
- nav ul li a:hover {
-     background-color: #B20D0C;
+nav ul li a:hover {
+    background-color: #B20D0C;
 }
 /* About me Section */
- #aboutMeButton, #logoCredits{
-     color: #CDCCFF;
-     cursor:pointer;
-     background:none!important;
-     border:none;
-     padding:0!important;
-     font-size: 10px;
-	 margin-left: 10px;
+#aboutMeButton, #logoCredits{
+    color: #CDCCFF;
+    cursor:pointer;
+    background:none!important;
+    border:none;
+    padding:0!important;
+    font-size: 10px;
+    margin-left: 10px;
 }
- #aboutMeButton:hover, #logoCredits:hover{
-     text-decoration:underline;
+#aboutMeButton:hover, #logoCredits:hover{
+    text-decoration:underline;
 }
 #logoCredits{
-	position: absolute;
-	left: 0xp;
+    position: absolute;
+    left: 0xp;
 }
- #aboutMeOverlay, #logoCreditsOverlay {
-     position: fixed;
-     display: none;
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     background-color: rgba(0,0,0,0.9);
-     z-index: 2;
-     cursor: pointer;
+#aboutMeOverlay, #logoCreditsOverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    cursor: pointer;
 }
- #aboutMeText, #credit{
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     font-size: 20px;
-     color: white;
-     transform: translate(-50%,-50%);
-     -ms-transform: translate(-50%,-50%);
+#aboutMeText, #credit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 /* !Projects! */
- #projects{
-     margin: 0 auto;
-     width: 100%;
-     position: relative;
-     margin-top: 57px;
-     height: 90%;
-}
- #projectInfoText{
-     position: absolute;
-     bottom: 0px;
-     color: white;
-     background: rgb(0, 0, 0);
-     background: rgba(0, 0, 0, 0.7);
-     width: 100%;
-     height: 100%;
-}
- #content{
+#projects{
+    margin: 0 auto;
+    width: 100%;
     position: relative;
-    /* max-width: 700px; */
+    margin-top: 57px;
+    height: 90%;
+}
+#projectInfoText{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+#content{
+    position: relative;
+   /* max-width: 700px;
+    */
     margin: 0 auto;
     padding-bottom: 30px;
     width: 100%;
     height: 90%;
     margin-top: 50px;
 }
- #projectTitle{
-    /* padding-top: 4%; */
-
+#projectTitle{
+   /* padding-top: 4%;
+    */
 }
 #topLeftContent{
     position: absolute;
@@ -185,243 +177,233 @@
 }
 #projectAdditionalInformation{
     display: none;
+    max-width: 50%;
+    background: rgba(0, 0, 0, 0.37);
+    padding: 5px;
+    border-radius: 15px;
 }
 #toggleButton{
-    background: rgb(42, 42, 42); 
-    border: 1px solid black; 
+    background: rgb(42, 42, 42);
+    border: 1px solid black;
     color: rgb(255, 255, 255);
-    padding: 15px; 
-    font-size: 16px; 
-    border-radius: 10px; 
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
 }
 #toggleButton:hover{
-    border-color: white; 
+    border-color: white;
 }
- #projects ul{
-     padding: 0px;
+#projects ul{
+    padding: 0px;
 }
- #projectBackEnd, #projectFrontEnd{
-     width: 95%;
+#projectBackEnd, #projectFrontEnd{
+    width: 95%;
 }
- #projectFrontEnd li, #projectBackEnd li {
-     border-radius: 5px; 
-     display: inline-block;
-     text-transform: uppercase;
-     letter-spacing: 0.2em;
-     padding: 3px 5px 3px 5px;
-     margin: 0px 3px 4px 3px;
+#projectFrontEnd li, #projectBackEnd li {
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 3px 5px 3px 5px;
+    margin: 0px 3px 4px 3px;
 }
- #projectFrontEnd li {
-
-     background: #C54E30; 
+#projectFrontEnd li {
+    background: #C54E30;
 }
- #projectBackEnd li {
-     background: #9952B7;
+#projectBackEnd li {
+    background: #9952B7;
 }
- #projectLinks {
+#projectLinks {
     padding: 0px;
     position: absolute;
-   /* left: calc(50% - 418px); */
+   /* left: calc(50% - 418px);
+    */
     bottom: 40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    text-align: center; 
+    text-align: center;
 }
-
- #projectLinks li {
-     text-align: center; 
-     display: inline-block;
-     list-style-type: none;
-     margin: 5px 10px 0px 0px;
-     font-size: 17px;
-     text-transform: uppercase;
-     letter-spacing: 0.2em;
-	   background: #2D304C;
-	    padding: 4px 10px; 
-	border: 1px solid transparent; 
-	border-radius: 10px; 
-    
-     -webkit-transition: color 2s;
-     -moz-transition: color 2s;
-     -ms-transition: color 2s;
-     -o-transition: color 2s;
-     transition: color 2s;
+#projectLinks li {
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px 10px 0px 0px;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: #2D304C;
+    padding: 4px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    -webkit-transition: color 2s;
+    -moz-transition: color 2s;
+    -ms-transition: color 2s;
+    -o-transition: color 2s;
+    transition: color 2s;
 }
- .fa-code,.fa-external-link{
-     padding: 3px 5px 3px 5px;
-     color: white;
-     -webkit-transition: color .5s;
-     -moz-transition: color .5s;
-     -ms-transition: color .5s;
-     -o-transition: color .5s;
-     transition: color .5s;
+.fa-code,.fa-external-link{
+    padding: 3px 5px 3px 5px;
+    color: white;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
 }
- #projectLinks li:hover {
-     opacity: 0.7;
+#projectLinks li:hover {
+    opacity: 0.7;
 }
-
 #video-jumbotron{
     position: relative;
     overflow: hidden;
     width: auto;
     height: 100%;
-    margin-top: -60px; 
+    margin-top: -60px;
 }
-
- #projectPicture {
-     display: block;
-     opacity: 0.6;
-
-	  -webkit-transition: .5s;
-     -moz-transition: .5s;
-     -ms-transition: .5s;
-     -o-transition: .5s;
-     transition: .5s;
-    width: 100%; 
-     position: absolute; 
+#projectPicture {
+    display: block;
+    opacity: 0.6;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    width: 100%;
+    position: absolute;
 }
 #projectVideo{
     display: block;
-    /*position: fixed;
+   /*position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;*/
+    min-width: 100%;
+    min-height: 100%;
+    */
 }
 /* Project Buttons */
- #projectSelectBoxes {
-     width: 100%;
-     overflow-x:scroll;
-     white-space: nowrap;
-     margin: 0 auto;
-	 font-size: 0px; 
+#projectSelectBoxes {
+    width: 100%;
+    overflow-x:scroll;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 0px;
 }
- .projectSelectImage {
-     width: 100%;
-     padding: 0;
-     margin: 0;
+.projectSelectImage {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
- button{
-     cursor: pointer;
+button{
+    cursor: pointer;
 }
-
 .logoText{
-font-family: 'Roboto', sans-serif;
-	font-weight: bold; 
-	  font-size: 20px;
-	position: absolute; 
-   bottom: 0px; 
-    color: white;  
-	width: 100%;
-  
-   margin: 0px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    margin: 0px;
 }
-
- .projectSelectButton {
-     background: white;
-     max-width: 150px;
-     max-height: 150px;
-     min-width: 100px;
-     min-height: 100px;
-     padding: 0;
-     border: none;
-	 position: relative; 
-	 font-size: 0px; 
+.projectSelectButton {
+    background: white;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0;
+    border: none;
+    position: relative;
+    font-size: 0px;
 }
 /* !!CONTACT!! */
- #contactInfo{
-     text-align: center;
-     clear: both;
-     padding-top: 50px;
-     font-size: 20px;
-     height: 100%;
-     background-color: #3B3738;
-     color: white;
+#contactInfo{
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    font-size: 20px;
+    height: 100%;
+    background-color: #3B3738;
+    color: white;
 }
 #gmailTagLine{
-	font-size: 25px;
+    font-size: 25px;
 }
- #nameContainer{
-     float: left;
+#nameContainer{
+    float: left;
 }
- #addressContainer{
-     float: right;
+#addressContainer{
+    float: right;
 }
- #Message{
-     clear: both;
+#Message{
+    clear: both;
 }
- .antispam {
-     display:none;
+.antispam {
+    display:none;
 }
- #credit{
-     font-size: 10px;
+#credit{
+    font-size: 10px;
 }
 /* Splash page */
- #splash button{
-     width: 20%;
-     height: 100%;
-     margin: 0px;
-     border: none;
-     padding: 0px;
+#splash button{
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    border: none;
+    padding: 0px;
 }
 #removeMargin{
-	font-size: 0px; 
+    font-size: 0px;
 }
- #splash button img{
-     width: 100%;
+#splash button img{
+    width: 100%;
 }
-
 .splashText{
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold; 
-	 font-size: 27px; 
-	position: absolute; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    position: absolute;
     top: 60%;
-    color: white;  
-	width: 100%;
-
+    color: white;
+    width: 100%;
 }
- #splash{
-     text-align: center;
-     margin: 0;
-     padding: 0;
-     width: 100%;
-     height: 100%;
-	 position: relative; 
+#splash{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
- #index{
-     display: none;
-     height: 100%;
+#index{
+    display: none;
+    height: 100%;
 }
-
-
 .projectSelectButton img, .projectSelectImage {
-		opacity: 1;
-	-webkit-transition: opacity .3s ease-in-out;
-	transition: opacity .3s ease-in-out;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
 }
 .projectSelectButton:hover img, .projectSelectImage:hover {
-	opacity: .5;
+    opacity: .5;
 }
-
- @media screen and (max-width: 950px) {
-    /* SPLASH PAGE */
-  
-     #aboutMeText, #credit{
-         font-size: 18px;
-    }
-    /* Projects */
-     #projectTitle{
-         padding-top: 1.5%;
-    }
-     #projectLinks{
-         margin: 0px;
-    }
-
-     #projectFrontEnd li, #projectBackEnd li {
-         font-size: 12px;
-    }
+@media screen and (max-width: 950px) {
+   /* SPLASH PAGE */
+    #aboutMeText, #credit{
+        font-size: 18px;
+   }
+   /* Projects */
+    #projectTitle{
+        padding-top: 1.5%;
+   }
+    #projectLinks{
+        margin: 0px;
+   }
+    #projectFrontEnd li, #projectBackEnd li {
+        font-size: 12px;
+   }
     #projectPicture{
         display: block;
         opacity: 0.6;
@@ -430,24 +412,25 @@ font-family: 'Roboto', sans-serif;
         -ms-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
-        /* width: 100%; */
-        width: auto; 
+       /* width: 100%;
+        */
+        width: auto;
         position: absolute;
         height: 100%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         left: 50%;
-    }
+   }
     #video-jumbotron{
         height: 100%;
-        width: auto; 
-    }
+        width: auto;
+   }
     #projectLinks li {
         width: 50%;
         font-size: 18px;
    }
 }
- @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     #splash button{
         height: 250px;
         width: 100%;
@@ -459,111 +442,146 @@ font-family: 'Roboto', sans-serif;
     #splash button img{
         width: 150px;
    }
-	 #nameNavContainer{
-		 padding: 0px; 
-	 }
+    #nameNavContainer{
+        padding: 0px;
+   }
     #aboutMeText, #credit{
-         font-size: 16px;
-    }
-     #splash{
-         margin-top: 100px;
-    }
-    /* NAV */
-     nav{
-         height: 97px;
-    }
-     nav ul{
-         display: block;
-         text-align: center;
-		 font-size: 0px; 
-    }
-	#nicJob{
-		font-size: 14px; 
-	}
-     nav ul li {
-         width: 33.3%;
-         text-align: center;
-    }
-     nav ul li:first-child {
-         width: 100%;
-         text-align: center;
-         display: block;
-    }
-     nav ul li a {
-         display: block;
-         font-size: 8px;
-    }
-     .projectSelectButton {
-         max-width: 100px;
-         max-height: 100px;
-         min-width: 50px;
-         min-height: 50px;
-    }
-	.logoText{
-		font-size: 13px; 
-	}
-     #projectTitle{
-         padding-top: 40px;
-    }
+        font-size: 16px;
+   }
+    #splash{
+        margin-top: 100px;
+   }
+   /* NAV */
+    nav{
+        height: 97px;
+   }
+    nav ul{
+        display: block;
+        text-align: center;
+        font-size: 0px;
+   }
+    #nicJob{
+        font-size: 14px;
+   }
+    nav ul li {
+        width: 33.3%;
+        text-align: center;
+   }
+    nav ul li:first-child {
+        width: 100%;
+        text-align: center;
+        display: block;
+   }
+    nav ul li a {
+        display: block;
+        font-size: 8px;
+        padding: 0px;
+        padding-top: 4px;
+   }
+    nav ul li img{
+        height: 25px;
+        width: 25px;
+   }
+    .projectSelectButton {
+        max-width: 100px;
+        max-height: 100px;
+        min-width: 50px;
+        min-height: 50px;
+   }
+    .logoText{
+        font-size: 13px;
+   }
+    #projectTitle{
+        padding-top: 40px;
+   }
     #projectLinks li {
         width: 90%;
         font-size: 18px;
    }
-     #projectInfoText{
-         position: relative;
-    }
-     #projectPicture{
-         display: none;
-    }
-	#content{
-        margin: 10px; 
+   /* #projectInfoText{
+        position: relative;
+   }
+    #projectPicture{
+        display: none;
+   }
+    #content{
+        margin: 10px;
         padding-bottom: 60px;
-	}
-     nav ul li img{
-         height: 25px;
-         width: 25px;
-    }
-     nav ul li a{
-         padding: 0px;
-         padding-top: 4px;
-    }
+   }
+    */
 }
- @media screen and (max-width: 500px) {
-     #aboutMeText, #credit{
-         font-size: 12px;
-    }
-     #nic{
-         margin: 3px 0px;
-         font-size: 14px 
-    }
-     #nicJob {
-         margin: 5px 0px 10px 5px;
-         font-size: 12px;
-    }
-     #aboutMeButton, #logoCredits{
-         display: block;
-         font-size: 15px;
-         margin: 0 auto;
-    }
-     #contactInfo{
-         font-size: 20px;
-    }
-     .projectSelectButton{
-         width: 100%;
-         max-width: 100%;
-         height: 50px;
-         white-space: normal;
-    }
-	.logoText{
-		font-size: 17px; 
-		right: 83px;
-		top: 13px;
-	}
-     #projectSelectBoxes{
-         overflow-x: visible;
-         white-space: normal;
-    }
-     .projectSelectImage{
-         width: 50px;
-    }
+@media screen and (max-width: 500px) {
+    #aboutMeText, #credit{
+        font-size: 12px;
+   }
+    #nic{
+        margin: 3px 0px;
+        font-size: 14px 
+   }
+    #nicJob {
+        margin: 5px 0px 10px 5px;
+        font-size: 12px;
+   }
+    #aboutMeButton, #logoCredits{
+        display: block;
+        font-size: 15px;
+        margin: 0 auto;
+   }
+    #contactInfo{
+        font-size: 20px;
+   }
+    .projectSelectButton{
+        width: 100%;
+        max-width: 100%;
+        height: 50px;
+        white-space: normal;
+   }
+    .logoText{
+        font-size: 17px;
+        right: 83px;
+        top: 13px;
+   }
+    #projectSelectBoxes{
+        overflow-x: visible;
+        white-space: normal;
+   }
+    .projectSelectImage{
+        width: 50px;
+   }
+    #projectAdditionalInformation{
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+   }
+    #projects{
+        height: auto;
+        margin-top: 90px;
+   }
+    #video-jumbotron{
+        display: none;
+   }
+    #content{
+        width: 90%;
+   }
+    #projectInfoText{
+        position: relative;
+   }
+    #toggleButton{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 15px;
+   }
+    #topLeftContent{
+        position: relative;
+   }
+    #projectLinks{
+        position: relative;
+        transform: none;
+        -webkit-transform: none;
+        bottom: 0;
+        left: 0;
+   }
+    .sliderBtn{
+        top: 0;
+   }
 }
