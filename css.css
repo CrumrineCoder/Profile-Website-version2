@@ -155,7 +155,7 @@
      width: 100%;
      position: relative;
      margin-top: 57px;
-     height: auto;
+     height: 90%;
 }
  #projectInfoText{
      position: absolute;
@@ -173,6 +173,7 @@
     padding-bottom: 30px;
     width: 100%;
     height: 90%;
+    margin-top: 50px;
 }
  #projectTitle{
     /* padding-top: 4%; */
@@ -220,14 +221,16 @@
  #projectLinks {
     padding: 0px;
     position: absolute;
-    left: calc(50% - 418px);
-    bottom: 0px;
+   /* left: calc(50% - 418px); */
+    bottom: 40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    text-align: center; 
 }
 
  #projectLinks li {
+     text-align: center; 
      display: inline-block;
      list-style-type: none;
      margin: 5px 10px 0px 0px;
@@ -258,16 +261,25 @@
      opacity: 0.7;
 }
 
+#video-jumbotron{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    margin-top: -60px; 
+}
+
  #projectPicture {
      display: block;
      opacity: 0.6;
-     width: 100%;
-     height: auto;
+
 	  -webkit-transition: .5s;
      -moz-transition: .5s;
      -ms-transition: .5s;
      -o-transition: .5s;
      transition: .5s;
+    width: 100%; 
+     position: absolute; 
 }
 #projectVideo{
     display: block;
@@ -393,19 +405,9 @@ font-family: 'Roboto', sans-serif;
 	opacity: .5;
 }
 
- @media screen and (max-width: 850px) {
+ @media screen and (max-width: 950px) {
     /* SPLASH PAGE */
-     #splash button{
-         height: 250px;
-         width: 100%;
-    }
-     #splash{
-         margin-top: 70px;
-         width: 100%;
-    }
-     #splash button img{
-         width: 150px;
-    }
+  
      #aboutMeText, #credit{
          font-size: 18px;
     }
@@ -420,13 +422,43 @@ font-family: 'Roboto', sans-serif;
      #projectFrontEnd li, #projectBackEnd li {
          font-size: 12px;
     }
-     h1 {
-         margin: .37em 0px;
-         font-size: 1.4em;
+    #projectPicture{
+        display: block;
+        opacity: 0.6;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        /* width: 100%; */
+        width: auto; 
+        position: absolute;
+        height: 100%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        left: 50%;
     }
-	
+    #video-jumbotron{
+        height: 100%;
+        width: auto; 
+    }
+    #projectLinks li {
+        width: 50%;
+        font-size: 18px;
+   }
 }
  @media screen and (max-width: 700px) {
+    #splash button{
+        height: 250px;
+        width: 100%;
+   }
+    #splash{
+        margin-top: 70px;
+        width: 100%;
+   }
+    #splash button img{
+        width: 150px;
+   }
 	 #nameNavContainer{
 		 padding: 0px; 
 	 }
@@ -473,11 +505,10 @@ font-family: 'Roboto', sans-serif;
      #projectTitle{
          padding-top: 40px;
     }
-     #projectLinks li {
-         width: 90%;
-         font-size: 18px;
-		
-    }
+    #projectLinks li {
+        width: 90%;
+        font-size: 18px;
+   }
      #projectInfoText{
          position: relative;
     }
