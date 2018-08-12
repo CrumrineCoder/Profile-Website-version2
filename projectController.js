@@ -27,6 +27,11 @@ function creditsOff() {
     document.getElementById("logoCreditsOverlay").style.display = "none";
 }*/
 var app = angular.module('portfolio', []);
+app.filter("trustUrl", ['$sce', function ($sce) {
+    return function (recordingUrl) {
+        return $sce.trustAsResourceUrl(recordingUrl);
+    };
+}]);
 app.controller('portfolioControllers', function ($scope) {
     // Slow scroll functionality.
     $scope.scrollTo = function (eID) {
@@ -91,7 +96,8 @@ app.controller('portfolioControllers', function ($scope) {
         frontend: "HTML, CSS, Responsive, Swiper, Intense Images, Mail Chimp",
         productPaper: "I taught myself about developing a marketing strategy, writing a competitive analysis, scheduling, and writing user stories with a client. I also learned about working with another designer. I taught myself PHP to develop the email forms. I also taught myself a few other minor libraries and services.",
         codeLink: "https://github.com/CrumrineCoder/PJRevised",
-        websiteLink: "http://pennyjanescookies.com/"
+        websiteLink: "http://pennyjanescookies.com/",
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\pjcEdited.mp4"
     }, {
         logo: " Images/twitchViewerLogo.png ",
         color: "#6441A4",
@@ -103,7 +109,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I taught myself one-page Angular design with this project as well as using multiple APIs with Angular.",
         codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
         websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather",
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
     }, {
         logo: " Images/connectFourAppLogo.png ",
         color: "#FF7F11",
@@ -115,7 +122,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "This was practice with independent research, Javascript algorithm scripting, UI design for games, and artificial intelligence.",
         codeLink: "https://github.com/CrumrineCoder/connect4-version2",
         websiteLink: "https://crumrinecoder.github.io/connect4-version2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/votingAppLogo.png ",
         color: "#A61C88",
@@ -127,7 +135,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to make my first fullstack website.",
         codeLink: "https://github.com/CrumrineCoder/VotingApp",
         websiteLink: "https://joinordie.glitch.me/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/weatherApp%20logo.png ",
         color: "#048027",
@@ -139,7 +148,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/quotesAppLogo.png ",
         color: "#008080",
@@ -151,7 +161,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I practiced Functional Programming and one page design in Angular and refined the design and User Experience.",
         codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/npcLookUpLogo.png ",
         color: "#EF281A",
@@ -162,7 +173,8 @@ app.controller('portfolioControllers', function ($scope) {
         frontend: "HTML, CSS, Responsive, Angular",
         productPaper: "I refined and expanded on Node.JS and Express and experimented with Angular alongside a database.",
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
-        websiteLink: "https://npclookup.glitch.me/"
+        websiteLink: "https://npclookup.glitch.me/",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/wikipediaViewerLogo.png ",
         color: "#007CB6",
@@ -174,7 +186,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I taught myself about using APIs with React and more about state management with this project.",
         codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
         websiteLink: "http://dark-yarn.surge.sh/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/calculatorAppLogo.png ",
         color: "#865DAF",
@@ -186,7 +199,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I practiced Javascript algorithm scripting with this project.",
         codeLink: "https://github.com/CrumrineCoder/Calculator",
         websiteLink: " https://crumrinecoder.github.io/Calculator/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/pomodoroAppLogo.png",
         color: "#E90000",
@@ -198,7 +212,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I practiced Asynch Javascript design and minimalistic front end design.",
         codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/simonSaysLogo.png ",
         color: "#2D2D2D",
@@ -210,7 +225,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "This was both more practice with Javascript algorithm scripting, asynch Javascript design, and more advanced CSS styling.",
         codeLink: "https://github.com/CrumrineCoder/Simon-Says-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Simon-Says-Version-2/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-simon-game"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-simon-game",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }, {
         logo: " Images/tabletopAppLogo.png ",
         color: "#E96969",
@@ -222,7 +238,8 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I taught myself Angular with this project and learned how to incorporate an API with a database.",
         codeLink: "https://github.com/CrumrineCoder/TabletopUnited",
         websiteLink: "https://tabletop.glitch.me/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app"
+        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app",
+        video: "C:\Users\NicLaptop\Videos\fin\pjcEdited.mp4"
     }]
     $scope.projectInfo = {};
     $scope.changeProject = function (projectID) {
@@ -241,6 +258,7 @@ app.controller('portfolioControllers', function ($scope) {
         $scope.projectInfo.productPaper = $scope.projects[projectID].productPaper;
         $scope.projectInfo.codeLink = $scope.projects[projectID].codeLink;
         $scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
+        $scope.projectInfo.video = $scope.projects[projectID].video;
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
         document.getElementById("toggleButton").style.background = $scope.projects[projectID].color;

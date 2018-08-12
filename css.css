@@ -177,7 +177,7 @@ nav ul li a:hover {
 }
 #projectAdditionalInformation{
     display: none;
-    max-width: 50%;
+    max-width: 40%;
     background: rgba(0, 0, 0, 0.37);
     padding: 5px;
     border-radius: 15px;
@@ -189,6 +189,7 @@ nav ul li a:hover {
     padding: 15px;
     font-size: 16px;
     border-radius: 10px;
+    margin: 10px auto; 
 }
 #toggleButton:hover{
     border-color: white;
@@ -390,6 +391,9 @@ button{
     opacity: .5;
 }
 @media screen and (max-width: 950px) {
+    #projectAdditionalInformation{
+        max-width: 50%;
+    }
    /* SPLASH PAGE */
     #aboutMeText, #credit{
         font-size: 18px;
@@ -431,6 +435,9 @@ button{
    }
 }
 @media screen and (max-width: 700px) {
+    #projectAdditionalInformation{
+        max-width: 70%;
+    }
     #splash button{
         height: 250px;
         width: 100%;
