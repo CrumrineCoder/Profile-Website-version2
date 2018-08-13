@@ -87,9 +87,9 @@ nav ul li a {
     background-color: #521A19;
     display: block;
     height: 100%;
-    padding: 5px 20px;
+    padding: 20px 20px;
     text-decoration: none;
-    padding-top: 12px;
+    padding-top: 14px;
 }
 nav ul li:first-child {
     margin-right: auto;
@@ -100,6 +100,10 @@ nav ul li:first-child {
 /* Right links */
 nav ul li a:hover {
     background-color: #B20D0C;
+}
+
+.navIcon{
+    font-size: 36px; 
 }
 /* About me Section */
 #aboutMeButton, #logoCredits{
@@ -230,7 +234,6 @@ nav ul li a:hover {
     display: inline-block;
     list-style-type: none;
     margin: 5px 10px 0px 0px;
-    font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     background: #2D304C;
@@ -243,7 +246,7 @@ nav ul li a:hover {
     -o-transition: color 2s;
     transition: color 2s;
 }
-.fa-code,.fa-external-link{
+.fa-code,.fa-external-link-alt{
     padding: 3px 5px 3px 5px;
     color: white;
     -webkit-transition: color .5s;
@@ -252,6 +255,13 @@ nav ul li a:hover {
     -o-transition: color .5s;
     transition: color .5s;
 }
+
+#code-link, #website-link{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: white; 
+}
+
 #projectLinks li:hover {
     opacity: 0.7;
 }
@@ -488,7 +498,7 @@ button{
         padding: 0px;
         padding-top: 4px;
    }
-    nav ul li img{
+   .navIcon{
         height: 25px;
         width: 25px;
    }

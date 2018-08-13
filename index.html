@@ -16,7 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+</head>
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -47,18 +49,21 @@
 				</p>
 			</li>
 			<li>
-				<a href="https://github.com/CrumrineCoder" id="github" title="Github: revised projects" target="_blank">
-					<img src="Images/githubWhite.png" width="42" height="42" border="0" color="white">
+				<a href="https://github.com/CrumrineCoder" id="github" title="Github" target="_blank">
+					<!--				<img src="Images/githubWhite.png" width="42" height="42" border="0" color="white"> -->
+					<i class="fab fa-github navIcon" border="0"></i>
 				</a>
 			</li>
 			<li>
 				<a href="https://www.linkedin.com/in/nicolas-crumrine-50899b120/" title="LinkedIn" target="_blank">
-					<img src="Images/linkedinWhite.png" width="42" height="42" border="0">
+					<!--			<img src="Images/linkedinWhite.png" width="42" height="42" border="0"> -->
+					<i class="fab fa-linkedin-in navIcon" border="0"></i>
 				</a>
 			</li>
 			<li>
-				<a href="https://codepen.io/collection/DxOEJM/#0" title="Codepen: old projects" target="_blank">
-					<img src="Images/codepenWhite.png" width="42" height="42" border="0">
+				<a href="mailto:crumrinecoding@gmail.com" title="Email" target="_blank">
+					<!--	<img src="Images/codepenWhite.png" width="42" height="42" border="0"> -->
+					<i class="fas fa-envelope navIcon" border="0"></i>
 				</a>
 			</li>
 		</ul>
@@ -139,12 +144,12 @@
 					<ul id="projectLinks">
 						<a href="{{projectInfo.codeLink}}" target="_blank">
 							<li id="code-link">
-								<i class="fa fa-code" rgb="(0,0,0)"> See Code </i>
+								<i class="fas fa-code" rgb="(0,0,0)"> </i>See Code
 							</li>
 						</a>
 						<a href="{{projectInfo.websiteLink}}" class="externalLinks" target="_blank">
 							<li id="website-link">
-								<i class="fa fa-external-link"> Visit Website </i>
+								<i class="fas fa-external-link-alt"> </i>Visit Website
 							</li>
 						</a>
 						<!-- <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li> -->
