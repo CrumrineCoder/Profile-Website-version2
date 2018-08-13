@@ -366,14 +366,12 @@ button{
     margin: 10px auto;
     text-transform: uppercase; 
     text-decoration: none; 
-    background: #3B3738;
-    border: 2px solid rgba(82, 26, 25, 0.558);
+ 
 }
 
 #emailButton:hover{
-    background: #B20D0C;
+    opacity: .8;
 }
-
 
 /* Splash page */
 #splash button{

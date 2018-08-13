@@ -17,6 +17,10 @@ function toggleInfo() {
     }
 }
 
+function shadeColor(color, percent) {   
+    var f=parseInt(color.slice(1),16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
+    return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
+}
 
 /*
 function creditsOn() {
@@ -242,6 +246,9 @@ app.controller('portfolioControllers', function ($scope) {
         video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
     }]*/
     $scope.projectInfo = {};
+
+ 
+
     $scope.changeProject = function (projectID) {
         if ($scope.selectedProject != null) {
             document.getElementById($scope.selectedProject).style.opacity = "1";
@@ -259,10 +266,12 @@ app.controller('portfolioControllers', function ($scope) {
         $scope.projectInfo.codeLink = $scope.projects[projectID].codeLink;
         $scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
         $scope.projectInfo.video = $scope.projects[projectID].video;
+        $scope.projectInfo.darkerColor = shadeColor($scope.projects[projectID].color, -.55);
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
-        document.getElementById("toggleButton").style.background = $scope.projects[projectID].color;
-        document.getElementById("code-link").style.background = $scope.projects[projectID].color;
+        document.getElementById("toggleButton").style.background =  $scope.projects[projectID].color;
+        document.getElementById("emailButton").style.background =  $scope.projectInfo.darkerColor;
+        document.getElementById("code-link").style.background =  $scope.projects[projectID].color;
         document.getElementById("website-link").style.background = $scope.projects[projectID].color;
         document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         $scope.selectedProject = projectID;
