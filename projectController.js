@@ -149,7 +149,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/show-the-local-weather",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\weatherEdited.mp4"
     }, {
         logo: " Images/quotesAppLogo.png ",
         color: "#008080",
@@ -162,7 +162,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-random-quote-machine",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\quoteEdited.mp4"
     }, {
         logo: " Images/npcLookUpLogo.png ",
         color: "#EF281A",
@@ -174,7 +174,7 @@ app.controller('portfolioControllers', function ($scope) {
         productPaper: "I refined and expanded on Node.JS and Express and experimented with Angular alongside a database.",
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
         websiteLink: "https://npclookup.glitch.me/",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\npcEdited.mp4"
     }, {
         logo: " Images/wikipediaViewerLogo.png ",
         color: "#007CB6",
@@ -187,7 +187,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
         websiteLink: "http://dark-yarn.surge.sh/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\wikiEdited.mp4"
     }, {
         logo: " Images/calculatorAppLogo.png ",
         color: "#865DAF",
@@ -200,7 +200,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/Calculator",
         websiteLink: " https://crumrinecoder.github.io/Calculator/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-javascript-calculator",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\calcEdited.mp4"
     }, {
         logo: " Images/pomodoroAppLogo.png",
         color: "#E90000",
@@ -213,7 +213,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\pomodoroEdited.mp4"
     }, {
         logo: " Images/simonSaysLogo.png ",
         color: "#2D2D2D",
@@ -226,8 +226,8 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/Simon-Says-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Simon-Says-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-simon-game",
-        video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
-    }, {
+        video: "C:\\Users\\NicLaptop\\Videos\\fin\\simonEdited.mp4"
+    }]/*, {
         logo: " Images/tabletopAppLogo.png ",
         color: "#E96969",
         picture: " Images/tabletopApp.png ",
@@ -240,7 +240,7 @@ app.controller('portfolioControllers', function ($scope) {
         websiteLink: "https://tabletop.glitch.me/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-nightlife-coordination-app",
         video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
-    }]
+    }]*/
     $scope.projectInfo = {};
     $scope.changeProject = function (projectID) {
         if ($scope.selectedProject != null) {
