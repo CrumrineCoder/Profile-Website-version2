@@ -333,15 +333,11 @@ button{
 #contactInfo{
     text-align: center;
     clear: both;
-    padding-top: 50px;
-    font-size: 20px;
-    height: 100%;
+    padding: 100px 0px;
     background-color: #3B3738;
     color: white;
 }
-#gmailTagLine{
-    font-size: 25px;
-}
+
 #nameContainer{
     float: left;
 }
@@ -357,6 +353,28 @@ button{
 #credit{
     font-size: 10px;
 }
+
+#contactInfoHeader{
+    padding: 30px; 
+}
+
+#emailButton{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    margin: 10px auto;
+    text-transform: uppercase; 
+    text-decoration: none; 
+    background: #3B3738;
+    border: 2px solid rgba(82, 26, 25, 0.558);
+}
+
+#emailButton:hover{
+    background: #B20D0C;
+}
+
+
 /* Splash page */
 #splash button{
     width: 20%;
