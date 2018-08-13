@@ -191,7 +191,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
         websiteLink: "http://dark-yarn.surge.sh/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-wikipedia-viewer",
-        video: "Videos\\wikiEdited.mp4"
+        video: "Videos\\wiki.mp4"
     }, {
         logo: " Images/calculatorAppLogo.png ",
         color: "#865DAF",
