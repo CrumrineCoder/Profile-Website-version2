@@ -272,6 +272,7 @@ nav ul li a:hover {
     transition: .5s;
     width: 100%;
     position: absolute;
+    top: -53px;
 }
 #projectVideo{
     display: block;
@@ -410,7 +411,6 @@ button{
    }
     #projectPicture{
         display: block;
-        opacity: 0.6;
         -webkit-transition: .5s;
         -moz-transition: .5s;
         -ms-transition: .5s;
@@ -424,6 +424,7 @@ button{
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         left: 50%;
+        
    }
     #video-jumbotron{
         height: 100%;
