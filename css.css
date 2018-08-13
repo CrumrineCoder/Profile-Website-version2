@@ -260,7 +260,6 @@ nav ul li a:hover {
     overflow: hidden;
     width: auto;
     height: 100%;
-    margin-top: -60px;
 }
 #projectPicture {
     display: block;
