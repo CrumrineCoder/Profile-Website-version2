@@ -265,24 +265,27 @@ nav ul li a:hover {
     opacity: 0.7;
 }
 #video-jumbotron{
-    position:absolute;
-    height:100%;
-    width:100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; 
     overflow: hidden;
 }
-video {
-    object-fit: fill !important;
-}
 #projectPicture {
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    position: absolute;
-    top: -53px;
-    min-width: 100%;
-    min-height: 100%;
+ /* Make video to at least 100% wide and tall */
+ min-width: 100%; 
+ min-height: 100%; 
+
+ /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+ width: auto;
+ height: auto;
+
+ /* Center the video */
+ position: absolute;
+ top: calc(50% + 80px);
+ left: 50%;
+ transform: translate(-50%,-50%);
 }
 #projectVideo{
     display: block;
@@ -442,27 +445,8 @@ button{
     #projectFrontEnd li, #projectBackEnd li {
         font-size: 12px;
    }
-    #projectPicture{
-        display: block;
-        -webkit-transition: .5s;
-        -moz-transition: .5s;
-        -ms-transition: .5s;
-        -o-transition: .5s;
-        transition: .5s;
-       /* width: 100%;
-        */
-        width: auto;
-        position: absolute;
-        height: 100%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        left: 50%;
-        
-   }
-    #video-jumbotron{
-        height: 100%;
-        width: auto;
-   }
+  
+
     #projectLinks li {
         width: 50%;
         font-size: 18px;
