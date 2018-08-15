@@ -143,6 +143,7 @@ nav ul li a:hover {
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    width: 90%;
 }
 /* !Projects! */
 #projects{
@@ -166,9 +167,8 @@ nav ul li a:hover {
    /* max-width: 700px;
     */
     margin: 0 auto;
-    padding-bottom: 30px;
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 #projectTitle{
    /* padding-top: 4%;
@@ -428,6 +428,11 @@ button{
     opacity: .5;
 }
 @media screen and (max-width: 950px) {
+
+    #projects ul{
+        margin-bottom: 10px;
+    }
+
     #projectAdditionalInformation{
         max-width: 50%;
     }
@@ -445,7 +450,6 @@ button{
     #projectFrontEnd li, #projectBackEnd li {
         font-size: 12px;
    }
-  
 
     #projectLinks li {
         width: 50%;
@@ -472,7 +476,7 @@ button{
         padding: 0px;
    }
     #aboutMeText, #credit{
-        font-size: 16px;
+        font-size: 14px;
    }
     #splash{
         margin-top: 100px;
@@ -535,6 +539,7 @@ button{
         padding-bottom: 60px;
    }
     */
+   
     .navIcon{
         font-size: 25px;
        }
@@ -542,7 +547,9 @@ button{
 @media screen and (max-width: 500px) {
     #aboutMeText, #credit{
         font-size: 12px;
+        padding-top: 30px;
    }
+
     #nic{
         margin: 3px 0px;
         font-size: 14px 
