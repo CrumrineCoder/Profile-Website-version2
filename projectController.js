@@ -92,7 +92,20 @@ app.controller('portfolioControllers', function ($scope) {
             return y;
         }
     };
+
+    https://tmbg.herokuapp.com/
     $scope.projects = [{
+        logo: " Images/tmbgLogo.png ",
+        color: "#171E26",
+        title: "TMBG",
+        shortDesc: "This is a landing page redesign for the They Might Be Giants website.",
+        backend: "JavaScript, jQuery, Node.js, Express.js, MongoDB, Mongoose, OpenStreetMap API, LyricsAPI",
+        frontend: "HTML, CSS, Responsive, Angular, Sass",
+        productPaper: "I built this website as a Capstone project for everything I've learnt in the past year. The website allows users to anonymously comment on the newest album and to find the nearest tour. The website is also a practice in business marketing and design. Links and most buttons are placeholders.",
+        codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
+        websiteLink: "https://tmbg.herokuapp.com/",
+        video: "Videos\\tmbgEdited.mp4"
+    },{
         logo: " Images/cookiesWebsiteLogo.png ",
         color: "#18788C",
         picture: " Images/cookiesWebsite.png ",
@@ -136,9 +149,9 @@ app.controller('portfolioControllers', function ($scope) {
         picture: " Images/votingApp.png ",
         title: "Polling",
         shortDesc: "This fullstack website lets users create, view, and vote on polls.",
-        backend: "JavaScript, Node.js, Express, MongoDB, Mongoose, Passport, Chart.js",
+        backend: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, Passport, Chart.js",
         frontend: "HTML, CSS, Responsive",
-        productPaper: "I taught myself Express, Node.js, NPM, MongoDB, and other minor libraries to make my first fullstack website.",
+        productPaper: "I taught myself Express.js, Node.js, NPM, MongoDB, and other minor libraries to make my first fullstack website.",
         codeLink: "https://github.com/CrumrineCoder/VotingApp",
         websiteLink: "https://joinordie.glitch.me/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app",
@@ -149,7 +162,7 @@ app.controller('portfolioControllers', function ($scope) {
         picture: " Images/weatherApp.png ",
         title: "Weather",
         shortDesc: "This is a web app that shows the weather based on location.",
-        backend: "JavaScript, jQuery, Google Geolocation API, Forecast.io API,",
+        backend: "JavaScript, jQuery, OpenStreetMap API, Forecast.io API,",
         frontend: "HTML, CSS, Responsive, Angular, Sass",
         productPaper: "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
@@ -175,9 +188,9 @@ app.controller('portfolioControllers', function ($scope) {
         picture: " Images/npcLookUpv2.png ",
         title: "NPC Lookup",
         shortDesc: "This fullstack website lets users add Non Playable Characters (NPCs) to a database and view them with Angular.",
-        backend: "JavaScript, Node.js, Express, MongoDB, Mongoose, Passport",
+        backend: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, Passport",
         frontend: "HTML, CSS, Responsive, Angular",
-        productPaper: "I refined and expanded on Node.JS and Express and experimented with Angular alongside a database.",
+        productPaper: "I refined and expanded on Node.JS and Express.js and experimented with AngularJS alongside a database.",
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
         websiteLink: "https://npclookup.glitch.me/",
         video: "Videos\\npcEdited.mp4"
