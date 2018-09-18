@@ -93,7 +93,6 @@ app.controller('portfolioControllers', function ($scope) {
         }
     };
 
-    https://tmbg.herokuapp.com/
     $scope.projects = [{
         logo: " Images/tmbgLogo.png ",
         color: "#171E26",
