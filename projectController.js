@@ -1,10 +1,4 @@
-function on() {
-    document.getElementById("aboutMeOverlay").style.display = "block";
-}
 
-function off() {
-    document.getElementById("aboutMeOverlay").style.display = "none";
-}
 
 function toggleInfo() {
     if (document.getElementById("toggleButton").value == "Show Less") {
@@ -95,7 +89,7 @@ app.controller('portfolioControllers', function ($scope) {
 
     $scope.projects = [{
         logo: " Images/tmbgLogo.png ",
-        color: "#171E26",
+        color: "#0D080A",
         title: "TMBG",
         shortDesc: "This is a landing page redesign for the They Might Be Giants website.",
         backend: "JavaScript, jQuery, Node.js, Express.js, MongoDB, Mongoose, OpenStreetMap API, LyricsAPI",
