@@ -87,9 +87,11 @@ app.controller('portfolioControllers', function ($scope) {
         }
     };
 
+    // tests
+
     $scope.projects = [{
         logo: " Images/tmbgLogo.png ",
-        color: "#0D080A",
+        color: "#171E26",
         title: "TMBG",
         shortDesc: "This is a landing page redesign for the They Might Be Giants website.",
         backend: "JavaScript, jQuery, Node.js, Express.js, MongoDB, Mongoose, OpenStreetMap API, LyricsAPI",
