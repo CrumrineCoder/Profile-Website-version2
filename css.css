@@ -191,9 +191,11 @@ nav ul li a:hover {
     font-size: 16px;
     border-radius: 10px;
     margin: 10px auto; 
+    border-color: white;
 }
 #toggleButton:hover{
-    border-color: white;
+    color: rgb(180, 180, 180);
+    border-color:rgb(180, 180, 180);
 }
 #projects ul{
     padding: 0px;
@@ -257,7 +259,7 @@ nav ul li a:hover {
 }
 
 #projectLinks li:hover {
-   color: rgb(180, 180, 180) !important;
+   color: rgb(180, 180, 180);
    border-color:rgb(180, 180, 180);
 }
 #video-jumbotron{
