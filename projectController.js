@@ -228,7 +228,7 @@ app.controller('portfolioControllers', function ($scope) {
         websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-pomodoro-clock",
         video: "Videos\\pomodoroEdited.mp4"
-    }, {
+    }/*, {
         logo: " Images/simonSaysLogo.png ",
         color: "#2D2D2D",
         picture: " Images/simonSays.png ",
@@ -241,7 +241,7 @@ app.controller('portfolioControllers', function ($scope) {
         websiteLink: "https://crumrinecoder.github.io/Simon-Says-Version-2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-simon-game",
         video: "Videos\\simonEdited.mp4"
-    }]/*, {
+    }*/]/*, {
         logo: " Images/tabletopAppLogo.png ",
         color: "#E96969",
         picture: " Images/tabletopApp.png ",
