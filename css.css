@@ -525,6 +525,7 @@ button{
     #projectLinks li {
         width: 90%;
         font-size: 18px;
+        margin: 5px auto;
    }
    /* #projectInfoText{
         position: relative;
