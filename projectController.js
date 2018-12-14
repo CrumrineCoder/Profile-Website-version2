@@ -269,6 +269,8 @@ app.controller('portfolioControllers', function ($scope) {
     }]*/
     $scope.projectInfo = {};
     $scope.previewInfo = {};
+   // $scope.selectedProject = 0;
+   // $scope.changeProject(0); 
     $scope.changePreview = function (projectID) {
         document.getElementById("overlay").className = "shownOverlay";
         $scope.previewInfo = {};
@@ -279,12 +281,14 @@ app.controller('portfolioControllers', function ($scope) {
 
 
     $scope.changeProject = function (projectID) {
+        console.log(projectID);
         if ($scope.selectedProject != null) {
             document.getElementById($scope.selectedProject).style.opacity = "1";
             document.getElementById($scope.selectedProject).disabled = false;
+            document.getElementById(projectID).style.opacity = ".3"
+            document.getElementById(projectID).disabled = true;
         }
-        document.getElementById(projectID).style.opacity = ".3"
-        document.getElementById(projectID).disabled = true;
+    
         $scope.projectInfo = {};
         $scope.projectInfo.picture = $scope.projects[projectID].picture;
         $scope.projectInfo.title = $scope.projects[projectID].title;
@@ -324,10 +328,14 @@ app.controller('portfolioControllers', function ($scope) {
             title: $scope.projects[i].title
         });
     }
+   
     $scope.change = function (x) {
-        document.getElementById("index").style.display = "block";
+    /*    document.getElementById("index").style.display = "block";
         document.getElementById("splash").style.display = "none";
-        document.getElementById("nav").style.display = "block";
+        document.getElementById("nav").style.display = "block"; */
         $scope.changeProject(x);
     }
+
+    $scope.change(0);
+
 });
