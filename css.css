@@ -49,6 +49,43 @@ button:focus {
     background: rgb(113, 113, 113);
 }
 */
+/* !Overlay! */
+
+#overlay{
+    position: fixed; 
+    z-index: 3; 
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    height: auto; 
+    background: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    border-radius: 15px; 
+    text-align: center; 
+    padding: 5px; 
+    max-width: 30%;
+}
+
+.shownOverlay{
+    display: block;
+}
+
+.hiddenOverlay{
+    display: none;  
+}
+
+#toggleOverlayButton{
+    position: absolute;
+    right: 10px; 
+    background: transparent;
+    border: 2px solid white; 
+    border-radius: 2px; 
+}
+
+#toggleOverlayButtonIcon{
+    color: white; 
+}
+
 /* !Nav! */
 nav {
     background-color: #3B3738;
@@ -149,8 +186,7 @@ nav ul li a:hover {
     margin: 0 auto;
     width: 100%;
     position: relative;
-    margin-top: 57px;
-    height: calc(90% - 57px);
+    height: 90%;
 }
 #projectInfoText{
     position: absolute;
@@ -201,10 +237,10 @@ nav ul li a:hover {
 #projects ul{
     padding: 0px;
 }
-#projectBackEnd, #projectFrontEnd{
+#projectBackEnd, #projectFrontEnd, #overlayFrontEnd, #overlayBackEnd{
     width: 95%;
 }
-#projectFrontEnd li, #projectBackEnd li {
+#projectFrontEnd li, #projectBackEnd li, #overlayFrontEnd li, #overlayBackEnd li  {
     border-radius: 5px;
     display: inline-block;
     text-transform: uppercase;
@@ -212,10 +248,10 @@ nav ul li a:hover {
     padding: 3px 5px 3px 5px;
     margin: 0px 3px 4px 3px;
 }
-#projectFrontEnd li {
+#projectFrontEnd li, #overlayFrontEnd li {
     background: #C54E30;
 }
-#projectBackEnd li {
+#projectBackEnd li, #overlayBackEnd li {
     background: #9952B7;
 }
 #projectLinks {
@@ -302,6 +338,7 @@ nav ul li a:hover {
     white-space: nowrap;
     margin: 0 auto;
     font-size: 0px;
+    margin-top: 57px;
 }
 .projectSelectImage {
     width: 100%;

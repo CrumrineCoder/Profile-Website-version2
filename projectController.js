@@ -3,19 +3,31 @@
 function toggleInfo() {
     if (document.getElementById("toggleButton").value == "Show Less") {
         document.getElementById("toggleButton").value = "Show More";
-    document.getElementById("projectAdditionalInformation").style.display = "none";
-
+        document.getElementById("projectAdditionalInformation").style.display = "none";
     } else if (document.getElementById("toggleButton").value == "Show More") {
         document.getElementById("toggleButton").value = "Show Less";
         document.getElementById("projectAdditionalInformation").style.display = "block";
     }
 }
 
+function toggleOverlay() {
+    if (document.getElementById("toggleOverlayButtonIcon").className == "fas fa-chevron-down") {
+        document.getElementById("toggleOverlayButtonIcon").className = "fas fa-chevron-up";
+        document.getElementById("overlayText").className = "hiddenOverlay";
+        document.getElementById("toggleOverlayButton").style = "bottom: 10px;";
+        document.getElementById("overlay").style = "background: rgba(0, 0, 0, 0)";
+    } else if (document.getElementById("toggleOverlayButtonIcon").className == "fas fa-chevron-up") {
+        document.getElementById("toggleOverlayButtonIcon").className = "fas fa-chevron-down";
+        document.getElementById("overlayText").className = "shownOverlay";
+        document.getElementById("toggleOverlayButton").style = "top: 10px;";
+        document.getElementById("overlay").style = "background: rgba(0, 0, 0, 0.8)";
+    }
+}
 
 
-function shadeColor(color, percent) {   
-    var f=parseInt(color.slice(1),16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
-    return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
+function shadeColor(color, percent) {
+    var f = parseInt(color.slice(1), 16), t = percent < 0 ? 0 : 255, p = percent < 0 ? percent * -1 : percent, R = f >> 16, G = f >> 8 & 0x00FF, B = f & 0x0000FF;
+    return "#" + (0x1000000 + (Math.round((t - R) * p) + R) * 0x10000 + (Math.round((t - G) * p) + G) * 0x100 + (Math.round((t - B) * p) + B)).toString(16).slice(1);
 }
 
 /*
@@ -100,7 +112,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
         websiteLink: "https://tmbg.herokuapp.com/",
         video: "Videos\\tmbgEdited.mp4"
-    },{
+    }, {
         logo: " Images/cookiesWebsiteLogo.png ",
         color: "#18788C",
         picture: " Images/cookiesWebsite.png ",
@@ -131,7 +143,7 @@ app.controller('portfolioControllers', function ($scope) {
         picture: " Images/connectFourApp.png ",
         title: "Connect Four",
         shortDesc: "This is a web app that uses plain JavaScript to play Connect Four either against an AI that uses alpha-beta minimaxing or locally with another player.",
-        backend: "JavaScript",
+        backend: "JavaScript, minimax Algorithms",
         frontend: "HTML, CSS",
         productPaper: "This was practice with independent research, JavaScript algorithm scripting, UI design for games, and artificial intelligence.",
         codeLink: "https://github.com/CrumrineCoder/connect4-version2",
@@ -256,8 +268,15 @@ app.controller('portfolioControllers', function ($scope) {
         video: "C:\\Users\\NicLaptop\\Videos\\fin\\twitchEdited.mp4"
     }]*/
     $scope.projectInfo = {};
+    $scope.previewInfo = {};
+    $scope.changePreview = function (projectID) {
+        document.getElementById("overlay").className = "shownOverlay";
+        $scope.previewInfo = {};
+        $scope.previewInfo.title = $scope.projects[projectID].title;
+        $scope.previewInfo.frontTechnologies = $scope.projects[projectID].frontend;
+        $scope.previewInfo.backTechnologies = $scope.projects[projectID].backend;
+    }
 
- 
 
     $scope.changeProject = function (projectID) {
         if ($scope.selectedProject != null) {
@@ -279,9 +298,9 @@ app.controller('portfolioControllers', function ($scope) {
         $scope.projectInfo.darkerColor = shadeColor($scope.projects[projectID].color, -.55);
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
-        document.getElementById("toggleButton").style.background =  $scope.projects[projectID].color;
-        document.getElementById("emailButton").style.background =  $scope.projectInfo.darkerColor;
-        document.getElementById("code-link").style.background =  $scope.projects[projectID].color;
+        document.getElementById("toggleButton").style.background = $scope.projects[projectID].color;
+        document.getElementById("emailButton").style.background = $scope.projectInfo.darkerColor;
+        document.getElementById("code-link").style.background = $scope.projects[projectID].color;
         document.getElementById("website-link").style.background = $scope.projects[projectID].color;
         document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         $scope.selectedProject = projectID;

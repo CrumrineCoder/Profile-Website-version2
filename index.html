@@ -3,10 +3,10 @@
 <head>
 	<script>
 		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
 		ga('create', 'UA-114290573-1', 'auto');
@@ -47,7 +47,8 @@
 				<p id="nic"> Nicolas Crumrine </p>
 				<p id="nicJob"> Web Developer based in NYC
 					<a id="aboutMeButton" href="https://nicolascrumrine.herokuapp.com/#/about" target="_blank" onclick="ga('send', 'event', 'Nav', 'Click', 'AboutMeBlog');">About
-						Me</a>
+						Me
+					</a>
 				</p>
 			</li>
 			<li>
@@ -97,11 +98,37 @@
 		</span>
 	</div>
 
+	<div id="overlay" class="hiddenOverlay">
+		<button id="toggleOverlayButton" onclick="toggleOverlay()">
+				<i id="toggleOverlayButtonIcon" class="fas fa-chevron-down"></i>
+		</button>
+		<div id="overlayText" class="shownOverlay">
+			<h4><i>Preview</i></h4>
+			<h1 id="overlayTitle"> {{previewInfo.title}} </h1>
+			<ul>
+				<div id="overlayFrontEnd">
+					<li class="frontend"> {{previewInfo.frontTechnologies}} </li>
+				</div>
+				<div id="overlayBackEnd">
+					<li class="backend"> {{previewInfo.backTechnologies}} </li>
+				</div>
+			</ul>
+			<h3>Click on the Project Icon to learn more!</h3>
+		</div>
+	</div>
+
 
 	<div id="index">
 
 		test
 		<!-- Project Section -->
+		<div id="projectSelectBoxes">
+			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) || scrollTo('index')"
+			 ng-mouseover="changePreview(project.id)" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
+				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
+				<p class="logoText"> {{project.title}} </p>
+			</button>
+		</div>
 		<div id="projects">
 			<!-- Select a project section -->
 
@@ -153,13 +180,7 @@
 				<i class="fa fa-chevron-right"></i>
 			</button>
 		</div>
-		<div id="projectSelectBoxes">
-			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) || scrollTo('index')"
-			 ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
-				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
-				<p class="logoText"> {{project.title}} </p>
-			</button>
-		</div>
+
 		<!-- Contact Section -->
 		<div id="contactInfo">
 			<i class="fa fa-envelope-o fa-2x"> </i>
