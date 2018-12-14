@@ -90,7 +90,7 @@
 	<div id="splash">
 		<span id="removeMargin" ng-repeat="project in buttons | limitTo:5">
 			<button type="image" ng-click="change(project.id)" ng-style="{'background-color': project.color}" style="position: relative;"
-			 onclick="ga('send', 'event', 'Portfolio', 'Click', 'AboutMeBlog');">
+			 onclick="ga('send', 'event', 'Portfolio', 'Click', 'Landing');">
 				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 				<p class="splashText"> {{project.title}} </p>
 			</button>
