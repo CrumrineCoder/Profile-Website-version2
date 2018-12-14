@@ -186,7 +186,7 @@ nav ul li a:hover {
 }
 #toggleButton{
     background: rgb(42, 42, 42);
-    border: 1px solid black;
+    border: 3px solid black;
     color: rgb(255, 255, 255);
     padding: 15px;
     font-size: 16px;
@@ -238,7 +238,7 @@ nav ul li a:hover {
     letter-spacing: 0.2em;
     background: #2D304C;
     padding: 4px 10px;
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     border-radius: 10px;
     border-color: white; 
 }
