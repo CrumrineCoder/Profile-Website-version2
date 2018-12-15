@@ -121,14 +121,15 @@
 	<div id="index">
 
 		test
-		<!-- Project Section -->
+		<!-- Project Section || scrollTo('content') -->
 		<div id="projectSelectBoxes">
-			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) || scrollTo('index')"
+			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) "
 			 ng-mouseover="changePreview(project.id)" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
 				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 				<p class="logoText"> {{project.title}} </p>
 			</button>
 		</div>
+
 		<div id="projects">
 			<!-- Select a project section -->
 
