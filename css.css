@@ -584,6 +584,10 @@ button{
        }
 }
 @media screen and (max-width: 500px) {
+    #overlay{
+        display: none;
+    }
+
     #aboutMeText, #credit{
         font-size: 12px;
         padding-top: 30px;
@@ -619,6 +623,7 @@ button{
     #projectSelectBoxes{
         overflow-x: visible;
         white-space: normal;
+        margin-top: 83px;
    }
     .projectSelectImage{
         width: 50px;
