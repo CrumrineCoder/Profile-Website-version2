@@ -14,10 +14,10 @@ button:focus {
     outline: 0;
 }
 #backBtn{
-    left: 10px;
+    left: 35px;
 }
 #nextBtn{
-    right: 20px;
+    right: 45px;
 }
 #backBtn i{
     padding-right: 3px;
