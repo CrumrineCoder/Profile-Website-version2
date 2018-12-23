@@ -100,14 +100,25 @@ app.controller('portfolioControllers', function ($scope) {
     };
 
     // tests
-
     $scope.projects = [{
+        logo: " Images/votingAppLogo.png ",
+        color: "#A61C88",
+        title: "Polling",
+        shortDesc: "This React.js & Redux fullstack website lets users create, view, and vote on polls.",
+        backend: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, jwt, Passport",
+        frontend: "React.js, Redux.js, rxJs, react-router, HTML5, CSS3, Bootstrap 4",
+        productPaper: "This website is an updated version of one I made last year. I taught myself Redux and react-router while developing my React.js fullstack skills. I am still adding new features.",
+        codeLink: "https://github.com/CrumrineCoder/Polling",
+        websiteLink: "https://crumrinepolling.herokuapp.com/#/",
+        prevWebsiteLink: "https://joinordie.glitch.me/",
+        video: "Videos\\pollingReactEdited.mp4"
+    },{
         logo: " Images/tmbgLogo.png ",
         color: "#171E26",
         title: "TMBG",
         shortDesc: "This is a landing page redesign for the They Might Be Giants website.",
         backend: "JavaScript, jQuery, Node.js, Express.js, MongoDB, Mongoose, OpenStreetMap API, LyricsAPI",
-        frontend: "HTML, CSS, Responsive, Angular, Sass",
+        frontend: "HTML5, CSS3, Responsive, Angular, Sass",
         productPaper: "I built this website as a Capstone project for everything I've learnt in the past year. The website allows users to anonymously comment on the newest album and to find the nearest tour. The website is also a practice in business marketing and design. Links and most buttons are placeholders.",
         codeLink: "https://github.com/CrumrineCoder/TheyMightBeGiantsv3",
         websiteLink: "https://tmbg.herokuapp.com/",
@@ -119,7 +130,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Penny's Cookies",
         shortDesc: "This is a portfolio website for a local NYC cookie bakery and decorating business that I built for a client.",
         backend: "JavaScript, PHP, jQuery",
-        frontend: "HTML, CSS, Responsive, Swiper, Intense Images, Mail Chimp",
+        frontend: "HTML5, CSS3, Responsive, Swiper, Intense Images, Mail Chimp",
         productPaper: "I taught myself about developing a marketing strategy, writing a competitive analysis, scheduling, and writing user stories with a client. I also learned about working with another designer. I taught myself PHP to develop the email forms. I also taught myself a few other minor libraries and services.",
         codeLink: "https://github.com/CrumrineCoder/PJRevised",
         websiteLink: "http://pennyjanescookies.com/",
@@ -131,7 +142,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Twitch Viewer",
         shortDesc: "This is a website that uses the Twitch.tv API and Angular to display Twitch Streams.",
         backend: "JavaScript, jQuery, Twitch.tv API",
-        frontend: "HTML, CSS, Responsive, Angular",
+        frontend: "HTML5, CSS3, Responsive, Angular",
         productPaper: "I taught myself one-page Angular design with this project as well as using multiple APIs with Angular.",
         codeLink: "https://github.com/CrumrineCoder/Twitch-Viewer-Redone",
         websiteLink: "https://crumrinecoder.github.io/Twitch-Viewer-Redone/",
@@ -144,25 +155,12 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Connect Four",
         shortDesc: "This is a web app that uses plain JavaScript to play Connect Four either against an AI that uses alpha-beta minimaxing or locally with another player.",
         backend: "JavaScript, minimax Algorithms",
-        frontend: "HTML, CSS",
+        frontend: "HTML5, CSS3",
         productPaper: "This was practice with independent research, JavaScript algorithm scripting, UI design for games, and artificial intelligence.",
         codeLink: "https://github.com/CrumrineCoder/connect4-version2",
         websiteLink: "https://crumrinecoder.github.io/connect4-version2/",
         freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game",
         video: "Videos\\c4Edited.mp4"
-    }, {
-        logo: " Images/votingAppLogo.png ",
-        color: "#A61C88",
-        picture: " Images/votingApp.png ",
-        title: "Polling",
-        shortDesc: "This fullstack website lets users create, view, and vote on polls.",
-        backend: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, Passport, Chart.js",
-        frontend: "HTML, CSS, Responsive",
-        productPaper: "I taught myself Express.js, Node.js, NPM, MongoDB, and other minor libraries to make my first fullstack website.",
-        codeLink: "https://github.com/CrumrineCoder/VotingApp",
-        websiteLink: "https://joinordie.glitch.me/",
-        freeCodeCampLink: "https://www.freecodecamp.org/challenges/build-a-voting-app",
-        video: "Videos\\voteEdited.mp4"
     }, {
         logo: " Images/weatherApp%20logo.png ",
         color: "#048027",
@@ -170,7 +168,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Weather",
         shortDesc: "This is a web app that shows the weather based on location.",
         backend: "JavaScript, jQuery, OpenStreetMap API, Forecast.io API,",
-        frontend: "HTML, CSS, Responsive, Angular, Sass",
+        frontend: "HTML5, CSS3, Responsive, Angular, Sass",
         productPaper: "I taught myself multiple APIs, Angular, Sass and Mobile-first design with this project.",
         codeLink: "https://github.com/CrumrineCoder/Weather-App",
         websiteLink: "https://crumrinecoder.github.io/Weather-App/",
@@ -183,7 +181,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Quotes",
         shortDesc: "This is a website that uses Angular to display quotes from various sources.",
         backend: "JavaScript, jQuery",
-        frontend: "HTML, CSS, Responsive, Angular",
+        frontend: "HTML5, CSS3, Responsive, Angular",
         productPaper: "I practiced Functional Programming and one page design in Angular and refined the design and User Experience.",
         codeLink: "https://github.com/CrumrineCoder/Quote-Generator-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Quote-Generator-Version-2/",
@@ -196,7 +194,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "NPC Lookup",
         shortDesc: "This fullstack website lets users add Non Playable Characters (NPCs) to a database and view them with Angular.",
         backend: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, Passport",
-        frontend: "HTML, CSS, Responsive, Angular",
+        frontend: "HTML5, CSS3, Responsive, Angular",
         productPaper: "I refined and expanded on Node.JS and Express.js and experimented with AngularJS alongside a database.",
         codeLink: "https://github.com/CrumrineCoder/NPC-LOOK-UP",
         websiteLink: "https://npclookup.glitch.me/",
@@ -208,7 +206,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Wiki Viewer",
         shortDesc: "This is a web app that uses the Wikipedia API to search for multiple Wikipedia pages by term or by randomness.",
         backend: "JavaScript, jQuery, Wikipedia API",
-        frontend: "HTML, CSS, React.js, Responsive",
+        frontend: "HTML5, CSS3, React.js, Responsive",
         productPaper: "I taught myself about using APIs with React and more about state management with this project.",
         codeLink: "https://github.com/CrumrineCoder/wikipediaviewerreact",
         websiteLink: "http://dark-yarn.surge.sh/",
@@ -221,7 +219,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Calculator",
         shortDesc: "This is a web app that resembles a basic calculator.",
         backend: "JavaScript",
-        frontend: "HTML, CSS, Responsive",
+        frontend: "HTML5, CSS3, Responsive",
         productPaper: "I practiced JavaScript algorithm scripting with this project.",
         codeLink: "https://github.com/CrumrineCoder/Calculator",
         websiteLink: " https://crumrinecoder.github.io/Calculator/",
@@ -234,7 +232,7 @@ app.controller('portfolioControllers', function ($scope) {
         title: "Pomodoro",
         shortDesc: "This is a web app that acts as a minimalist Pomodoro (time management) clock with options.",
         backend: "JavaScript, jQuery",
-        frontend: "HTML, CSS, Responsive",
+        frontend: "HTML5, CSS3, Responsive",
         productPaper: "I practiced Async JavaScript design and minimalistic front end design.",
         codeLink: "https://github.com/CrumrineCoder/Pomodoro-Version-2",
         websiteLink: "https://crumrinecoder.github.io/Pomodoro-Version-2/",
@@ -300,6 +298,12 @@ app.controller('portfolioControllers', function ($scope) {
         $scope.projectInfo.websiteLink = $scope.projects[projectID].websiteLink;
         $scope.projectInfo.video = $scope.projects[projectID].video;
         $scope.projectInfo.darkerColor = shadeColor($scope.projects[projectID].color, -.55);
+        if($scope.projects[projectID].prevWebsiteLink){
+            $scope.projectInfo.prevWebsiteLink = $scope.projects[projectID].prevWebsiteLink;
+        } else{
+            $scope.projectInfo.prevWebsiteLink = undefined;
+        }
+   
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;
         document.getElementById("contactInfo").style.background = $scope.projects[projectID].color;
         document.getElementById("toggleButton").style.background = $scope.projects[projectID].color;

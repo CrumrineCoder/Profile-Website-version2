@@ -121,9 +121,9 @@
 	<div id="index">
 
 		test
-		<!-- Project Section || scrollTo('content') -->
+		<!-- Project Section || scrollTo('projectSelectBoxes') -->
 		<div id="projectSelectBoxes">
-			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id) "
+			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)"
 			 ng-mouseover="changePreview(project.id)" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
 				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 				<p class="logoText"> {{project.title}} </p>
@@ -156,13 +156,18 @@
 							</ul>
 							<p> {{projectInfo.projectDescription}} </p>
 							<p> {{projectInfo.productPaper}} </p>
+							<a ng-if="projectInfo.prevWebsiteLink != undefined" href="{{projectInfo.prevWebsiteLink}}" target="_blank">
+								<div id="prev-code-link" style="font-size: 12px;">
+									<i class="fas fa-external-link-alt" rgb="(0,0,0)"> </i>See Previous Version of Website
+								</div>
+							</a>
 						</div>
 						<button id="toggleButton" onclick="toggleInfo()" value="Show More">Toggle Info</button>
 					</div>
 					<ul id="projectLinks">
 						<a href="{{projectInfo.codeLink}}" target="_blank">
 							<li id="code-link">
-								<i class="fas fa-code" rgb="(0,0,0)"> </i>See Code
+								<i class="fas fa-code"> </i>See Code
 							</li>
 						</a>
 						<a href="{{projectInfo.websiteLink}}" class="externalLinks" target="_blank">
