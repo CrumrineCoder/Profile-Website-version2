@@ -111,6 +111,7 @@ app.controller('portfolioControllers', function ($scope) {
         codeLink: "https://github.com/CrumrineCoder/Polling",
         websiteLink: "https://crumrinepolling.herokuapp.com/#/",
         prevWebsiteLink: "https://joinordie.glitch.me/",
+        caseStudyLink: "https://nicolascrumrine.herokuapp.com/#/posts/5c253ffad802b53cdcc17e00", 
         video: "Videos\\pollingReactEdited.mp4"
     },{
         logo: " Images/tmbgLogo.png ",
@@ -302,6 +303,13 @@ app.controller('portfolioControllers', function ($scope) {
             $scope.projectInfo.prevWebsiteLink = $scope.projects[projectID].prevWebsiteLink;
         } else{
             $scope.projectInfo.prevWebsiteLink = undefined;
+        }
+
+        if($scope.projects[projectID].caseStudyLink){
+            $scope.projectInfo.caseStudyLink = $scope.projects[projectID].caseStudyLink;
+        //    document.getElementById("case-link").style.background = $scope.projects[projectID].color;
+        } else{
+            $scope.projectInfo.caseStudyLink = undefined;
         }
    
         //$scope.projectInfo.freeCodeCampLink = $scope.projects[projectID].freeCodeCampLink;

@@ -156,23 +156,28 @@
 							</ul>
 							<p> {{projectInfo.projectDescription}} </p>
 							<p> {{projectInfo.productPaper}} </p>
-							<a ng-if="projectInfo.prevWebsiteLink != undefined" href="{{projectInfo.prevWebsiteLink}}" target="_blank">
+							<a ng-if="projectInfo.prevWebsiteLink != undefined" style="text-decoration: underline" class="externalLinks" href="{{projectInfo.prevWebsiteLink}}" target="_blank">
 								<div id="prev-code-link" style="font-size: 12px;">
-									<i class="fas fa-external-link-alt" rgb="(0,0,0)"> </i>See Previous Version of Website
+									<i class="fas fa-external-link-alt fontIcon" rgb="(0,0,0)"> </i>See Previous Version of Website
 								</div>
 							</a>
 						</div>
 						<button id="toggleButton" onclick="toggleInfo()" value="Show More">Toggle Info</button>
 					</div>
 					<ul id="projectLinks">
-						<a href="{{projectInfo.codeLink}}" target="_blank">
+						<a href="{{projectInfo.codeLink}}" class="externalLinks" target="_blank">
 							<li id="code-link">
-								<i class="fas fa-code"> </i>See Code
+								<i class="fas fa-code fontIcon"></i>See Code
 							</li>
 						</a>
 						<a href="{{projectInfo.websiteLink}}" class="externalLinks" target="_blank">
 							<li id="website-link">
-								<i class="fas fa-external-link-alt"> </i>Visit Website
+								<i class="fas fa-external-link-alt fontIcon"></i>Visit Website
+							</li>
+						</a>
+						<a ng-if="projectInfo.caseStudyLink != undefined" href="{{projectInfo.caseStudyLink}}" class="externalLinks" target="_blank">
+							<li id="case-link">
+								<i class="fas fa-book-open fontIcon"></i>Read Case Study
 							</li>
 						</a>
 						<!-- <li ng-hide="projectInfo.freeCodeCampLink == null"><a href="{{projectInfo.freeCodeCampLink}}" target="_blank"> <i class="fa fa-free-code-camp"> FreeCodeCamp Challenge </i> </a></li> -->

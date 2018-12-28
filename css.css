@@ -274,14 +274,15 @@ nav ul li a:hover {
     margin: 5px 10px 0px 0px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    background: #2D304C;
+   /* background: #2D304C; */
+   background: rgb(35, 35, 35); 
     padding: 4px 10px;
     border: 3px solid transparent;
     border-radius: 10px;
     border-color: white; 
 }
 
-.fa-code,.fa-external-link-alt{
+.fontIcon{
     padding: 3px 5px 3px 5px;
     color: white;
     -webkit-transition: color .5s;
@@ -291,10 +292,11 @@ nav ul li a:hover {
     transition: color .5s;
 }
 
-#code-link, #website-link, #prev-code-link{
+.externalLinks{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: white; 
+    text-decoration: none;
 }
 
 #projectLinks li:hover {
