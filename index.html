@@ -122,11 +122,11 @@
 
 		test
 		<!-- Project Section || scrollTo('projectSelectBoxes') -->
-		<div id="projectSelectBoxes">
+		<div ng-cloak id="projectSelectBoxes">
 			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id); ga('send', 'event', 'Project', 'Click', {{title}});"
 			 ng-mouseover="changePreview(project.id)" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
 				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
-				<p class="logoText"> {{project.title}} </p>
+				<p ng-cloak class="logoText"> {{project.title}} </p>
 			</button>
 		</div>
 
@@ -139,12 +139,12 @@
 					<source src="{{projectInfo.video | trustUrl }}" type="video/mp4"> Your browser does not support HTML5 video.
 				</video>
 			</div>
-			<div id="projectInfoText">
+			<div ng-cloak id="projectInfoText">
 
 				<div id="content">
 
 					<div id="topLeftContent">
-						<h1 id="projectTitle"> {{projectInfo.title}} </h1>
+						<h1 ng-cloak id="projectTitle"> {{projectInfo.title}} </h1>
 						<div id="projectAdditionalInformation">
 							<ul>
 								<div id="projectFrontEnd">
