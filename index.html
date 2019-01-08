@@ -45,7 +45,7 @@
 		<ul>
 			<li id="nameNavContainer">
 				<p id="nic"> Nicolas Crumrine </p>
-				<p id="nicJob"> Web Developer based in NYC
+				<p id="nicJob">React.JS Web Developer based in NYC
 					<a id="aboutMeButton" href="https://nicolascrumrine.herokuapp.com/#/about" target="_blank" onclick="ga('send', 'event', 'Nav', 'Click', 'AboutMeBlog');">About
 						Me
 					</a>
@@ -99,7 +99,7 @@
 	</div> -->
 
 	<div id="overlay" class="hiddenOverlay">
-		<button id="toggleOverlayButton" onclick="toggleOverlay()">
+		<button id="toggleOverlayButton" onclick="toggleOverlay(); ga('send', 'event', 'Overlay', 'Click', 'Close');">
 				<i id="toggleOverlayButtonIcon" class="fas fa-chevron-down"></i>
 		</button>
 		<div id="overlayText" class="shownOverlay">
@@ -123,7 +123,7 @@
 		test
 		<!-- Project Section || scrollTo('projectSelectBoxes') -->
 		<div id="projectSelectBoxes">
-			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id)"
+			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id); ga('send', 'event', 'Project', 'Click', {{title}});"
 			 ng-mouseover="changePreview(project.id)" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
 				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 				<p class="logoText"> {{project.title}} </p>
@@ -162,20 +162,20 @@
 								</div>
 							</a>
 						</div>
-						<button id="toggleButton" onclick="toggleInfo()" value="Show More">Toggle Info</button>
+						<button id="toggleButton" onclick="toggleInfo(); ga('send', 'event', 'Project', 'Click', 'Toggle');" value="Show More">Toggle Info</button>
 					</div>
 					<ul id="projectLinks">
-						<a href="{{projectInfo.codeLink}}" class="externalLinks" target="_blank">
+						<a href="{{projectInfo.codeLink}}" class="externalLinks" target="_blank" onclick="ga('send', 'event', 'Project', 'Click', 'SeeCode');">
 							<li id="code-link">
 								<i class="fas fa-code fontIcon"></i>See Code
 							</li>
 						</a>
-						<a href="{{projectInfo.websiteLink}}" class="externalLinks" target="_blank">
+						<a href="{{projectInfo.websiteLink}}" class="externalLinks" target="_blank" onclick="ga('send', 'event', 'Project', 'Click', 'VisitWebsite');">
 							<li id="website-link">
 								<i class="fas fa-external-link-alt fontIcon"></i>Visit Website
 							</li>
 						</a>
-						<a ng-if="projectInfo.caseStudyLink != undefined" href="{{projectInfo.caseStudyLink}}" class="externalLinks" target="_blank">
+						<a ng-if="projectInfo.caseStudyLink != undefined" href="{{projectInfo.caseStudyLink}}" class="externalLinks" target="_blank" onclick="ga('send', 'event', 'Project', 'Click', 'CaseStudy');">
 							<li id="case-link">
 								<i class="fas fa-book-open fontIcon"></i>Read Case Study
 							</li>
@@ -184,10 +184,10 @@
 					</ul>
 				</div>
 			</div>
-			<button ng-click="carouselProject(-1)" class="sliderBtn" id="backBtn">
+			<button ng-click="carouselProject(-1)" class="sliderBtn" id="backBtn" onclick="ga('send', 'event', 'Project', 'Click', 'Left');">
 				<i class="fa fa-chevron-left"></i>
 			</button>
-			<button ng-click="carouselProject(1)" class="sliderBtn" id="nextBtn">
+			<button ng-click="carouselProject(1)" class="sliderBtn" id="nextBtn" onclick="ga('send', 'event', 'Project', 'Click', 'Right');">
 				<i class="fa fa-chevron-right"></i>
 			</button>
 		</div>
@@ -197,7 +197,7 @@
 			<i class="fa fa-envelope-o fa-2x"> </i>
 			<h1>Let's start</h1>
 			<h3> a new project together</h3>
-			<a id="emailButton" href="mailto:crumrinecoding@gmail.com">Email Me</a>
+			<a id="emailButton" href="mailto:crumrinecoding@gmail.com" onclick="ga('send', 'event', 'Project', 'Click', 'Email');">Email Me</a>
 		</div>
 
 		<!-- <button id="logoCredits" onclick="creditsOn(); off">Logo Credits</button> -->
