@@ -220,7 +220,7 @@ nav ul li a:hover {
     transform: translateX(-50%)
 }
 .video-control-button{
-    font-size: 20px;
+    font-size: 34px;
 }
 .video-control-button:hover{
     cursor: pointer;
