@@ -24,6 +24,21 @@ function toggleOverlay() {
     }
 }
 
+var video = document.getElementById("projectPicture");
+var pauseButton = document.getElementById("video-pause-button");
+var playButton = document.getElementById("video-play-button");
+
+function pause(){
+    video.pause();
+    pauseButton.style = "display: none;"
+    playButton.style = "display: relative;"
+}
+
+function play(){
+    video.play();
+    playButton.style = "display: none;"
+    pauseButton.style = "display: relative;"
+}
 
 function shadeColor(color, percent) {
     var f = parseInt(color.slice(1), 16), t = percent < 0 ? 0 : 255, p = percent < 0 ? percent * -1 : percent, R = f >> 16, G = f >> 8 & 0x00FF, B = f & 0x0000FF;
@@ -320,6 +335,8 @@ app.controller('portfolioControllers', function ($scope) {
         document.getElementById("website-link").style.background = $scope.projects[projectID].color;
         document.getElementById("nav").style.borderColor = $scope.projects[projectID].color;
         $scope.selectedProject = projectID;
+
+        play();
     }
     $scope.carouselProject = function (increment) {
         if ($scope.selectedProject == 0 && increment == -1) {

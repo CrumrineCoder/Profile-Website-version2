@@ -123,7 +123,7 @@
 		test
 		<!-- Project Section || scrollTo('projectSelectBoxes') -->
 		<div ng-cloak id="projectSelectBoxes">
-			<button type="image" class="projectSelectButton" id={{project.id}} ng-click="changeProject(project.id); ga('send', 'event', 'Project', 'Click', {{title}});"
+			<button type="image" class="projectSelectButton" id={{project.id}}  onclick="ga('send', 'event', 'Project', 'Click','ProjectBox');" ng-click="changeProject(project.id)"
 			 ng-mouseover="changePreview(project.id)" ng-style="{'background-color': project.color}" ng-repeat="project in buttons">
 				<img ng-src={{project.logo}} class="projectSelectImage" ng-style="{'background-color': project.color}">
 				<p ng-cloak class="logoText"> {{project.title}} </p>
@@ -142,6 +142,10 @@
 			<div ng-cloak id="projectInfoText">
 
 				<div id="content">
+					<div id="video-controls">
+						<i onclick="pause()" class="fas fa-pause-circle video-control-button" id="video-pause-button"></i>
+						<i onclick="play()"  style="display: none;" class="fas fa-play-circle video-control-button" id="video-play-button"></i>
+					</div>
 
 					<div id="topLeftContent">
 						<h1 ng-cloak id="projectTitle"> {{projectInfo.title}} </h1>
