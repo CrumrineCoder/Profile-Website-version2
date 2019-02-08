@@ -222,6 +222,10 @@ nav ul li a:hover {
 .video-control-button{
     font-size: 20px;
 }
+.video-control-button:hover{
+    cursor: pointer;
+    color: rgb(180, 180, 180);
+}
 
 
 #projectTitle{
